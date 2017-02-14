@@ -1,0 +1,277 @@
+.#{$pre} {
+  &-col {
+    &-8 {
+      width: 66.6%;
+    }
+    &-4 {
+      width: 33.3%;
+    }
+  }
+  &-affix {
+    position: fixed;
+    top: 0;
+  }
+  &-body {
+    @include after-float();
+  }
+  &-aside {
+    @include _color();
+    @include _float();
+    &__title {}
+    &__btn {}
+    &__list {}
+    @include after-float();
+  }
+  &-content {
+    @include _color();
+    @include _float();
+    @include after-float();
+  }
+  &-footer {
+    @include _color();
+    &__title {}
+    &__btn {}
+    &__list {}
+    @include after-float();
+  }
+  &-header {
+    @include _color();
+    &__title {}
+    &__btn {}
+    &__list {}
+    @include after-float();
+  }
+  &-btn {
+    $block: "btn";
+    position: relative;
+    cursor: pointer;
+    font-size: inherit;
+    border: 0;
+    padding: 0;
+    font-family: inherit;
+    display: inline-block;
+    line-height: 2rem;
+    @include _color();
+    @include _size();
+    &__icon {
+      @include _float();
+      &_float_left,
+      &_float_right {
+        background-color: darken($bg_color_neutral, 10%);
+      }
+    }
+    &__text {
+      padding: 0 0.5rem;
+      display: inline-block;
+    }
+    &__badge {
+      position: absolute;
+      top: 0;
+      right: 0;
+      margin-right: -1rem;
+      margin-top: -1rem;
+      transform: scale(0.7);
+    }
+    &-list {
+      &__item {
+        @include _float()
+      }
+      @include after-float();
+    }
+    background-color: $bg_color_neutral;
+    color: $text_color_neutral;
+    &:hover,
+    &:focus {
+      background-color: darken($bg_color_neutral, 20%);
+      .#{$pre}-btn__icon_float_left,
+      .#{$pre}-btn__icon_float_right {
+        background-color: darken($bg_color_neutral, 30%);
+      }
+    }
+  }
+  &-badge {
+    $font-size: 1rem;
+    $line-height: $font-size * 2;
+    $border-radius: $line-height / 2;
+    $min-width: $line-height;
+    background-color: $bg_color_badge;
+    color: $text_color_badge;
+    border-radius: $border-radius;
+    min-width: $min-width;
+    display: inline-block;
+    text-align: center;
+    line-height: $line-height;
+    padding: 0 0.3rem;
+    box-sizing: border-box;
+    @include _color();
+    @include _size();
+  }
+  &-dropdown {
+    &__link {}
+    &__btn {}
+    &__list {}
+    &__item {}
+  }
+  &-checkbox {
+    position: relative;
+    cursor: pointer;
+    font-size: inherit;
+    border: 0;
+    padding: 0;
+    font-family: inherit;
+    display: inline-block;
+    line-height: 2rem;
+    @include _color();
+    @include _size();
+    &__label {
+      cursor: pointer;
+    }
+    &__input {
+      width: 0;
+      height: 0;
+      visibility: hidden;
+      position: absolute;
+      &:checked {
+        &+.fg-icon {
+          &.fg-icon_shape_square {
+            &::after {
+              content: "\f046";
+            }
+          }
+        }
+        &~.fg-icon {
+          &.fg-icon_shape_toggle {
+            &::after {
+              content: "\f205";
+            }
+          }
+        }
+      }
+    }
+    &__icon {
+      @include _float();
+    }
+    &-list {
+      &__item {
+        @include _float();
+      }
+      @include after-float();
+    }
+    &__text {
+      padding: 0 0.5rem;
+      display: inline-block;
+      @include _float();
+    }
+    @include after-float();
+  }
+  &-radio {
+    position: relative;
+    cursor: pointer;
+    font-size: inherit;
+    border: 0;
+    padding: 0;
+    font-family: inherit;
+    display: inline-block;
+    line-height: 2rem;
+    @include _color();
+    @include _size();
+    &__icon {
+      @include _float();
+    }
+    &__text {
+      padding: 0 0.5rem;
+      display: inline-block;
+    }
+    &__label {
+      cursor: pointer;
+    }
+    &__input {
+      width: 0;
+      height: 0;
+      visibility: hidden;
+      position: absolute;
+      &:checked {
+        &+.fg-icon {
+          &.fg-icon_shape_circle {
+            &::before {
+              content: "\f111";
+              position: absolute;
+            }
+          }
+        }
+      }
+    }
+    &-list {
+      &__item {
+        @include _float();
+        &.#{$pre}-radio-list__item_float_left,
+        .#{$pre}-radio-list__item_float_right {
+          &:first-child {
+            .fg-radio {
+              border-radius: 0.5rem 0 0 0.5rem;
+              overflow: hidden;
+            }
+          }
+          &:last-child {
+            .fg-radio {
+              border-radius: 0 0.5rem 0.5rem 0;
+              overflow: hidden;
+            }
+          }
+        }
+      }
+      @include after-float();
+    }
+  }
+  &-link {
+    &__icon {
+      @include _float()
+    }
+  }
+  &-icon {
+    display: block;
+    width: 2rem;
+    text-align: center;
+    font-size: 1.25rem;
+    margin-left: auto;
+    margin-right: auto;
+    font-family: FontAwesome;
+    @include _color();
+    @include _size();
+    &-list {
+      &__item {
+        @include _float()
+      }
+    }
+    &_shape {
+      @include icon()
+    }
+    &::after {
+      display: inline-block;
+    }
+    &::before {
+      display: inline-block;
+    }
+  }
+  &-title {
+    &__icon {
+      @include _float()
+    }
+    @include after-float();
+  }
+  &-img {}
+  //componentes especificos aglutinantes
+  &-toolbar {
+    &__item {
+      @include _float()
+    }
+    @include after-float();
+  }
+  &-list {
+    &__item {
+      @include _float()
+    }
+    @include after-float();
+  }
+  &-card {}
+}

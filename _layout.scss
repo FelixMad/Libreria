@@ -1,0 +1,62 @@
+@mixin _without {
+    &_without {
+        &_header {}
+    }
+    &_without {
+        &_footer {}
+    }
+}
+
+.#{$pre} {
+    &-body {
+        &__header {}
+        &__aside {}
+        &__content {}
+        &__body {}
+        &__footer {}
+        @include _without;
+    }
+    &-aside {
+        &__header {}
+        &__aside {}
+        &__content {}
+        &__body {}
+        &__footer {}
+        @include _without;
+    }
+    &-page {
+        &__header {}
+        &__aside {}
+        &__content {}
+        &__body {}
+        &__footer {}
+        @include _without;
+    }
+    &-publication {
+        &__header {}
+        &__aside {}
+        &__content {}
+        &__body {}
+        &__footer {}
+        @include _without;
+    }
+    &-modal {
+        &__header {}
+        &__aside {}
+        &__content {}
+        &__body {}
+        &__footer {}
+        @include _without;
+        &_fixed-to {
+            &_top {}
+            &_bottom {}
+            &_left {}
+            &_right {}
+        }
+    }
+    &-page {
+        &_home {}
+        &_result-list {}
+        &_document {}
+    }
+}

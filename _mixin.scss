@@ -1,0 +1,264 @@
+@mixin _size() {
+  &_size {
+    &_xs {
+      $font-size: 0.3rem;
+      @include _size-components($font-size);
+    }
+    &_s {
+      $font-size: 0.8rem;
+      @include _size-components($font-size);
+    }
+    &_m {
+      $font-size: 1rem;
+      @include _size-components($font-size);
+    }
+    &_l {
+      $font-size: 1.5rem;
+      @include _size-components($font-size);
+    }
+  }
+}
+
+@mixin _size-components($font-size) {
+  $line-height: $font-size * 2;
+  $width: $line-height;
+  $border-radius: $line-height / 2;
+  font-size: $font-size;
+  &.#{$pre}-badge {
+    $line-height: $font-size * 2;
+    $border-radius: $line-height / 2;
+    $min-width: $line-height;
+    border-radius: $border-radius;
+    min-width: $min-width;
+    line-height: $line-height;
+    padding: 0 $line-height / 6;
+  }
+  &.#{$pre}-btn {
+    line-height: $line-height;
+    .#{$pre}-btn__icon {
+      width: $width;
+      font-size: $font-size * 1.25;
+    }
+    .#{$pre}-btn__text {}
+    .#{$pre}-btn__badge {
+      $line-height: $font-size * 2;
+      $min-width: $line-height;
+      border-radius: $line-height / 2;
+      min-width: $min-width;
+      line-height: $line-height;
+      padding: 0 $line-height / 6;
+      margin-right: -$line-height / 2;
+      margin-top: -$line-height / 2;
+    }
+  }
+  &.#{$pre}-icon {
+    font-size: $font-size * 1.25;
+    width: $width;
+    line-height: $line-height;
+  }
+}
+
+@mixin hover($background-color, $color) {
+  background-color: $background-color;
+  color: $color;
+  &.#{$pre}-btn {
+    &:hover,
+    &:focus {
+      background-color: darken($background-color, 20%);
+      .#{$pre}-btn__icon_float_left,
+      .#{$pre}-btn__icon_float_right {
+        background-color: darken($background-color, 30%);
+      }
+    }
+  }
+  &.#{$pre}-radio {
+    &:hover {
+      background-color: darken($background-color, 20%);
+      .#{$pre}-radio__icon_float_left,
+      .#{$pre}-radio__icon_float_right {
+        background-color: darken($background-color, 30%);
+      }
+    }
+    .#{$pre}-radio__input {
+      &:checked {
+        &+.fg-radio__icon {
+          background-color: darken($background-color, 30%);
+          &+.fg-radio__text {
+            background-color: darken($background-color, 20%);
+          }
+        }
+        &+.fg-radio__text {
+          background-color: darken($background-color, 20%);
+        }
+      }
+    }
+  }
+  &.#{$pre}-checkbox {
+    &:hover {
+      background-color: darken($background-color, 20%);
+      .#{$pre}-checkbox__icon_float_left,
+      .#{$pre}-checkbox__icon_float_right {
+        background-color: darken($background-color, 30%);
+      }
+    }
+    .#{$pre}-checkbox__input {
+      &:checked {
+        &+.fg-icon {
+          background-color: darken($background-color, 30%);
+          &+.fg-text {
+            background-color: darken($background-color, 20%);
+          }
+        }
+        &+.fg-text {
+          background-color: darken($background-color, 20%);
+        }
+      }
+    }
+  }
+  &.#{$pre}-icon {
+    color: $background-color;
+    background-color: inherit;
+  }
+  .#{$pre}-btn__icon_float_left,
+  .#{$pre}-btn__icon_float_right {
+    background-color: darken($background-color, 10%);
+  }
+  .#{$pre}-radio__icon_float_left,
+  .#{$pre}-radio__icon_float_right {
+    background-color: darken($background-color, 10%);
+  }
+}
+
+@mixin _color() {
+  &_color {
+    &_principal {
+      @include hover($bg_color_principal, $text_color_principal);
+    }
+    &_secondary {
+      @include hover($bg_color_secondary, $text_color_secondary);
+    }
+    &_neutral {
+      @include hover($bg_color_neutral, $text_color_neutral);
+    }
+    &_toolbar {
+      @include hover($bg_color_toolbar, $text_color_toolbar);
+    }
+    &_filter {
+      @include hover($bg_color_filter, $text_color_filter);
+    }
+    &_search {
+      @include hover($bg_color_search, $text_color_search);
+    }
+    &_update {
+      @include hover($bg_color_update, $text_color_update);
+    }
+    &_warning {
+      @include hover($bg_color_warning, $text_color_warning);
+    }
+    &_alert {
+      @include hover($bg_color_info, $text_color_info);
+    }
+    &_info {
+      @include hover($bg_color_info, $text_color_info);
+    }
+    &_success {
+      @include hover($bg_color_success, $text_color_success);
+    }
+    &_error {
+      @include hover($bg_color_error, $text_color_error);
+    }
+    &_badge {
+      @include hover($bg_color_badge, $text_color_badge);
+    }
+    &_highlight {
+      @include hover($bg_color_highlight, $text_color_highlight);
+    }
+  }
+}
+
+@mixin _float() {
+  &_float {
+    &_left {
+      float: left;
+    }
+    &_right {
+      float: right;
+    }
+  }
+}
+
+@mixin after-float() {
+  &:after {
+    content: "";
+    clear: both;
+    display: table
+  }
+}
+
+@mixin icon {
+  &_close {
+    &:after {
+      content: "\f00d";
+    }
+  }
+  &_filter {
+    &:after {
+      content: "f";
+    }
+  }
+  &_search {
+    &:after {
+      content: "g";
+    }
+  }
+  &_more {
+    &:after {
+      content: "h";
+    }
+  }
+  &_next {
+    &:after {
+      content: "j";
+    }
+  }
+  &_prev {
+    &:after {
+      content: "w";
+    }
+  }
+  &_upload {
+    &:after {
+      content: "xy";
+    }
+  }
+  &_circle {
+    &:after {
+      content: "\f1db";
+    }
+  }
+  &_square {
+    &:after {
+      content: "\f096"
+    }
+  }
+  &_toggle {
+    &:after {
+      content: "\f204";
+    }
+  }
+  &_align-left {
+    &:after {
+      content: "\f036";
+    }
+  }
+  &_align-right {
+    &:after {
+      content: "\f038";
+    }
+  }
+  &_align-center {
+    &:after {
+      content: "\f037";
+    }
+  }
+}

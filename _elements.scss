@@ -1,0 +1,43 @@
+html {
+  font-size: 16px;
+  font-family: 'Helvetica';
+}
+
+body {
+  font-size: 13px;
+}
+
+.#{$pre} {
+  &-p {}
+  &-h1 {}
+  &-h2 {}
+  &-h3 {}
+  &-code {
+    font-family: monospace;
+    white-space: pre;
+    @include _color();
+  }
+  &-link {
+    @include _size();
+  }
+  &-text {
+    @include _size();
+  }
+  &-title {
+    @include _size();
+  }
+  &-input {
+    @include _size();
+    &_type {
+      &_text {}
+      &_radio {}
+      &_checkbox {}
+    }
+  }
+  &-select {
+    @include _size();
+  }
+  &-textarea {
+    @include _size();
+  }
+}
