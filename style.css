@@ -2313,7 +2313,7 @@ body { font-size: 13px; }
 .fg-radio-list:after { content: ""; clear: both; display: table; }
 .fg-link__icon_float_left { float: left; }
 .fg-link__icon_float_right { float: right; }
-.fg-icon { display: block; width: 2rem; text-align: center; font-size: 1.25rem; margin-left: auto; margin-right: auto; font-family: FontAwesome; }
+.fg-icon { display: inline-block; width: 2rem; text-align: center; font-size: 1.25rem; margin-left: auto; margin-right: auto; font-family: FontAwesome; }
 .fg-icon_color_principal { background-color: blue; color: white; }
 .fg-icon_color_principal.fg-btn:hover, .fg-icon_color_principal.fg-btn:focus { background-color: #000099; }
 .fg-icon_color_principal.fg-btn:hover .fg-btn__icon_float_left, .fg-icon_color_principal.fg-btn:hover .fg-btn__icon_float_right, .fg-icon_color_principal.fg-btn:focus .fg-btn__icon_float_left, .fg-icon_color_principal.fg-btn:focus .fg-btn__icon_float_right { background-color: #000066; }
@@ -2562,23 +2562,23 @@ body { font-size: 13px; }
 .fg-icon_size_l.fg-btn .fg-btn__icon { width: 3rem; font-size: 1.875rem; }
 .fg-icon_size_l.fg-btn .fg-btn__badge { border-radius: 1.5rem; min-width: 3rem; line-height: 3rem; padding: 0 0.5rem; margin-right: -1.5rem; margin-top: -1.5rem; }
 .fg-icon_size_l.fg-icon { font-size: 1.875rem; width: 3rem; line-height: 3rem; }
+.fg-icon::after { display: inline-block; content: "\f118"; }
+.fg-icon::before { display: inline-block; }
 .fg-icon-list__item_float_left { float: left; }
 .fg-icon-list__item_float_right { float: right; }
-.fg-icon_shape_close:after { content: "\f00d"; }
-.fg-icon_shape_filter:after { content: "f"; }
-.fg-icon_shape_search:after { content: "g"; }
-.fg-icon_shape_more:after { content: "h"; }
-.fg-icon_shape_next:after { content: "j"; }
-.fg-icon_shape_prev:after { content: "w"; }
-.fg-icon_shape_upload:after { content: "xy"; }
-.fg-icon_shape_circle:after { content: "\f1db"; }
-.fg-icon_shape_square:after { content: ""; }
-.fg-icon_shape_toggle:after { content: "\f204"; }
-.fg-icon_shape_align-left:after { content: "\f036"; }
-.fg-icon_shape_align-right:after { content: "\f038"; }
-.fg-icon_shape_align-center:after { content: "\f037"; }
-.fg-icon::after { display: inline-block; }
-.fg-icon::before { display: inline-block; }
+.fg-icon_graph_close:after { content: "\f00d"; }
+.fg-icon_graph_filter:after { content: "f"; }
+.fg-icon_graph_search:after { content: "g"; }
+.fg-icon_graph_more:after { content: "h"; }
+.fg-icon_graph_next:after { content: "j"; }
+.fg-icon_graph_prev:after { content: "w"; }
+.fg-icon_graph_upload:after { content: "xy"; }
+.fg-icon_graph_circle:after { content: "\f1db"; }
+.fg-icon_graph_square:after { content: ""; }
+.fg-icon_graph_toggle:after { content: "\f204"; }
+.fg-icon_graph_align-left:after { content: "\f036"; }
+.fg-icon_graph_align-right:after { content: "\f038"; }
+.fg-icon_graph_align-center:after { content: "\f037"; }
 .fg-title__icon_float_left { float: left; }
 .fg-title__icon_float_right { float: right; }
 .fg-title:after { content: ""; clear: both; display: table; }

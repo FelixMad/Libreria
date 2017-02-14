@@ -229,7 +229,7 @@
     }
   }
   &-icon {
-    display: block;
+    display: inline-block;
     width: 2rem;
     text-align: center;
     font-size: 1.25rem;
@@ -238,19 +238,20 @@
     font-family: FontAwesome;
     @include _color();
     @include _size();
+    &::after {
+      display: inline-block;
+      content: "\f118";
+    }
+    &::before {
+      display: inline-block;
+    }
     &-list {
       &__item {
         @include _float()
       }
     }
-    &_shape {
+    &_graph {
       @include icon()
-    }
-    &::after {
-      display: inline-block;
-    }
-    &::before {
-      display: inline-block;
     }
   }
   &-title {
