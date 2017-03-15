@@ -36,10 +36,19 @@
   }
   &-header {
     @include _color();
-    &__title {}
+    &__title {
+      padding-left: 1rem;
+      display: inline-block;
+      line-height: 2rem;
+    }
     &__btn {}
-    &__list {}
+    &__list {
+      @include _float();
+    }
     @include after-float();
+    @include _float();
+    background-color: $bg_color_neutral;
+    color: $text_color_neutral;
   }
   &-btn {
     $block: "btn";
@@ -51,10 +60,12 @@
     font-family: inherit;
     display: inline-block;
     line-height: 2rem;
+    text-decoration: none;
     @include _color();
     @include _size();
+    @include _float();
     &__icon {
-      @include _float();
+      //@include _float();
       &_float_left,
       &_float_right {
         background-color: darken($bg_color_neutral, 10%);
@@ -65,14 +76,15 @@
       display: inline-block;
     }
     &__badge {
-      position: absolute;
-      top: 0;
-      right: 0;
-      margin-right: -1rem;
-      margin-top: -1rem;
+      //position: absolute;
+      //top: 0;
+      //right: 0;
+      //margin-right: -1rem;
+      //margin-top: -1rem;
       transform: scale(0.7);
     }
     &-list {
+      @include _float();
       &__item {
         @include _float()
       }
@@ -87,6 +99,10 @@
       .#{$pre}-btn__icon_float_right {
         background-color: darken($bg_color_neutral, 30%);
       }
+    }
+    .fg-icon {
+      display: block;
+      width: auto;
     }
   }
   &-badge {
@@ -105,6 +121,7 @@
     box-sizing: border-box;
     @include _color();
     @include _size();
+    @include _float();
   }
   &-dropdown {
     &__link {}
@@ -196,6 +213,7 @@
             &::before {
               content: "\f111";
               position: absolute;
+              transform: scale(0.6);
             }
           }
         }
@@ -222,6 +240,10 @@
       }
       @include after-float();
     }
+    .fg-icon {
+      display: block;
+      width: auto;
+    }
   }
   &-link {
     &__icon {
@@ -230,7 +252,7 @@
   }
   &-icon {
     display: inline-block;
-    width: 2rem;
+    min-width: 2rem;
     text-align: center;
     font-size: 1.25rem;
     margin-left: auto;
@@ -238,6 +260,7 @@
     font-family: FontAwesome;
     @include _color();
     @include _size();
+    @include _float();
     &::after {
       display: inline-block;
       content: "\f118";

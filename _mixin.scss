@@ -36,7 +36,7 @@
   &.#{$pre}-btn {
     line-height: $line-height;
     .#{$pre}-btn__icon {
-      width: $width;
+      min-width: $width;
       font-size: $font-size * 1.25;
     }
     .#{$pre}-btn__text {}
@@ -62,6 +62,17 @@
   background-color: $background-color;
   color: $color;
   &.#{$pre}-btn {
+    &:hover,
+    &:focus {
+      background-color: darken($background-color, 20%);
+      .#{$pre}-btn__icon_float_left,
+      .#{$pre}-btn__icon_float_right {
+        background-color: darken($background-color, 30%);
+      }
+    }
+  }
+  .#{$pre}-btn {
+    background-color: darken($background-color, 10%);
     &:hover,
     &:focus {
       background-color: darken($background-color, 20%);
