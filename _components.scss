@@ -132,15 +132,15 @@
       visibility: hidden;
       position: absolute;
       &:checked {
-        &+.fg-icon {
-          &.fg-icon_shape_square {
+        &~.fg-icon {
+          &.fg-icon_graph_square {
             &::after {
               content: "\f046";
             }
           }
         }
         &~.fg-icon {
-          &.fg-icon_shape_toggle {
+          &.fg-icon_graph_toggle {
             &::after {
               content: "\f205";
             }
@@ -192,7 +192,7 @@
       position: absolute;
       &:checked {
         &+.fg-icon {
-          &.fg-icon_shape_circle {
+          &.fg-icon_graph_circle {
             &::before {
               content: "\f111";
               position: absolute;

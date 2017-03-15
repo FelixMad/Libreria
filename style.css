@@ -2040,8 +2040,8 @@ body { font-size: 13px; }
 .fg-checkbox_size_l.fg-icon { font-size: 1.875rem; width: 3rem; line-height: 3rem; }
 .fg-checkbox__label { cursor: pointer; }
 .fg-checkbox__input { width: 0; height: 0; visibility: hidden; position: absolute; }
-.fg-checkbox__input:checked + .fg-icon.fg-icon_shape_square::after { content: "\f046"; }
-.fg-checkbox__input:checked ~ .fg-icon.fg-icon_shape_toggle::after { content: "\f205"; }
+.fg-checkbox__input:checked ~ .fg-icon.fg-icon_graph_square::after { content: "\f046"; }
+.fg-checkbox__input:checked ~ .fg-icon.fg-icon_graph_toggle::after { content: "\f205"; }
 .fg-checkbox__icon_float_left { float: left; }
 .fg-checkbox__icon_float_right { float: right; }
 .fg-checkbox-list__item_float_left { float: left; }
@@ -2305,7 +2305,7 @@ body { font-size: 13px; }
 .fg-radio__text { padding: 0 0.5rem; display: inline-block; }
 .fg-radio__label { cursor: pointer; }
 .fg-radio__input { width: 0; height: 0; visibility: hidden; position: absolute; }
-.fg-radio__input:checked + .fg-icon.fg-icon_shape_circle::before { content: "\f111"; position: absolute; }
+.fg-radio__input:checked + .fg-icon.fg-icon_graph_circle::before { content: "\f111"; position: absolute; }
 .fg-radio-list__item_float_left { float: left; }
 .fg-radio-list__item_float_right { float: right; }
 .fg-radio-list__item.fg-radio-list__item_float_left:first-child .fg-radio, .fg-radio-list__item .fg-radio-list__item_float_right:first-child .fg-radio { border-radius: 0.5rem 0 0 0.5rem; overflow: hidden; }
