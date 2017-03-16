@@ -59,27 +59,12 @@
 }
 
 @mixin hover($background-color, $color) {
-  background-color: $background-color;
+  background-color: darken($background-color, 10%);
   color: $color;
-  &.#{$pre}-btn {
-    &:hover,
-    &:focus {
-      background-color: darken($background-color, 20%);
-      .#{$pre}-btn__icon_float_left,
-      .#{$pre}-btn__icon_float_right {
-        background-color: darken($background-color, 30%);
-      }
-    }
-  }
   .#{$pre}-btn {
-    background-color: darken($background-color, 10%);
-    &:hover,
-    &:focus {
-      background-color: darken($background-color, 20%);
-      .#{$pre}-btn__icon_float_left,
-      .#{$pre}-btn__icon_float_right {
-        background-color: darken($background-color, 30%);
-      }
+    background-color: darken($background-color, 20%);
+    &:hover {
+      background-color: darken($background-color, 30%);
     }
   }
   &.#{$pre}-radio {
@@ -129,14 +114,6 @@
   &.#{$pre}-icon {
     color: $background-color;
     background-color: inherit;
-  }
-  .#{$pre}-btn__icon_float_left,
-  .#{$pre}-btn__icon_float_right {
-    background-color: darken($background-color, 10%);
-  }
-  .#{$pre}-radio__icon_float_left,
-  .#{$pre}-radio__icon_float_right {
-    background-color: darken($background-color, 10%);
   }
 }
 

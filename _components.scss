@@ -15,16 +15,16 @@
     @include after-float();
   }
   &-aside {
-    @include _color();
-    @include _float();
+    //@include _color();
+    //@include _float();
     &__title {}
     &__btn {}
     &__list {}
     @include after-float();
   }
   &-content {
-    @include _color();
-    @include _float();
+    //@include _color();
+    //@include _float();
     @include after-float();
   }
   &-footer {
@@ -33,22 +33,6 @@
     &__btn {}
     &__list {}
     @include after-float();
-  }
-  &-header {
-    @include _color();
-    &__title {
-      padding-left: 1rem;
-      display: inline-block;
-      line-height: 2rem;
-    }
-    &__btn {}
-    &__list {
-      @include _float();
-    }
-    @include after-float();
-    @include _float();
-    background-color: $bg_color_neutral;
-    color: $text_color_neutral;
   }
   &-btn {
     $block: "btn";
@@ -61,49 +45,61 @@
     display: inline-block;
     line-height: 2rem;
     text-decoration: none;
-    @include _color();
-    @include _size();
-    @include _float();
+    background-color: $bg_color_neutral;
+    color: $text_color_neutral;
     &__icon {
-      //@include _float();
-      &_float_left,
-      &_float_right {
-        background-color: darken($bg_color_neutral, 10%);
+      &.fg_float_left,
+      &.fg_float_right {
+        &~.fg-btn__text {
+          display: inline-block;
+        }
       }
     }
     &__text {
       padding: 0 0.5rem;
-      display: inline-block;
+      display: block;
     }
     &__badge {
-      //position: absolute;
-      //top: 0;
-      //right: 0;
-      //margin-right: -1rem;
-      //margin-top: -1rem;
-      transform: scale(0.7);
+      &.fg-badge {
+        transform: scale(0.7);
+        margin-left: auto;
+        margin-right: auto;
+        display: table;
+        &.fg_float_left,
+        &.fg_float_right {
+          display: inline-block;
+        }
+      }
     }
     &-list {
-      @include _float();
-      &__item {
-        @include _float()
-      }
+      &__item {}
       @include after-float();
-    }
-    background-color: $bg_color_neutral;
-    color: $text_color_neutral;
-    &:hover,
-    &:focus {
-      background-color: darken($bg_color_neutral, 20%);
-      .#{$pre}-btn__icon_float_left,
-      .#{$pre}-btn__icon_float_right {
-        background-color: darken($bg_color_neutral, 30%);
-      }
     }
     .fg-icon {
       display: block;
       width: auto;
     }
+    @include _color();
+    @include after-float();
+  }
+  &-header {
+    .#{$pre}-btn {
+      background-color: inherit;
+    }
+    &__title {
+      padding-left: 1rem;
+      display: inline-block;
+      line-height: 2rem;
+    }
+    &__btn {}
+    &__list {}
+    background-color: $bg_color_neutral;
+    color: $text_color_neutral;
+    @include _color();
+    .#{$pre}-btn {
+      @include _color();
+    }
+    @include after-float();
   }
   &-badge {
     $font-size: 1rem;
@@ -119,9 +115,9 @@
     line-height: $line-height;
     padding: 0 0.3rem;
     box-sizing: border-box;
-    @include _color();
-    @include _size();
-    @include _float();
+    //@include _color();
+    //@include _size();
+    //@include _float();
   }
   &-dropdown {
     &__link {}
@@ -138,8 +134,8 @@
     font-family: inherit;
     display: inline-block;
     line-height: 2rem;
-    @include _color();
-    @include _size();
+    //@include _color();
+    //@include _size();
     &__label {
       cursor: pointer;
     }
@@ -190,8 +186,8 @@
     font-family: inherit;
     display: inline-block;
     line-height: 2rem;
-    @include _color();
-    @include _size();
+    //@include _color();
+    //@include _size();
     &__icon {
       @include _float();
     }
@@ -258,9 +254,9 @@
     margin-left: auto;
     margin-right: auto;
     font-family: FontAwesome;
-    @include _color();
-    @include _size();
-    @include _float();
+    //@include _color();
+    //@include _size();
+    //@include _float();
     &::after {
       display: inline-block;
       content: "\f118";
@@ -298,4 +294,8 @@
     @include after-float();
   }
   &-card {}
+  //LOS MODIFICADORES TIENE QUE ESTAR AL FINAL
+  //@include _color();
+  @include _size();
+  @include _float();
 }

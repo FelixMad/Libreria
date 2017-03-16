@@ -12,6 +12,7 @@
       margin-right: 10px;
     }
   </style>
+  <!--ASIDE-->
   <div class="fg-col-4 fg-aside fg-aside_float_right fg-affix" style="right:0">
     <ul class="fg-list">
       <li class="fg-list__item"><a href="#fg-icons">Tipos de modificadores</a>
@@ -53,12 +54,37 @@
       <li class="fg-list__item"><a href="#fg-header">Header</a></li>
     </ul>
   </div>
+  <!--CONTENT-->
   <div class="fg-col-8 fg-content fg-content_float_left">
     <div class="fg-list">
+      <!-- TIPOS DE MODIFICADORES -->
+      <div class="fg-section fg-list__item">
+        <h2 class="fg-title fg-section__title" id="fg-icons">
+          <a class="fg-link"></a>Tipos de modificadores
+        </h2>
+        <p>Los modificadores ayudan a cambiar caracteristicas de los estilos establecidos por defecto en los bloques. Estos
+          modificadores son de color, tamaño y posición.</p>
+        <ul>
+          <li>
+            <h3 class="fg-title fg-section__title" id="fg-icons-graph">Color</h3>
+            <p><code class="fg-code fg-code_color_highlight">fg_color_*COLOR*</code>
+            </p>
+          </li>
+          <li>
+            <h3 class="fg-title fg-section__title" id="fg-icons-graph">Tamaño</h3>
+            <p><code class="fg-code fg-code_color_highlight">fg_size_*COLOR*</code>
+          </li>
+          <li>
+            <h3 class="fg-title fg-section__title" id="fg-icons-graph">Alineación</h3>
+            <p><code class="fg-code fg-code_color_highlight">fg_float_*POSICIÓN*</code>
+          </li>
+        </ul>
+      </div>
       <!-- ICONOS -->
       <div class="fg-section fg-list__item">
         <h2 class="fg-title fg-section__title" id="fg-icons">
-          <a class="fg-link"></a>Iconos</h2>
+          <a class="fg-link"></a>Iconos
+        </h2>
         <p><code class="fg-code fg-code_color_highlight">fg-icon</code> para incoportar el bloque icono.</p>
         <p>El bloque "Icono" solo con la clase <code class="fg-code fg-code_color_highlight">fg-icon</code> viene con una serie
           de caracteristicas por defecto. Estas se pueden cambiar incoporando modificadores preestablecidos cambiar tipo
@@ -72,7 +98,8 @@
         <ul>
           <li>
             <h3 class="fg-title fg-section__title" id="fg-icons-graph">Modificador - Iconos con distintas grafias</h3>
-            <p><code class="fg-code fg-code_color_highlight">fg-icon_graph_*ICONO*</code> es el modificador del tipo de icono.</p>
+            <p><code class="fg-code fg-code_color_highlight">fg-icon_graph_*ICONO*</code> es el modificador del tipo de icono.
+              Es un modificador exclusiblo de <code class="fg-code fg-code_color_highlight">fg-icon</code>. </p>
             <div class="fg-list">
               <div class="fg-list__item fg-list__item_float_left">
                 <span class="fg-icon fg-icon_graph_close"></span>
@@ -87,45 +114,45 @@
           </li>
           <li>
             <h3 class="fg-title fg-section__title" id="fg-icons-with-colors">Modificador - Iconos con colores</h3>
-            <p><code class="fg-code fg-code_color_highlight">fg-icon_color_*COLOR*</code> es el modificador del color del icono.</p>
+            <p><code class="fg-code fg-code_color_highlight">fg_color_*COLOR*</code> es el modificador del color del icono.</p>
             <div class="fg-list">
               <div class="fg-list__item fg-list__item_float_left">
-                <span class="fg-icon fg-icon_color_principal fg-icon_graph_close"></span>
+                <span class="fg-icon fg_color_principal fg-icon_graph_close"></span>
               </div>
               <div class="fg-list__item fg-list__item_float_left">
-                <span class="fg-icon fg-icon_color_secondary fg-icon_graph_align-left"></span>
+                <span class="fg-icon fg_color_secondary fg-icon_graph_align-left"></span>
               </div>
               <div class="fg-list__item fg-list__item_float_left">
-                <span class="fg-icon fg-icon_color_neutral fg-icon_graph_toggle"></span>
+                <span class="fg-icon fg_color_neutral fg-icon_graph_toggle"></span>
               </div>
             </div>
           </li>
           <li>
             <h3 class="fg-title fg-section__title" id="fg-icons-sizes">Modificador - Iconos en tamaños</h3>
-            <p><code class="fg-code fg-code_color_highlight">fg-icon_size_*TAMAÑO*</code> es el modificador del tamaño del icono.</p>
+            <p><code class="fg-code fg-code_color_highlight">fg_size_*TAMAÑO*</code> es el modificador del tamaño del icono.</p>
             <div class="fg-list">
               <div class="fg-list__item fg-list__item_float_left">
-                <span class="fg-icon fg-icon_size_s fg-icon_graph_close"></span>
+                <span class="fg-icon fg_size_s fg-icon_graph_close"></span>
               </div>
               <div class="fg-list__item fg-list__item_float_left">
-                <span class="fg-icon fg-icon_size_m fg-icon_graph_align-left"></span>
+                <span class="fg-icon fg_size_m fg-icon_graph_align-left"></span>
               </div>
               <div class="fg-list__item fg-list__item_float_left">
-                <span class="fg-icon fg-icon_size_l fg-icon_graph_toggle"></span>
+                <span class="fg-icon fg_size_l fg-icon_graph_toggle"></span>
               </div>
             </div>
           </li>
           <li>
             <h3 class="fg-title fg-section__title" id="fg-icons-align">Modificador - Iconos alineados</h3>
-            <p><code class="fg-code fg-code_color_highlight">fg-icon_float_*POSICIÓN*</code> es el modificador de la alineación
-              del icono.
+            <p><code class="fg-code fg-code_color_highlight">fg_float_*POSICIÓN*</code> es el modificador de la alineación del
+              icono.
             </p>
             <div class="fg-list">
               <div class="fg-list__item fg-list__item_float_left">
-                <span class="fg-icon fg-icon_float_left"></span>
+                <span class="fg-icon fg_float_left"></span>
               </div>
               <div class="fg-list__item ">
-                <span class="fg-icon fg-icon_float_right"></span>
+                <span class="fg-icon fg_float_right"></span>
               </div>
             </div>
           </li>
@@ -183,19 +210,20 @@
               <li>
                 <h4 class="fg-title fg-section__title">
                   <a id="fg-btn-with-icon-align" class="fg-link"></a>Modificador - Alineación de icono en botón</h4>
-                <p>Incoporar <code class="fg-code fg-code_color_highlight">fg-btn__icon fg-icon</code> y el modificador
-                  <code class="fg-code fg-code_color_highlight">fg-icon_float_left</code> o <code class="fg-code fg-code_color_highlight">fg-icon_float_right</code>
+                <p>Incoporar a <code class="fg-code fg-code_color_highlight">fg-icon</code> y el modificador
+                  <code class="fg-code fg-code_color_highlight">fg_float_left</code> o <code class="fg-code fg-code_color_highlight">fg_float_right</code>
                   <p>
                     <div class="fg-btn-list">
-                      <div class="fg-btn-list__item fg-btn-list__item_float_left">
+                      <div class="fg-btn-list__item">
                         <a class="fg-btn" href="#">
-                          <span class="fg-icon_float_left fg-icon fg-btn__icon"></span>
+                          <span class="fg_float_left fg-icon fg-btn__icon"></span>
                           <span class="fg-text fg-btn__text">Cerrar</span>
                         </a>
                       </div>
-                      <div class="fg-btn-list__item fg-btn-list__item_float_left">
+                      <br>
+                      <div class="fg-btn-list__item">
                         <a class="fg-btn" href="#">
-                          <span class="fg-icon_float_right fg-icon fg-btn__icon"></span>
+                          <span class="fg_float_right fg-icon fg-btn__icon"></span>
                           <span class="fg-text fg-btn__text">Cerrar</span>
                         </a>
                       </div>
@@ -212,9 +240,9 @@
               es necesario acompañarlo de la clase de bloque <code class="fg-code fg-code_color_highlight">fg-badge</code>              </p>
 
             <div class="fg-btn-list">
-              <div class="fg-btn-list__item fg-btn-list__item_float_left">
+              <div class="fg-btn-list__item fg_float_left">
                 <a class="fg-btn" href="#">
-                  <span class="fg-icon fg-icon_float_left fg-btn__icon"></span>
+                  <span class="fg-icon fg-btn__icon"></span>
                   <span class="fg-text fg-btn__text">Cerrar</span>
                   <span class="fg-badge fg-btn__badge">3</span>
                 </a>
@@ -224,17 +252,35 @@
               <li>
                 <h3 class="fg-title fg-section__title">
                   <a id="fg-btn-with-badge" class="fg-link"></a>Modificador - Alineación del badge en botón</h3>
-                <p>Incoporar <code class="fg-code fg-code_color_highlight">fg-btn__badge fg-badge</code> y el modificador
-                  <code class="fg-code fg-code_color_highlight">fg-badge_float_left</code> o <code class="fg-code fg-code_color_highlight">fg-badge_float_right</code>
+                <p>Incoporar <code class="fg-code fg-code_color_highlight">"fg-btn__badge fg-badge"</code> y el modificador
+                  <code class="fg-code fg-code_color_highlight">fg_float_left</code> o <code class="fg-code fg-code_color_highlight">fg_float_right</code>
                 </p>
                 <div class="fg-btn-list">
-                  <div class="fg-btn-list__item fg-btn-list__item_float_left">
+                  <div class="fg-btn-list__item">
                     <a class="fg-btn" href="#">
-                      <span class="fg-icon fg-icon_float_left fg-btn__icon"></span>
+                      <span class="fg-icon fg_float_left fg-btn__icon"></span>
                       <span class="fg-text fg-btn__text">Cerrar</span>
-                      <span class="fg-badge fg-badge_float_right fg-btn__badge">3</span>
+                      <span class="fg-badge fg_float_right fg-btn__badge">3</span>
                     </a>
                   </div>
+                  <br>
+                  <div class="fg-btn-list__item">
+                    <a class="fg-btn" href="#">
+                      <span class="fg-icon fg_float_left fg-btn__icon"></span>
+                      <span class="fg-text fg-btn__text">Cerrar</span>
+                      <span class="fg-badge fg_float_left fg-btn__badge">3</span>
+                    </a>
+                  </div>
+                  <br>
+
+                  <div class="fg-btn-list__item">
+                    <a class="fg-btn" href="#">
+                      <span class="fg-icon fg_float_right fg-btn__icon"></span>
+                      <span class="fg-text fg-btn__text">Cerrar</span>
+                      <span class="fg-badge fg_float_left fg-btn__badge">3</span>
+                    </a>
+                  </div>
+
                 </div>
               </li>
             </ul>
@@ -243,22 +289,22 @@
             <h3 class="fg-title fg-section__title">
               <a id="fg-btn-with-colors" class="fg-link"></a>Modificador - Botones con colores
             </h3>
-            <p><code class="fg-code fg-code_color_highlight">fg-btn_color_*COLOR*</code> es el modificador del color del boton.</p>
+            <p><code class="fg-code fg-code_color_highlight">fg_color_*COLOR*</code> es el modificador del color del boton.</p>
             <div class="fg-btn-list">
               <div class="fg-btn-list__item fg-btn-list__item_float_left">
-                <a class="fg-btn fg-btn_color_principal" href="#">
+                <a class="fg-btn fg_color_principal" href="#">
                   <span class="fg-icon fg-btn__icon"></span>
                   <span class="fg-text fg-btn__text">Cerrar</span>
                 </a>
               </div>
               <div class="fg-btn-list__item fg-btn-list__item_float_left">
-                <a class="fg-btn fg-btn_color_secondary" href="#">
+                <a class="fg-btn fg_color_secondary" href="#">
                   <span class="fg-icon fg-btn__icon"></span>
                   <span class="fg-text fg-btn__text">Cerrar</span>
                 </a>
               </div>
               <div class="fg-btn-list__item fg-btn-list__item_float_left">
-                <a class="fg-btn fg-btn_color_neutral" href="#">
+                <a class="fg-btn fg_color_neutral" href="#">
                   <span class="fg-icon fg-btn__icon"></span>
                   <span class="fg-text fg-btn__text">Cerrar</span>
                 </a>
@@ -269,29 +315,29 @@
             <h3 class="fg-title fg-section__title">
               <a id="fg-btn-with-size" class="fg-link"></a>Modificador - Botones en tamaños
             </h3>
-            <p><code class="fg-code fg-code_color_highlight">fg-btn_size_*TAMAÑO*</code> es el modificador de tamaños del boton.</p>
+            <p><code class="fg-code fg-code_color_highlight">fg_size_*TAMAÑO*</code> es el modificador de tamaños del boton.</p>
 
             <div class="fg-btn-list">
               <div class="fg-btn-list__item fg-btn-list__item_float_left">
-                <a class="fg-btn fg-btn_size_xs" href="#">
+                <a class="fg-btn fg_size_xs" href="#">
                   <span class="fg-icon fg-btn__icon"></span>
                   <span class="fg-text fg-btn__text">Cerrar</span>
                 </a>
               </div>
               <div class="fg-btn-list__item fg-btn-list__item_float_left">
-                <a class="fg-btn fg-btn_size_s" href="#">
+                <a class="fg-btn fg_size_s" href="#">
                   <span class="fg-icon fg-btn__icon"></span>
                   <span class="fg-text fg-btn__text">Cerrar</span>
                 </a>
               </div>
               <div class="fg-btn-list__item fg-btn-list__item_float_left">
-                <a class="fg-btn fg-btn_size_m" href="#">
+                <a class="fg-btn fg_size_m" href="#">
                   <span class="fg-icon fg-btn__icon"></span>
                   <span class="fg-text fg-btn__text">Cerrar</span>
                 </a>
               </div>
               <div class="fg-btn-list__item fg-btn-list__item_float_left">
-                <a class="fg-btn fg-btn_size_l" href="#">
+                <a class="fg-btn fg_size_l" href="#">
                   <span class="fg-icon fg-btn__icon"></span>
                   <span class="fg-text fg-btn__text">Cerrar</span>
                 </a>
@@ -320,10 +366,10 @@
             <h3 class="fg-title fg-section__title">
               <a id="fg-badge-with-colors" class="fg-link"></a>Modificador - Badges con colores
             </h3>
-            <p>Acompañado del bloque <code class="fg-code fg-code_color_highlight">fg-badge</code> el modificador <code class="fg-code fg-code_color_highlight">fg-badge_color_*COLOR*</code>              cambia el color del badge.</p>
+            <p>Acompañado del bloque <code class="fg-code fg-code_color_highlight">fg-badge</code> el modificador <code class="fg-code fg-code_color_highlight">fg_color_*COLOR*</code>              cambia el color del badge.</p>
             <div class="fg-list">
               <div class="fg-list__item fg-list__item_float_left">
-                <span class="fg-badge fg-badge_color_principal">34</span>
+                <span class="fg-badge fg_color_principal">34</span>
               </div>
             </div>
           </li>
@@ -331,19 +377,19 @@
             <h3 class="fg-title fg-section__title">
               <a id="fg-badge-with-size" class="fg-link"></a>Modificador - Badges en tamaños
             </h3>
-            <p>Acompañado del bloque <code class="fg-code fg-code_color_highlight">fg-badge</code> el modificador <code class="fg-code fg-code_color_highlight">fg-badge_size_*TAMAÑO*</code>              cambia el tamaño del badge.</p>
+            <p>Acompañado del bloque <code class="fg-code fg-code_color_highlight">fg-badge</code> el modificador <code class="fg-code fg-code_color_highlight">fg_size_*TAMAÑO*</code>              cambia el tamaño del badge.</p>
             <div class="fg-list">
               <div class="fg-list__item fg-list__item_float_left">
-                <span class="fg-badge fg-badge_size_xs">34</span>
+                <span class="fg-badge fg_size_xs">34</span>
               </div>
               <div class="fg-list__item fg-list__item_float_left">
-                <span class="fg-badge fg-badge_size_s">34</span>
+                <span class="fg-badge fg_size_s">34</span>
               </div>
               <div class="fg-list__item fg-list__item_float_left">
-                <span class="fg-badge fg-badge_size_m">34</span>
+                <span class="fg-badge fg_size_m">34</span>
               </div>
               <div class="fg-list__item fg-list__item_float_left">
-                <span class="fg-badge fg-badge_size_l">34</span>
+                <span class="fg-badge fg_size_l">34</span>
               </div>
             </div>
           </li>
@@ -425,20 +471,20 @@
                 <h3 class="fg-title fg-section__title">
                   <a class="fg-link"></a>Modificador - Alineación de icono en radio
                 </h3>
-                <p>Incoporar <code class="fg-code fg-code_color_highlight">fg-icon_float_left</code> o <code class="fg-code fg-code_color_highlight">fg-icon_float_right</code>                  a <code class="fg-code fg-code_color_highlight">"fg-icon fg-radio__icon"</code>
+                <p>Incoporar <code class="fg-code fg-code_color_highlight">fg_float_left</code> o <code class="fg-code fg-code_color_highlight">fg_float_right</code>                  a <code class="fg-code fg-code_color_highlight">"fg-icon fg-radio__icon"</code>
                 </p>
                 <div class="fg-radio-list">
                   <div class="fg-radio">
                     <label class="fg-radio__label">
                       <input class="fg-radio__input" type="radio" name="1">
-                      <span class="fg-icon  fg-radio__icon fg-icon_float_left fg-icon_graph_circle"></span>
+                      <span class="fg-icon  fg-radio__icon fg_float_left fg-icon_graph_circle"></span>
                       <span class="fg-text fg-radio__text">Centrado</span>
                     </label>
                   </div>
                   <div class="fg-radio">
                     <label class="fg-radio__label">
                       <input class="fg-radio__input" type="radio" name="1">
-                      <span class="fg-icon fg-icon_float_left fg-radio__icon fg-icon_graph_circle"></span>
+                      <span class="fg-icon fg_float_left fg-radio__icon fg-icon_graph_circle"></span>
                       <span class="fg-text fg-radio__text">Centrado</span>
                     </label>
                   </div>
@@ -447,14 +493,14 @@
                   <div class="fg-radio">
                     <label class="fg-radio__label">
                       <input class="fg-radio__input" type="radio" name="1">
-                      <span class="fg-icon fg-radio__icon fg-icon_float_right fg-icon_graph_circle"></span>
+                      <span class="fg-icon fg-radio__icon fg_float_right fg-icon_graph_circle"></span>
                       <span class="fg-text fg-radio__text">Centrado</span>
                     </label>
                   </div>
                   <div class="fg-radio">
                     <label class="fg-radio__label">
                       <input class="fg-radio__input" type="radio" name="1">
-                      <span class="fg-icon fg-icon_float_right fg-radio__icon fg-icon_graph_circle"></span>
+                      <span class="fg-icon fg_float_right fg-radio__icon fg-icon_graph_circle"></span>
                       <span class="fg-text fg-radio__text">Centrado</span>
                     </label>
                   </div>
@@ -508,27 +554,27 @@
 
             </p>
             <div class="fg-radio-list">
-              <div class="fg-radio-list__item fg-radio-list__item_float_left">
-                <div class="fg-radio fg-radio_color_toolbar">
+              <div class="fg-radio-list__item fg_float_left">
+                <div class="fg-radio fg_color_toolbar">
                   <label class="fg-radio__label">
                 <input class="fg-radio__input" type="radio" name="1">
-                <span class="fg-icon fg-icon_graph_align-left fg-radio__icon fg-radio__icon_float_left"></span>
+                <span class="fg-icon fg-icon_graph_align-left fg-radio__icon fg_float_left"></span>
               </label>
                 </div>
               </div>
-              <div class="fg-radio-list__item fg-radio-list__item_float_left">
-                <div class="fg-radio fg-radio_color_toolbar">
+              <div class="fg-radio-list__item fg_float_left">
+                <div class="fg-radio fg_color_toolbar">
                   <label class="fg-radio__label">
                 <input class="fg-radio__input" type="radio" name="1">
-                <span class="fg-icon fg-icon_graph_align-center fg-radio__icon fg-radio__icon_float_left"></span>
+                <span class="fg-icon fg-icon_graph_align-center fg-radio__icon fg_float_left"></span>
               </label>
                 </div>
               </div>
-              <div class="fg-radio-list__item fg-radio-list__item_float_left">
-                <div class="fg-radio fg-radio_color_toolbar">
+              <div class="fg-radio-list__item fg_float_left">
+                <div class="fg-radio fg_color_toolbar">
                   <label class="fg-radio__label">
                 <input class="fg-radio__input" type="radio" name="1">
-                <span class="fg-icon fg-icon_graph_align-right fg-radio__icon fg-radio__icon_float_left"></span>
+                <span class="fg-icon fg-icon_graph_align-right fg-radio__icon fg_float_left"></span>
               </label>
                 </div>
               </div>
@@ -752,46 +798,76 @@
       <h2 class="fg-title fg-section__title">
         <a class="fg-link" id="fg-header"></a>Header
       </h2>
-      <div class="fg-header fg-header_color_update">
-        <a class="fg-btn fg-btn_float_left fg-header__btn" href="#">
+      <div class="fg-header">
+        <a class="fg-btn fg_float_left fg-header__btn" href="#">
           <span class="fg-icon fg-icon_graph_close fg-btn__icon"></span>
         </a>
-        <div class="fg-header__title fg-text">dsfgsdfg</div>
-        <div class="fg-btn-list fg-btn-list_float_right">
+        <div class="fg-header__title fg-text">Titulo</div>
+        <div class="fg-btn-list fg_float_right">
           <a class="fg-btn fg-btn_float_left fg-header__btn" href="#">
             <span class="fg-icon fg-icon_graph_close fg-btn__icon"></span>
           </a>
-          <a class="fg-btn fg-btn_float_left fg-header__btn" href="#">
+          <a class="fg-btn fg_float_left fg-header__btn" href="#">
             <span class="fg-icon fg-icon_graph_close fg-btn__icon"></span>
           </a>
         </div>
       </div>
       <br>
       <div class="fg-header">
-        <a class="fg-btn fg-btn_float_left fg-header__btn" href="#">
+        <a class="fg-btn fg_float_left fg-header__btn" href="#">
           <span class="fg-icon fg-icon_graph_close fg-btn__icon"></span>
         </a>
-        <div class="fg-header__title fg-text">dsfgsdfg</div>
-        <div class="fg-btn-list fg-btn-list_float_right">
-          <a class="fg-btn fg-btn_float_left fg-header__btn" href="#">
+        <div class="fg-header__title fg-text">Titulo</div>
+        <div class="fg-btn-list fg_float_right">
+          <a class="fg-btn fg_float_left fg-header__btn" href="#">
             <span class="fg-icon fg-icon_graph_close fg-btn__icon"></span>
           </a>
-          <a class="fg-btn fg-btn_float_left fg-header__btn" href="#">
+          <a class="fg-btn fg_float_left fg-header_color_update fg-header__btn" href="#">
+            <span class="fg-icon fg-icon_graph_close fg-btn__icon"></span>
+          </a>
+        </div>
+      </div>
+      <br>
+      <div class="fg-header fg-header_color_update">
+        <a class="fg-btn fg_float_left fg-header__btn" href="#">
+          <span class="fg-icon fg-icon_graph_close fg-btn__icon"></span>
+        </a>
+        <div class="fg-header__title fg-text">Titulo</div>
+        <div class="fg-btn-list fg_float_right">
+          <a class="fg-btn fg_float_left fg-header__btn" href="#">
+            <span class="fg-icon fg-icon_graph_close fg-btn__icon"></span>
+          </a>
+          <a class="fg-btn fg_float_left fg-header__btn" href="#">
+            <span class="fg-icon fg-icon_graph_close fg-btn__icon"></span>
+          </a>
+        </div>
+      </div>
+      <br>
+      <div class="fg-header fg-header_color_update">
+        <a class="fg-btn fg_float_left fg-header__btn" href="#">
+          <span class="fg-icon fg-icon_graph_close fg-btn__icon"></span>
+        </a>
+        <div class="fg-header__title fg-text">Titulo</div>
+        <div class="fg-btn-list fg_float_right">
+          <a class="fg-btn fg_float_left fg-header__btn" href="#">
+            <span class="fg-icon fg-icon_graph_close fg-btn__icon"></span>
+          </a>
+          <a class="fg-btn fg_float_left fg-btn_color_principal fg-header__btn" href="#">
             <span class="fg-icon fg-icon_graph_close fg-btn__icon"></span>
           </a>
         </div>
       </div>
       <br>
       <div class="fg-header fg-header_color_principal">
-        <a class="fg-btn fg-btn_float_left fg-header__btn" href="#">
+        <a class="fg-btn fg_float_left fg-header__btn" href="#">
           <span class="fg-icon fg-icon_graph_close fg-btn__icon"></span>
         </a>
-        <div class="fg-header__title fg-text">dsfgsdfg</div>
-        <div class="fg-btn-list fg-btn-list_float_right">
-          <a class="fg-btn fg-btn_float_left fg-header__btn" href="#">
+        <div class="fg-header__title fg-text">Titulo</div>
+        <div class="fg-btn-list fg_float_right">
+          <a class="fg-btn fg_float_left fg-header__btn" href="#">
             <span class="fg-icon fg-icon_graph_close fg-btn__icon"></span>
           </a>
-          <a class="fg-btn fg-btn_float_left fg-header__btn" href="#">
+          <a class="fg-btn fg_float_left fg-header__btn" href="#">
             <span class="fg-icon fg-icon_graph_close fg-btn__icon"></span>
           </a>
         </div>
