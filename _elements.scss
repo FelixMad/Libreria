@@ -18,13 +18,13 @@ body {
     @include _color();
   }
   &-link {
-    @include _size();
+    //@include _size();
   }
   &-text {
-    @include _size();
+    //@include _size();
   }
   &-title {
-    @include _size();
+    //@include _size();
   }
   &-input {
     @include _size();

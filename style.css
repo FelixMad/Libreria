@@ -4,12 +4,16 @@ html { font-size: 16px; font-family: 'Helvetica'; }
 body { font-size: 13px; }
 
 .fg-code { font-family: monospace; white-space: pre; }
-.fg-code_color_principal { background-color: #0000cc; color: white; }
-.fg-code_color_principal .fg-btn { background-color: #000099; }
-.fg-code_color_principal .fg-btn:hover { background-color: #000066; }
-.fg-code_color_principal.fg-radio:hover { background-color: #000099; }
-.fg-code_color_principal.fg-radio:hover .fg-radio__icon_float_left, .fg-code_color_principal.fg-radio:hover .fg-radio__icon_float_right { background-color: #000066; }
-.fg-code_color_principal.fg-radio .fg-radio__input:checked + .fg-radio__icon { background-color: #000066; }
+.fg-code_color_principal.fg-header { background-color: blue; color: white; }
+.fg-code_color_principal.fg-header .fg-btn { background-color: #000099; }
+.fg-code_color_principal.fg-header .fg-btn:hover { background-color: #000066; }
+.fg-code_color_principal.fg-btn { background-color: blue !important; }
+.fg-code_color_principal.fg-btn:hover { background-color: #0000cc !important; }
+.fg-code_color_principal.fg-btn .fg-badge { background-color: #000099; }
+.fg-code_color_principal.fg-btn .fg-badge:hover { background-color: #000066; }
+.fg-code_color_principal.fg-radio { background-color: blue; color: white; }
+.fg-code_color_principal.fg-radio:hover { background-color: #0000cc; }
+.fg-code_color_principal.fg-radio .fg-radio__input:checked + .fg-radio__icon { background-color: #000099; }
 .fg-code_color_principal.fg-radio .fg-radio__input:checked + .fg-radio__icon + .fg-radio__text { background-color: #000099; }
 .fg-code_color_principal.fg-radio .fg-radio__input:checked + .fg-radio__text { background-color: #000099; }
 .fg-code_color_principal.fg-checkbox:hover { background-color: #000099; }
@@ -18,12 +22,18 @@ body { font-size: 13px; }
 .fg-code_color_principal.fg-checkbox .fg-checkbox__input:checked + .fg-icon + .fg-text { background-color: #000099; }
 .fg-code_color_principal.fg-checkbox .fg-checkbox__input:checked + .fg-text { background-color: #000099; }
 .fg-code_color_principal.fg-icon { color: blue; background-color: inherit; }
-.fg-code_color_secondary { background-color: #cc0000; color: white; }
-.fg-code_color_secondary .fg-btn { background-color: #990000; }
-.fg-code_color_secondary .fg-btn:hover { background-color: #660000; }
-.fg-code_color_secondary.fg-radio:hover { background-color: #990000; }
-.fg-code_color_secondary.fg-radio:hover .fg-radio__icon_float_left, .fg-code_color_secondary.fg-radio:hover .fg-radio__icon_float_right { background-color: #660000; }
-.fg-code_color_secondary.fg-radio .fg-radio__input:checked + .fg-radio__icon { background-color: #660000; }
+.fg-code_color_principal.fg-code { color: white; background-color: blue; }
+.fg-code_color_principal.fg-badge { color: white; background-color: blue; }
+.fg-code_color_secondary.fg-header { background-color: red; color: white; }
+.fg-code_color_secondary.fg-header .fg-btn { background-color: #990000; }
+.fg-code_color_secondary.fg-header .fg-btn:hover { background-color: #660000; }
+.fg-code_color_secondary.fg-btn { background-color: red !important; }
+.fg-code_color_secondary.fg-btn:hover { background-color: #cc0000 !important; }
+.fg-code_color_secondary.fg-btn .fg-badge { background-color: #990000; }
+.fg-code_color_secondary.fg-btn .fg-badge:hover { background-color: #660000; }
+.fg-code_color_secondary.fg-radio { background-color: red; color: white; }
+.fg-code_color_secondary.fg-radio:hover { background-color: #cc0000; }
+.fg-code_color_secondary.fg-radio .fg-radio__input:checked + .fg-radio__icon { background-color: #990000; }
 .fg-code_color_secondary.fg-radio .fg-radio__input:checked + .fg-radio__icon + .fg-radio__text { background-color: #990000; }
 .fg-code_color_secondary.fg-radio .fg-radio__input:checked + .fg-radio__text { background-color: #990000; }
 .fg-code_color_secondary.fg-checkbox:hover { background-color: #990000; }
@@ -32,12 +42,18 @@ body { font-size: 13px; }
 .fg-code_color_secondary.fg-checkbox .fg-checkbox__input:checked + .fg-icon + .fg-text { background-color: #990000; }
 .fg-code_color_secondary.fg-checkbox .fg-checkbox__input:checked + .fg-text { background-color: #990000; }
 .fg-code_color_secondary.fg-icon { color: red; background-color: inherit; }
-.fg-code_color_neutral { background-color: #676767; color: white; }
-.fg-code_color_neutral .fg-btn { background-color: #4d4d4d; }
-.fg-code_color_neutral .fg-btn:hover { background-color: #343434; }
-.fg-code_color_neutral.fg-radio:hover { background-color: #4d4d4d; }
-.fg-code_color_neutral.fg-radio:hover .fg-radio__icon_float_left, .fg-code_color_neutral.fg-radio:hover .fg-radio__icon_float_right { background-color: #343434; }
-.fg-code_color_neutral.fg-radio .fg-radio__input:checked + .fg-radio__icon { background-color: #343434; }
+.fg-code_color_secondary.fg-code { color: white; background-color: red; }
+.fg-code_color_secondary.fg-badge { color: white; background-color: red; }
+.fg-code_color_neutral.fg-header { background-color: gray; color: white; }
+.fg-code_color_neutral.fg-header .fg-btn { background-color: #4d4d4d; }
+.fg-code_color_neutral.fg-header .fg-btn:hover { background-color: #343434; }
+.fg-code_color_neutral.fg-btn { background-color: gray !important; }
+.fg-code_color_neutral.fg-btn:hover { background-color: #676767 !important; }
+.fg-code_color_neutral.fg-btn .fg-badge { background-color: #4d4d4d; }
+.fg-code_color_neutral.fg-btn .fg-badge:hover { background-color: #343434; }
+.fg-code_color_neutral.fg-radio { background-color: gray; color: white; }
+.fg-code_color_neutral.fg-radio:hover { background-color: #676767; }
+.fg-code_color_neutral.fg-radio .fg-radio__input:checked + .fg-radio__icon { background-color: #4d4d4d; }
 .fg-code_color_neutral.fg-radio .fg-radio__input:checked + .fg-radio__icon + .fg-radio__text { background-color: #4d4d4d; }
 .fg-code_color_neutral.fg-radio .fg-radio__input:checked + .fg-radio__text { background-color: #4d4d4d; }
 .fg-code_color_neutral.fg-checkbox:hover { background-color: #4d4d4d; }
@@ -46,12 +62,18 @@ body { font-size: 13px; }
 .fg-code_color_neutral.fg-checkbox .fg-checkbox__input:checked + .fg-icon + .fg-text { background-color: #4d4d4d; }
 .fg-code_color_neutral.fg-checkbox .fg-checkbox__input:checked + .fg-text { background-color: #4d4d4d; }
 .fg-code_color_neutral.fg-icon { color: gray; background-color: inherit; }
-.fg-code_color_toolbar { background-color: #676767; color: white; }
-.fg-code_color_toolbar .fg-btn { background-color: #4d4d4d; }
-.fg-code_color_toolbar .fg-btn:hover { background-color: #343434; }
-.fg-code_color_toolbar.fg-radio:hover { background-color: #4d4d4d; }
-.fg-code_color_toolbar.fg-radio:hover .fg-radio__icon_float_left, .fg-code_color_toolbar.fg-radio:hover .fg-radio__icon_float_right { background-color: #343434; }
-.fg-code_color_toolbar.fg-radio .fg-radio__input:checked + .fg-radio__icon { background-color: #343434; }
+.fg-code_color_neutral.fg-code { color: white; background-color: gray; }
+.fg-code_color_neutral.fg-badge { color: white; background-color: gray; }
+.fg-code_color_toolbar.fg-header { background-color: gray; color: white; }
+.fg-code_color_toolbar.fg-header .fg-btn { background-color: #4d4d4d; }
+.fg-code_color_toolbar.fg-header .fg-btn:hover { background-color: #343434; }
+.fg-code_color_toolbar.fg-btn { background-color: gray !important; }
+.fg-code_color_toolbar.fg-btn:hover { background-color: #676767 !important; }
+.fg-code_color_toolbar.fg-btn .fg-badge { background-color: #4d4d4d; }
+.fg-code_color_toolbar.fg-btn .fg-badge:hover { background-color: #343434; }
+.fg-code_color_toolbar.fg-radio { background-color: gray; color: white; }
+.fg-code_color_toolbar.fg-radio:hover { background-color: #676767; }
+.fg-code_color_toolbar.fg-radio .fg-radio__input:checked + .fg-radio__icon { background-color: #4d4d4d; }
 .fg-code_color_toolbar.fg-radio .fg-radio__input:checked + .fg-radio__icon + .fg-radio__text { background-color: #4d4d4d; }
 .fg-code_color_toolbar.fg-radio .fg-radio__input:checked + .fg-radio__text { background-color: #4d4d4d; }
 .fg-code_color_toolbar.fg-checkbox:hover { background-color: #4d4d4d; }
@@ -60,12 +82,18 @@ body { font-size: 13px; }
 .fg-code_color_toolbar.fg-checkbox .fg-checkbox__input:checked + .fg-icon + .fg-text { background-color: #4d4d4d; }
 .fg-code_color_toolbar.fg-checkbox .fg-checkbox__input:checked + .fg-text { background-color: #4d4d4d; }
 .fg-code_color_toolbar.fg-icon { color: gray; background-color: inherit; }
-.fg-code_color_filter { background-color: #676767; color: white; }
-.fg-code_color_filter .fg-btn { background-color: #4d4d4d; }
-.fg-code_color_filter .fg-btn:hover { background-color: #343434; }
-.fg-code_color_filter.fg-radio:hover { background-color: #4d4d4d; }
-.fg-code_color_filter.fg-radio:hover .fg-radio__icon_float_left, .fg-code_color_filter.fg-radio:hover .fg-radio__icon_float_right { background-color: #343434; }
-.fg-code_color_filter.fg-radio .fg-radio__input:checked + .fg-radio__icon { background-color: #343434; }
+.fg-code_color_toolbar.fg-code { color: white; background-color: gray; }
+.fg-code_color_toolbar.fg-badge { color: white; background-color: gray; }
+.fg-code_color_filter.fg-header { background-color: gray; color: white; }
+.fg-code_color_filter.fg-header .fg-btn { background-color: #4d4d4d; }
+.fg-code_color_filter.fg-header .fg-btn:hover { background-color: #343434; }
+.fg-code_color_filter.fg-btn { background-color: gray !important; }
+.fg-code_color_filter.fg-btn:hover { background-color: #676767 !important; }
+.fg-code_color_filter.fg-btn .fg-badge { background-color: #4d4d4d; }
+.fg-code_color_filter.fg-btn .fg-badge:hover { background-color: #343434; }
+.fg-code_color_filter.fg-radio { background-color: gray; color: white; }
+.fg-code_color_filter.fg-radio:hover { background-color: #676767; }
+.fg-code_color_filter.fg-radio .fg-radio__input:checked + .fg-radio__icon { background-color: #4d4d4d; }
 .fg-code_color_filter.fg-radio .fg-radio__input:checked + .fg-radio__icon + .fg-radio__text { background-color: #4d4d4d; }
 .fg-code_color_filter.fg-radio .fg-radio__input:checked + .fg-radio__text { background-color: #4d4d4d; }
 .fg-code_color_filter.fg-checkbox:hover { background-color: #4d4d4d; }
@@ -74,12 +102,18 @@ body { font-size: 13px; }
 .fg-code_color_filter.fg-checkbox .fg-checkbox__input:checked + .fg-icon + .fg-text { background-color: #4d4d4d; }
 .fg-code_color_filter.fg-checkbox .fg-checkbox__input:checked + .fg-text { background-color: #4d4d4d; }
 .fg-code_color_filter.fg-icon { color: gray; background-color: inherit; }
-.fg-code_color_search { background-color: #cc0000; color: white; }
-.fg-code_color_search .fg-btn { background-color: #990000; }
-.fg-code_color_search .fg-btn:hover { background-color: #660000; }
-.fg-code_color_search.fg-radio:hover { background-color: #990000; }
-.fg-code_color_search.fg-radio:hover .fg-radio__icon_float_left, .fg-code_color_search.fg-radio:hover .fg-radio__icon_float_right { background-color: #660000; }
-.fg-code_color_search.fg-radio .fg-radio__input:checked + .fg-radio__icon { background-color: #660000; }
+.fg-code_color_filter.fg-code { color: white; background-color: gray; }
+.fg-code_color_filter.fg-badge { color: white; background-color: gray; }
+.fg-code_color_search.fg-header { background-color: red; color: white; }
+.fg-code_color_search.fg-header .fg-btn { background-color: #990000; }
+.fg-code_color_search.fg-header .fg-btn:hover { background-color: #660000; }
+.fg-code_color_search.fg-btn { background-color: red !important; }
+.fg-code_color_search.fg-btn:hover { background-color: #cc0000 !important; }
+.fg-code_color_search.fg-btn .fg-badge { background-color: #990000; }
+.fg-code_color_search.fg-btn .fg-badge:hover { background-color: #660000; }
+.fg-code_color_search.fg-radio { background-color: red; color: white; }
+.fg-code_color_search.fg-radio:hover { background-color: #cc0000; }
+.fg-code_color_search.fg-radio .fg-radio__input:checked + .fg-radio__icon { background-color: #990000; }
 .fg-code_color_search.fg-radio .fg-radio__input:checked + .fg-radio__icon + .fg-radio__text { background-color: #990000; }
 .fg-code_color_search.fg-radio .fg-radio__input:checked + .fg-radio__text { background-color: #990000; }
 .fg-code_color_search.fg-checkbox:hover { background-color: #990000; }
@@ -88,12 +122,18 @@ body { font-size: 13px; }
 .fg-code_color_search.fg-checkbox .fg-checkbox__input:checked + .fg-icon + .fg-text { background-color: #990000; }
 .fg-code_color_search.fg-checkbox .fg-checkbox__input:checked + .fg-text { background-color: #990000; }
 .fg-code_color_search.fg-icon { color: red; background-color: inherit; }
-.fg-code_color_update { background-color: #cc0000; color: white; }
-.fg-code_color_update .fg-btn { background-color: #990000; }
-.fg-code_color_update .fg-btn:hover { background-color: #660000; }
-.fg-code_color_update.fg-radio:hover { background-color: #990000; }
-.fg-code_color_update.fg-radio:hover .fg-radio__icon_float_left, .fg-code_color_update.fg-radio:hover .fg-radio__icon_float_right { background-color: #660000; }
-.fg-code_color_update.fg-radio .fg-radio__input:checked + .fg-radio__icon { background-color: #660000; }
+.fg-code_color_search.fg-code { color: white; background-color: red; }
+.fg-code_color_search.fg-badge { color: white; background-color: red; }
+.fg-code_color_update.fg-header { background-color: red; color: white; }
+.fg-code_color_update.fg-header .fg-btn { background-color: #990000; }
+.fg-code_color_update.fg-header .fg-btn:hover { background-color: #660000; }
+.fg-code_color_update.fg-btn { background-color: red !important; }
+.fg-code_color_update.fg-btn:hover { background-color: #cc0000 !important; }
+.fg-code_color_update.fg-btn .fg-badge { background-color: #990000; }
+.fg-code_color_update.fg-btn .fg-badge:hover { background-color: #660000; }
+.fg-code_color_update.fg-radio { background-color: red; color: white; }
+.fg-code_color_update.fg-radio:hover { background-color: #cc0000; }
+.fg-code_color_update.fg-radio .fg-radio__input:checked + .fg-radio__icon { background-color: #990000; }
 .fg-code_color_update.fg-radio .fg-radio__input:checked + .fg-radio__icon + .fg-radio__text { background-color: #990000; }
 .fg-code_color_update.fg-radio .fg-radio__input:checked + .fg-radio__text { background-color: #990000; }
 .fg-code_color_update.fg-checkbox:hover { background-color: #990000; }
@@ -102,12 +142,18 @@ body { font-size: 13px; }
 .fg-code_color_update.fg-checkbox .fg-checkbox__input:checked + .fg-icon + .fg-text { background-color: #990000; }
 .fg-code_color_update.fg-checkbox .fg-checkbox__input:checked + .fg-text { background-color: #990000; }
 .fg-code_color_update.fg-icon { color: red; background-color: inherit; }
-.fg-code_color_warning { background-color: #cc0000; color: white; }
-.fg-code_color_warning .fg-btn { background-color: #990000; }
-.fg-code_color_warning .fg-btn:hover { background-color: #660000; }
-.fg-code_color_warning.fg-radio:hover { background-color: #990000; }
-.fg-code_color_warning.fg-radio:hover .fg-radio__icon_float_left, .fg-code_color_warning.fg-radio:hover .fg-radio__icon_float_right { background-color: #660000; }
-.fg-code_color_warning.fg-radio .fg-radio__input:checked + .fg-radio__icon { background-color: #660000; }
+.fg-code_color_update.fg-code { color: white; background-color: red; }
+.fg-code_color_update.fg-badge { color: white; background-color: red; }
+.fg-code_color_warning.fg-header { background-color: red; color: white; }
+.fg-code_color_warning.fg-header .fg-btn { background-color: #990000; }
+.fg-code_color_warning.fg-header .fg-btn:hover { background-color: #660000; }
+.fg-code_color_warning.fg-btn { background-color: red !important; }
+.fg-code_color_warning.fg-btn:hover { background-color: #cc0000 !important; }
+.fg-code_color_warning.fg-btn .fg-badge { background-color: #990000; }
+.fg-code_color_warning.fg-btn .fg-badge:hover { background-color: #660000; }
+.fg-code_color_warning.fg-radio { background-color: red; color: white; }
+.fg-code_color_warning.fg-radio:hover { background-color: #cc0000; }
+.fg-code_color_warning.fg-radio .fg-radio__input:checked + .fg-radio__icon { background-color: #990000; }
 .fg-code_color_warning.fg-radio .fg-radio__input:checked + .fg-radio__icon + .fg-radio__text { background-color: #990000; }
 .fg-code_color_warning.fg-radio .fg-radio__input:checked + .fg-radio__text { background-color: #990000; }
 .fg-code_color_warning.fg-checkbox:hover { background-color: #990000; }
@@ -116,12 +162,18 @@ body { font-size: 13px; }
 .fg-code_color_warning.fg-checkbox .fg-checkbox__input:checked + .fg-icon + .fg-text { background-color: #990000; }
 .fg-code_color_warning.fg-checkbox .fg-checkbox__input:checked + .fg-text { background-color: #990000; }
 .fg-code_color_warning.fg-icon { color: red; background-color: inherit; }
-.fg-code_color_alert { background-color: #cc0000; color: white; }
-.fg-code_color_alert .fg-btn { background-color: #990000; }
-.fg-code_color_alert .fg-btn:hover { background-color: #660000; }
-.fg-code_color_alert.fg-radio:hover { background-color: #990000; }
-.fg-code_color_alert.fg-radio:hover .fg-radio__icon_float_left, .fg-code_color_alert.fg-radio:hover .fg-radio__icon_float_right { background-color: #660000; }
-.fg-code_color_alert.fg-radio .fg-radio__input:checked + .fg-radio__icon { background-color: #660000; }
+.fg-code_color_warning.fg-code { color: white; background-color: red; }
+.fg-code_color_warning.fg-badge { color: white; background-color: red; }
+.fg-code_color_alert.fg-header { background-color: red; color: white; }
+.fg-code_color_alert.fg-header .fg-btn { background-color: #990000; }
+.fg-code_color_alert.fg-header .fg-btn:hover { background-color: #660000; }
+.fg-code_color_alert.fg-btn { background-color: red !important; }
+.fg-code_color_alert.fg-btn:hover { background-color: #cc0000 !important; }
+.fg-code_color_alert.fg-btn .fg-badge { background-color: #990000; }
+.fg-code_color_alert.fg-btn .fg-badge:hover { background-color: #660000; }
+.fg-code_color_alert.fg-radio { background-color: red; color: white; }
+.fg-code_color_alert.fg-radio:hover { background-color: #cc0000; }
+.fg-code_color_alert.fg-radio .fg-radio__input:checked + .fg-radio__icon { background-color: #990000; }
 .fg-code_color_alert.fg-radio .fg-radio__input:checked + .fg-radio__icon + .fg-radio__text { background-color: #990000; }
 .fg-code_color_alert.fg-radio .fg-radio__input:checked + .fg-radio__text { background-color: #990000; }
 .fg-code_color_alert.fg-checkbox:hover { background-color: #990000; }
@@ -130,12 +182,18 @@ body { font-size: 13px; }
 .fg-code_color_alert.fg-checkbox .fg-checkbox__input:checked + .fg-icon + .fg-text { background-color: #990000; }
 .fg-code_color_alert.fg-checkbox .fg-checkbox__input:checked + .fg-text { background-color: #990000; }
 .fg-code_color_alert.fg-icon { color: red; background-color: inherit; }
-.fg-code_color_info { background-color: #cc0000; color: white; }
-.fg-code_color_info .fg-btn { background-color: #990000; }
-.fg-code_color_info .fg-btn:hover { background-color: #660000; }
-.fg-code_color_info.fg-radio:hover { background-color: #990000; }
-.fg-code_color_info.fg-radio:hover .fg-radio__icon_float_left, .fg-code_color_info.fg-radio:hover .fg-radio__icon_float_right { background-color: #660000; }
-.fg-code_color_info.fg-radio .fg-radio__input:checked + .fg-radio__icon { background-color: #660000; }
+.fg-code_color_alert.fg-code { color: white; background-color: red; }
+.fg-code_color_alert.fg-badge { color: white; background-color: red; }
+.fg-code_color_info.fg-header { background-color: red; color: white; }
+.fg-code_color_info.fg-header .fg-btn { background-color: #990000; }
+.fg-code_color_info.fg-header .fg-btn:hover { background-color: #660000; }
+.fg-code_color_info.fg-btn { background-color: red !important; }
+.fg-code_color_info.fg-btn:hover { background-color: #cc0000 !important; }
+.fg-code_color_info.fg-btn .fg-badge { background-color: #990000; }
+.fg-code_color_info.fg-btn .fg-badge:hover { background-color: #660000; }
+.fg-code_color_info.fg-radio { background-color: red; color: white; }
+.fg-code_color_info.fg-radio:hover { background-color: #cc0000; }
+.fg-code_color_info.fg-radio .fg-radio__input:checked + .fg-radio__icon { background-color: #990000; }
 .fg-code_color_info.fg-radio .fg-radio__input:checked + .fg-radio__icon + .fg-radio__text { background-color: #990000; }
 .fg-code_color_info.fg-radio .fg-radio__input:checked + .fg-radio__text { background-color: #990000; }
 .fg-code_color_info.fg-checkbox:hover { background-color: #990000; }
@@ -144,12 +202,18 @@ body { font-size: 13px; }
 .fg-code_color_info.fg-checkbox .fg-checkbox__input:checked + .fg-icon + .fg-text { background-color: #990000; }
 .fg-code_color_info.fg-checkbox .fg-checkbox__input:checked + .fg-text { background-color: #990000; }
 .fg-code_color_info.fg-icon { color: red; background-color: inherit; }
-.fg-code_color_success { background-color: #cc0000; color: white; }
-.fg-code_color_success .fg-btn { background-color: #990000; }
-.fg-code_color_success .fg-btn:hover { background-color: #660000; }
-.fg-code_color_success.fg-radio:hover { background-color: #990000; }
-.fg-code_color_success.fg-radio:hover .fg-radio__icon_float_left, .fg-code_color_success.fg-radio:hover .fg-radio__icon_float_right { background-color: #660000; }
-.fg-code_color_success.fg-radio .fg-radio__input:checked + .fg-radio__icon { background-color: #660000; }
+.fg-code_color_info.fg-code { color: white; background-color: red; }
+.fg-code_color_info.fg-badge { color: white; background-color: red; }
+.fg-code_color_success.fg-header { background-color: red; color: white; }
+.fg-code_color_success.fg-header .fg-btn { background-color: #990000; }
+.fg-code_color_success.fg-header .fg-btn:hover { background-color: #660000; }
+.fg-code_color_success.fg-btn { background-color: red !important; }
+.fg-code_color_success.fg-btn:hover { background-color: #cc0000 !important; }
+.fg-code_color_success.fg-btn .fg-badge { background-color: #990000; }
+.fg-code_color_success.fg-btn .fg-badge:hover { background-color: #660000; }
+.fg-code_color_success.fg-radio { background-color: red; color: white; }
+.fg-code_color_success.fg-radio:hover { background-color: #cc0000; }
+.fg-code_color_success.fg-radio .fg-radio__input:checked + .fg-radio__icon { background-color: #990000; }
 .fg-code_color_success.fg-radio .fg-radio__input:checked + .fg-radio__icon + .fg-radio__text { background-color: #990000; }
 .fg-code_color_success.fg-radio .fg-radio__input:checked + .fg-radio__text { background-color: #990000; }
 .fg-code_color_success.fg-checkbox:hover { background-color: #990000; }
@@ -158,12 +222,18 @@ body { font-size: 13px; }
 .fg-code_color_success.fg-checkbox .fg-checkbox__input:checked + .fg-icon + .fg-text { background-color: #990000; }
 .fg-code_color_success.fg-checkbox .fg-checkbox__input:checked + .fg-text { background-color: #990000; }
 .fg-code_color_success.fg-icon { color: red; background-color: inherit; }
-.fg-code_color_error { background-color: #cc0000; color: white; }
-.fg-code_color_error .fg-btn { background-color: #990000; }
-.fg-code_color_error .fg-btn:hover { background-color: #660000; }
-.fg-code_color_error.fg-radio:hover { background-color: #990000; }
-.fg-code_color_error.fg-radio:hover .fg-radio__icon_float_left, .fg-code_color_error.fg-radio:hover .fg-radio__icon_float_right { background-color: #660000; }
-.fg-code_color_error.fg-radio .fg-radio__input:checked + .fg-radio__icon { background-color: #660000; }
+.fg-code_color_success.fg-code { color: white; background-color: red; }
+.fg-code_color_success.fg-badge { color: white; background-color: red; }
+.fg-code_color_error.fg-header { background-color: red; color: white; }
+.fg-code_color_error.fg-header .fg-btn { background-color: #990000; }
+.fg-code_color_error.fg-header .fg-btn:hover { background-color: #660000; }
+.fg-code_color_error.fg-btn { background-color: red !important; }
+.fg-code_color_error.fg-btn:hover { background-color: #cc0000 !important; }
+.fg-code_color_error.fg-btn .fg-badge { background-color: #990000; }
+.fg-code_color_error.fg-btn .fg-badge:hover { background-color: #660000; }
+.fg-code_color_error.fg-radio { background-color: red; color: white; }
+.fg-code_color_error.fg-radio:hover { background-color: #cc0000; }
+.fg-code_color_error.fg-radio .fg-radio__input:checked + .fg-radio__icon { background-color: #990000; }
 .fg-code_color_error.fg-radio .fg-radio__input:checked + .fg-radio__icon + .fg-radio__text { background-color: #990000; }
 .fg-code_color_error.fg-radio .fg-radio__input:checked + .fg-radio__text { background-color: #990000; }
 .fg-code_color_error.fg-checkbox:hover { background-color: #990000; }
@@ -172,12 +242,18 @@ body { font-size: 13px; }
 .fg-code_color_error.fg-checkbox .fg-checkbox__input:checked + .fg-icon + .fg-text { background-color: #990000; }
 .fg-code_color_error.fg-checkbox .fg-checkbox__input:checked + .fg-text { background-color: #990000; }
 .fg-code_color_error.fg-icon { color: red; background-color: inherit; }
-.fg-code_color_badge { background-color: #cc0000; color: white; }
-.fg-code_color_badge .fg-btn { background-color: #990000; }
-.fg-code_color_badge .fg-btn:hover { background-color: #660000; }
-.fg-code_color_badge.fg-radio:hover { background-color: #990000; }
-.fg-code_color_badge.fg-radio:hover .fg-radio__icon_float_left, .fg-code_color_badge.fg-radio:hover .fg-radio__icon_float_right { background-color: #660000; }
-.fg-code_color_badge.fg-radio .fg-radio__input:checked + .fg-radio__icon { background-color: #660000; }
+.fg-code_color_error.fg-code { color: white; background-color: red; }
+.fg-code_color_error.fg-badge { color: white; background-color: red; }
+.fg-code_color_badge.fg-header { background-color: red; color: white; }
+.fg-code_color_badge.fg-header .fg-btn { background-color: #990000; }
+.fg-code_color_badge.fg-header .fg-btn:hover { background-color: #660000; }
+.fg-code_color_badge.fg-btn { background-color: red !important; }
+.fg-code_color_badge.fg-btn:hover { background-color: #cc0000 !important; }
+.fg-code_color_badge.fg-btn .fg-badge { background-color: #990000; }
+.fg-code_color_badge.fg-btn .fg-badge:hover { background-color: #660000; }
+.fg-code_color_badge.fg-radio { background-color: red; color: white; }
+.fg-code_color_badge.fg-radio:hover { background-color: #cc0000; }
+.fg-code_color_badge.fg-radio .fg-radio__input:checked + .fg-radio__icon { background-color: #990000; }
 .fg-code_color_badge.fg-radio .fg-radio__input:checked + .fg-radio__icon + .fg-radio__text { background-color: #990000; }
 .fg-code_color_badge.fg-radio .fg-radio__input:checked + .fg-radio__text { background-color: #990000; }
 .fg-code_color_badge.fg-checkbox:hover { background-color: #990000; }
@@ -186,12 +262,18 @@ body { font-size: 13px; }
 .fg-code_color_badge.fg-checkbox .fg-checkbox__input:checked + .fg-icon + .fg-text { background-color: #990000; }
 .fg-code_color_badge.fg-checkbox .fg-checkbox__input:checked + .fg-text { background-color: #990000; }
 .fg-code_color_badge.fg-icon { color: red; background-color: inherit; }
-.fg-code_color_highlight { background-color: #ffb9b9; color: #b55050; }
-.fg-code_color_highlight .fg-btn { background-color: #ff8686; }
-.fg-code_color_highlight .fg-btn:hover { background-color: #ff5353; }
-.fg-code_color_highlight.fg-radio:hover { background-color: #ff8686; }
-.fg-code_color_highlight.fg-radio:hover .fg-radio__icon_float_left, .fg-code_color_highlight.fg-radio:hover .fg-radio__icon_float_right { background-color: #ff5353; }
-.fg-code_color_highlight.fg-radio .fg-radio__input:checked + .fg-radio__icon { background-color: #ff5353; }
+.fg-code_color_badge.fg-code { color: white; background-color: red; }
+.fg-code_color_badge.fg-badge { color: white; background-color: red; }
+.fg-code_color_highlight.fg-header { background-color: #ffecec; color: #b55050; }
+.fg-code_color_highlight.fg-header .fg-btn { background-color: #ff8686; }
+.fg-code_color_highlight.fg-header .fg-btn:hover { background-color: #ff5353; }
+.fg-code_color_highlight.fg-btn { background-color: #ffecec !important; }
+.fg-code_color_highlight.fg-btn:hover { background-color: #ffb9b9 !important; }
+.fg-code_color_highlight.fg-btn .fg-badge { background-color: #ff8686; }
+.fg-code_color_highlight.fg-btn .fg-badge:hover { background-color: #ff5353; }
+.fg-code_color_highlight.fg-radio { background-color: #ffecec; color: #b55050; }
+.fg-code_color_highlight.fg-radio:hover { background-color: #ffb9b9; }
+.fg-code_color_highlight.fg-radio .fg-radio__input:checked + .fg-radio__icon { background-color: #ff8686; }
 .fg-code_color_highlight.fg-radio .fg-radio__input:checked + .fg-radio__icon + .fg-radio__text { background-color: #ff8686; }
 .fg-code_color_highlight.fg-radio .fg-radio__input:checked + .fg-radio__text { background-color: #ff8686; }
 .fg-code_color_highlight.fg-checkbox:hover { background-color: #ff8686; }
@@ -200,78 +282,8 @@ body { font-size: 13px; }
 .fg-code_color_highlight.fg-checkbox .fg-checkbox__input:checked + .fg-icon + .fg-text { background-color: #ff8686; }
 .fg-code_color_highlight.fg-checkbox .fg-checkbox__input:checked + .fg-text { background-color: #ff8686; }
 .fg-code_color_highlight.fg-icon { color: #ffecec; background-color: inherit; }
-.fg-link_size_xs { font-size: 0.3rem; }
-.fg-link_size_xs.fg-badge { border-radius: 0.3rem; min-width: 0.6rem; line-height: 0.6rem; padding: 0 0.1rem; }
-.fg-link_size_xs.fg-btn { line-height: 0.6rem; }
-.fg-link_size_xs.fg-btn .fg-btn__icon { min-width: 0.6rem; font-size: 0.375rem; }
-.fg-link_size_xs.fg-btn .fg-btn__badge { border-radius: 0.3rem; min-width: 0.6rem; line-height: 0.6rem; padding: 0 0.1rem; margin-right: -0.3rem; margin-top: -0.3rem; }
-.fg-link_size_xs.fg-icon { font-size: 0.375rem; width: 0.6rem; line-height: 0.6rem; }
-.fg-link_size_s { font-size: 0.8rem; }
-.fg-link_size_s.fg-badge { border-radius: 0.8rem; min-width: 1.6rem; line-height: 1.6rem; padding: 0 0.26667rem; }
-.fg-link_size_s.fg-btn { line-height: 1.6rem; }
-.fg-link_size_s.fg-btn .fg-btn__icon { min-width: 1.6rem; font-size: 1rem; }
-.fg-link_size_s.fg-btn .fg-btn__badge { border-radius: 0.8rem; min-width: 1.6rem; line-height: 1.6rem; padding: 0 0.26667rem; margin-right: -0.8rem; margin-top: -0.8rem; }
-.fg-link_size_s.fg-icon { font-size: 1rem; width: 1.6rem; line-height: 1.6rem; }
-.fg-link_size_m { font-size: 1rem; }
-.fg-link_size_m.fg-badge { border-radius: 1rem; min-width: 2rem; line-height: 2rem; padding: 0 0.33333rem; }
-.fg-link_size_m.fg-btn { line-height: 2rem; }
-.fg-link_size_m.fg-btn .fg-btn__icon { min-width: 2rem; font-size: 1.25rem; }
-.fg-link_size_m.fg-btn .fg-btn__badge { border-radius: 1rem; min-width: 2rem; line-height: 2rem; padding: 0 0.33333rem; margin-right: -1rem; margin-top: -1rem; }
-.fg-link_size_m.fg-icon { font-size: 1.25rem; width: 2rem; line-height: 2rem; }
-.fg-link_size_l { font-size: 1.5rem; }
-.fg-link_size_l.fg-badge { border-radius: 1.5rem; min-width: 3rem; line-height: 3rem; padding: 0 0.5rem; }
-.fg-link_size_l.fg-btn { line-height: 3rem; }
-.fg-link_size_l.fg-btn .fg-btn__icon { min-width: 3rem; font-size: 1.875rem; }
-.fg-link_size_l.fg-btn .fg-btn__badge { border-radius: 1.5rem; min-width: 3rem; line-height: 3rem; padding: 0 0.5rem; margin-right: -1.5rem; margin-top: -1.5rem; }
-.fg-link_size_l.fg-icon { font-size: 1.875rem; width: 3rem; line-height: 3rem; }
-.fg-text_size_xs { font-size: 0.3rem; }
-.fg-text_size_xs.fg-badge { border-radius: 0.3rem; min-width: 0.6rem; line-height: 0.6rem; padding: 0 0.1rem; }
-.fg-text_size_xs.fg-btn { line-height: 0.6rem; }
-.fg-text_size_xs.fg-btn .fg-btn__icon { min-width: 0.6rem; font-size: 0.375rem; }
-.fg-text_size_xs.fg-btn .fg-btn__badge { border-radius: 0.3rem; min-width: 0.6rem; line-height: 0.6rem; padding: 0 0.1rem; margin-right: -0.3rem; margin-top: -0.3rem; }
-.fg-text_size_xs.fg-icon { font-size: 0.375rem; width: 0.6rem; line-height: 0.6rem; }
-.fg-text_size_s { font-size: 0.8rem; }
-.fg-text_size_s.fg-badge { border-radius: 0.8rem; min-width: 1.6rem; line-height: 1.6rem; padding: 0 0.26667rem; }
-.fg-text_size_s.fg-btn { line-height: 1.6rem; }
-.fg-text_size_s.fg-btn .fg-btn__icon { min-width: 1.6rem; font-size: 1rem; }
-.fg-text_size_s.fg-btn .fg-btn__badge { border-radius: 0.8rem; min-width: 1.6rem; line-height: 1.6rem; padding: 0 0.26667rem; margin-right: -0.8rem; margin-top: -0.8rem; }
-.fg-text_size_s.fg-icon { font-size: 1rem; width: 1.6rem; line-height: 1.6rem; }
-.fg-text_size_m { font-size: 1rem; }
-.fg-text_size_m.fg-badge { border-radius: 1rem; min-width: 2rem; line-height: 2rem; padding: 0 0.33333rem; }
-.fg-text_size_m.fg-btn { line-height: 2rem; }
-.fg-text_size_m.fg-btn .fg-btn__icon { min-width: 2rem; font-size: 1.25rem; }
-.fg-text_size_m.fg-btn .fg-btn__badge { border-radius: 1rem; min-width: 2rem; line-height: 2rem; padding: 0 0.33333rem; margin-right: -1rem; margin-top: -1rem; }
-.fg-text_size_m.fg-icon { font-size: 1.25rem; width: 2rem; line-height: 2rem; }
-.fg-text_size_l { font-size: 1.5rem; }
-.fg-text_size_l.fg-badge { border-radius: 1.5rem; min-width: 3rem; line-height: 3rem; padding: 0 0.5rem; }
-.fg-text_size_l.fg-btn { line-height: 3rem; }
-.fg-text_size_l.fg-btn .fg-btn__icon { min-width: 3rem; font-size: 1.875rem; }
-.fg-text_size_l.fg-btn .fg-btn__badge { border-radius: 1.5rem; min-width: 3rem; line-height: 3rem; padding: 0 0.5rem; margin-right: -1.5rem; margin-top: -1.5rem; }
-.fg-text_size_l.fg-icon { font-size: 1.875rem; width: 3rem; line-height: 3rem; }
-.fg-title_size_xs { font-size: 0.3rem; }
-.fg-title_size_xs.fg-badge { border-radius: 0.3rem; min-width: 0.6rem; line-height: 0.6rem; padding: 0 0.1rem; }
-.fg-title_size_xs.fg-btn { line-height: 0.6rem; }
-.fg-title_size_xs.fg-btn .fg-btn__icon { min-width: 0.6rem; font-size: 0.375rem; }
-.fg-title_size_xs.fg-btn .fg-btn__badge { border-radius: 0.3rem; min-width: 0.6rem; line-height: 0.6rem; padding: 0 0.1rem; margin-right: -0.3rem; margin-top: -0.3rem; }
-.fg-title_size_xs.fg-icon { font-size: 0.375rem; width: 0.6rem; line-height: 0.6rem; }
-.fg-title_size_s { font-size: 0.8rem; }
-.fg-title_size_s.fg-badge { border-radius: 0.8rem; min-width: 1.6rem; line-height: 1.6rem; padding: 0 0.26667rem; }
-.fg-title_size_s.fg-btn { line-height: 1.6rem; }
-.fg-title_size_s.fg-btn .fg-btn__icon { min-width: 1.6rem; font-size: 1rem; }
-.fg-title_size_s.fg-btn .fg-btn__badge { border-radius: 0.8rem; min-width: 1.6rem; line-height: 1.6rem; padding: 0 0.26667rem; margin-right: -0.8rem; margin-top: -0.8rem; }
-.fg-title_size_s.fg-icon { font-size: 1rem; width: 1.6rem; line-height: 1.6rem; }
-.fg-title_size_m { font-size: 1rem; }
-.fg-title_size_m.fg-badge { border-radius: 1rem; min-width: 2rem; line-height: 2rem; padding: 0 0.33333rem; }
-.fg-title_size_m.fg-btn { line-height: 2rem; }
-.fg-title_size_m.fg-btn .fg-btn__icon { min-width: 2rem; font-size: 1.25rem; }
-.fg-title_size_m.fg-btn .fg-btn__badge { border-radius: 1rem; min-width: 2rem; line-height: 2rem; padding: 0 0.33333rem; margin-right: -1rem; margin-top: -1rem; }
-.fg-title_size_m.fg-icon { font-size: 1.25rem; width: 2rem; line-height: 2rem; }
-.fg-title_size_l { font-size: 1.5rem; }
-.fg-title_size_l.fg-badge { border-radius: 1.5rem; min-width: 3rem; line-height: 3rem; padding: 0 0.5rem; }
-.fg-title_size_l.fg-btn { line-height: 3rem; }
-.fg-title_size_l.fg-btn .fg-btn__icon { min-width: 3rem; font-size: 1.875rem; }
-.fg-title_size_l.fg-btn .fg-btn__badge { border-radius: 1.5rem; min-width: 3rem; line-height: 3rem; padding: 0 0.5rem; margin-right: -1.5rem; margin-top: -1.5rem; }
-.fg-title_size_l.fg-icon { font-size: 1.875rem; width: 3rem; line-height: 3rem; }
+.fg-code_color_highlight.fg-code { color: #b55050; background-color: #ffecec; }
+.fg-code_color_highlight.fg-badge { color: #b55050; background-color: #ffecec; }
 .fg-input_size_xs { font-size: 0.3rem; }
 .fg-input_size_xs.fg-badge { border-radius: 0.3rem; min-width: 0.6rem; line-height: 0.6rem; padding: 0 0.1rem; }
 .fg-input_size_xs.fg-btn { line-height: 0.6rem; }
@@ -345,208 +357,20 @@ body { font-size: 13px; }
 .fg-textarea_size_l.fg-btn .fg-btn__badge { border-radius: 1.5rem; min-width: 3rem; line-height: 3rem; padding: 0 0.5rem; margin-right: -1.5rem; margin-top: -1.5rem; }
 .fg-textarea_size_l.fg-icon { font-size: 1.875rem; width: 3rem; line-height: 3rem; }
 
-.fg-col-8 { width: 66.6%; }
-.fg-col-4 { width: 33.3%; }
+.fg-row { display: flex; margin-left: -1rem; margin-right: -1rem; }
+.fg-row__col_8 { padding-left: 1rem; padding-right: 1rem; width: 66.6%; }
+.fg-row__col_4 { padding-left: 1rem; padding-right: 1rem; width: 33.3%; }
 .fg-affix { position: fixed; top: 0; }
 .fg-body:after { content: ""; clear: both; display: table; }
+.fg-header { background-color: gray; color: white; }
+.fg-header__title { padding-left: 1rem; display: inline-block; line-height: 2rem; }
+.fg-header .fg-btn:not([class*="_color_"]) { background-color: inherit; }
+.fg-header:not([class*="_color_"]) .fg-btn:not([class*="_color_"]) { background-color: #676767; }
+.fg-header:not([class*="_color_"]) .fg-btn:not([class*="_color_"]):hover { background-color: #4d4d4d; }
+.fg-header:after { content: ""; clear: both; display: table; }
 .fg-aside:after { content: ""; clear: both; display: table; }
 .fg-content:after { content: ""; clear: both; display: table; }
-.fg-footer_color_principal { background-color: #0000cc; color: white; }
-.fg-footer_color_principal .fg-btn { background-color: #000099; }
-.fg-footer_color_principal .fg-btn:hover { background-color: #000066; }
-.fg-footer_color_principal.fg-radio:hover { background-color: #000099; }
-.fg-footer_color_principal.fg-radio:hover .fg-radio__icon_float_left, .fg-footer_color_principal.fg-radio:hover .fg-radio__icon_float_right { background-color: #000066; }
-.fg-footer_color_principal.fg-radio .fg-radio__input:checked + .fg-radio__icon { background-color: #000066; }
-.fg-footer_color_principal.fg-radio .fg-radio__input:checked + .fg-radio__icon + .fg-radio__text { background-color: #000099; }
-.fg-footer_color_principal.fg-radio .fg-radio__input:checked + .fg-radio__text { background-color: #000099; }
-.fg-footer_color_principal.fg-checkbox:hover { background-color: #000099; }
-.fg-footer_color_principal.fg-checkbox:hover .fg-checkbox__icon_float_left, .fg-footer_color_principal.fg-checkbox:hover .fg-checkbox__icon_float_right { background-color: #000066; }
-.fg-footer_color_principal.fg-checkbox .fg-checkbox__input:checked + .fg-icon { background-color: #000066; }
-.fg-footer_color_principal.fg-checkbox .fg-checkbox__input:checked + .fg-icon + .fg-text { background-color: #000099; }
-.fg-footer_color_principal.fg-checkbox .fg-checkbox__input:checked + .fg-text { background-color: #000099; }
-.fg-footer_color_principal.fg-icon { color: blue; background-color: inherit; }
-.fg-footer_color_secondary { background-color: #cc0000; color: white; }
-.fg-footer_color_secondary .fg-btn { background-color: #990000; }
-.fg-footer_color_secondary .fg-btn:hover { background-color: #660000; }
-.fg-footer_color_secondary.fg-radio:hover { background-color: #990000; }
-.fg-footer_color_secondary.fg-radio:hover .fg-radio__icon_float_left, .fg-footer_color_secondary.fg-radio:hover .fg-radio__icon_float_right { background-color: #660000; }
-.fg-footer_color_secondary.fg-radio .fg-radio__input:checked + .fg-radio__icon { background-color: #660000; }
-.fg-footer_color_secondary.fg-radio .fg-radio__input:checked + .fg-radio__icon + .fg-radio__text { background-color: #990000; }
-.fg-footer_color_secondary.fg-radio .fg-radio__input:checked + .fg-radio__text { background-color: #990000; }
-.fg-footer_color_secondary.fg-checkbox:hover { background-color: #990000; }
-.fg-footer_color_secondary.fg-checkbox:hover .fg-checkbox__icon_float_left, .fg-footer_color_secondary.fg-checkbox:hover .fg-checkbox__icon_float_right { background-color: #660000; }
-.fg-footer_color_secondary.fg-checkbox .fg-checkbox__input:checked + .fg-icon { background-color: #660000; }
-.fg-footer_color_secondary.fg-checkbox .fg-checkbox__input:checked + .fg-icon + .fg-text { background-color: #990000; }
-.fg-footer_color_secondary.fg-checkbox .fg-checkbox__input:checked + .fg-text { background-color: #990000; }
-.fg-footer_color_secondary.fg-icon { color: red; background-color: inherit; }
-.fg-footer_color_neutral { background-color: #676767; color: white; }
-.fg-footer_color_neutral .fg-btn { background-color: #4d4d4d; }
-.fg-footer_color_neutral .fg-btn:hover { background-color: #343434; }
-.fg-footer_color_neutral.fg-radio:hover { background-color: #4d4d4d; }
-.fg-footer_color_neutral.fg-radio:hover .fg-radio__icon_float_left, .fg-footer_color_neutral.fg-radio:hover .fg-radio__icon_float_right { background-color: #343434; }
-.fg-footer_color_neutral.fg-radio .fg-radio__input:checked + .fg-radio__icon { background-color: #343434; }
-.fg-footer_color_neutral.fg-radio .fg-radio__input:checked + .fg-radio__icon + .fg-radio__text { background-color: #4d4d4d; }
-.fg-footer_color_neutral.fg-radio .fg-radio__input:checked + .fg-radio__text { background-color: #4d4d4d; }
-.fg-footer_color_neutral.fg-checkbox:hover { background-color: #4d4d4d; }
-.fg-footer_color_neutral.fg-checkbox:hover .fg-checkbox__icon_float_left, .fg-footer_color_neutral.fg-checkbox:hover .fg-checkbox__icon_float_right { background-color: #343434; }
-.fg-footer_color_neutral.fg-checkbox .fg-checkbox__input:checked + .fg-icon { background-color: #343434; }
-.fg-footer_color_neutral.fg-checkbox .fg-checkbox__input:checked + .fg-icon + .fg-text { background-color: #4d4d4d; }
-.fg-footer_color_neutral.fg-checkbox .fg-checkbox__input:checked + .fg-text { background-color: #4d4d4d; }
-.fg-footer_color_neutral.fg-icon { color: gray; background-color: inherit; }
-.fg-footer_color_toolbar { background-color: #676767; color: white; }
-.fg-footer_color_toolbar .fg-btn { background-color: #4d4d4d; }
-.fg-footer_color_toolbar .fg-btn:hover { background-color: #343434; }
-.fg-footer_color_toolbar.fg-radio:hover { background-color: #4d4d4d; }
-.fg-footer_color_toolbar.fg-radio:hover .fg-radio__icon_float_left, .fg-footer_color_toolbar.fg-radio:hover .fg-radio__icon_float_right { background-color: #343434; }
-.fg-footer_color_toolbar.fg-radio .fg-radio__input:checked + .fg-radio__icon { background-color: #343434; }
-.fg-footer_color_toolbar.fg-radio .fg-radio__input:checked + .fg-radio__icon + .fg-radio__text { background-color: #4d4d4d; }
-.fg-footer_color_toolbar.fg-radio .fg-radio__input:checked + .fg-radio__text { background-color: #4d4d4d; }
-.fg-footer_color_toolbar.fg-checkbox:hover { background-color: #4d4d4d; }
-.fg-footer_color_toolbar.fg-checkbox:hover .fg-checkbox__icon_float_left, .fg-footer_color_toolbar.fg-checkbox:hover .fg-checkbox__icon_float_right { background-color: #343434; }
-.fg-footer_color_toolbar.fg-checkbox .fg-checkbox__input:checked + .fg-icon { background-color: #343434; }
-.fg-footer_color_toolbar.fg-checkbox .fg-checkbox__input:checked + .fg-icon + .fg-text { background-color: #4d4d4d; }
-.fg-footer_color_toolbar.fg-checkbox .fg-checkbox__input:checked + .fg-text { background-color: #4d4d4d; }
-.fg-footer_color_toolbar.fg-icon { color: gray; background-color: inherit; }
-.fg-footer_color_filter { background-color: #676767; color: white; }
-.fg-footer_color_filter .fg-btn { background-color: #4d4d4d; }
-.fg-footer_color_filter .fg-btn:hover { background-color: #343434; }
-.fg-footer_color_filter.fg-radio:hover { background-color: #4d4d4d; }
-.fg-footer_color_filter.fg-radio:hover .fg-radio__icon_float_left, .fg-footer_color_filter.fg-radio:hover .fg-radio__icon_float_right { background-color: #343434; }
-.fg-footer_color_filter.fg-radio .fg-radio__input:checked + .fg-radio__icon { background-color: #343434; }
-.fg-footer_color_filter.fg-radio .fg-radio__input:checked + .fg-radio__icon + .fg-radio__text { background-color: #4d4d4d; }
-.fg-footer_color_filter.fg-radio .fg-radio__input:checked + .fg-radio__text { background-color: #4d4d4d; }
-.fg-footer_color_filter.fg-checkbox:hover { background-color: #4d4d4d; }
-.fg-footer_color_filter.fg-checkbox:hover .fg-checkbox__icon_float_left, .fg-footer_color_filter.fg-checkbox:hover .fg-checkbox__icon_float_right { background-color: #343434; }
-.fg-footer_color_filter.fg-checkbox .fg-checkbox__input:checked + .fg-icon { background-color: #343434; }
-.fg-footer_color_filter.fg-checkbox .fg-checkbox__input:checked + .fg-icon + .fg-text { background-color: #4d4d4d; }
-.fg-footer_color_filter.fg-checkbox .fg-checkbox__input:checked + .fg-text { background-color: #4d4d4d; }
-.fg-footer_color_filter.fg-icon { color: gray; background-color: inherit; }
-.fg-footer_color_search { background-color: #cc0000; color: white; }
-.fg-footer_color_search .fg-btn { background-color: #990000; }
-.fg-footer_color_search .fg-btn:hover { background-color: #660000; }
-.fg-footer_color_search.fg-radio:hover { background-color: #990000; }
-.fg-footer_color_search.fg-radio:hover .fg-radio__icon_float_left, .fg-footer_color_search.fg-radio:hover .fg-radio__icon_float_right { background-color: #660000; }
-.fg-footer_color_search.fg-radio .fg-radio__input:checked + .fg-radio__icon { background-color: #660000; }
-.fg-footer_color_search.fg-radio .fg-radio__input:checked + .fg-radio__icon + .fg-radio__text { background-color: #990000; }
-.fg-footer_color_search.fg-radio .fg-radio__input:checked + .fg-radio__text { background-color: #990000; }
-.fg-footer_color_search.fg-checkbox:hover { background-color: #990000; }
-.fg-footer_color_search.fg-checkbox:hover .fg-checkbox__icon_float_left, .fg-footer_color_search.fg-checkbox:hover .fg-checkbox__icon_float_right { background-color: #660000; }
-.fg-footer_color_search.fg-checkbox .fg-checkbox__input:checked + .fg-icon { background-color: #660000; }
-.fg-footer_color_search.fg-checkbox .fg-checkbox__input:checked + .fg-icon + .fg-text { background-color: #990000; }
-.fg-footer_color_search.fg-checkbox .fg-checkbox__input:checked + .fg-text { background-color: #990000; }
-.fg-footer_color_search.fg-icon { color: red; background-color: inherit; }
-.fg-footer_color_update { background-color: #cc0000; color: white; }
-.fg-footer_color_update .fg-btn { background-color: #990000; }
-.fg-footer_color_update .fg-btn:hover { background-color: #660000; }
-.fg-footer_color_update.fg-radio:hover { background-color: #990000; }
-.fg-footer_color_update.fg-radio:hover .fg-radio__icon_float_left, .fg-footer_color_update.fg-radio:hover .fg-radio__icon_float_right { background-color: #660000; }
-.fg-footer_color_update.fg-radio .fg-radio__input:checked + .fg-radio__icon { background-color: #660000; }
-.fg-footer_color_update.fg-radio .fg-radio__input:checked + .fg-radio__icon + .fg-radio__text { background-color: #990000; }
-.fg-footer_color_update.fg-radio .fg-radio__input:checked + .fg-radio__text { background-color: #990000; }
-.fg-footer_color_update.fg-checkbox:hover { background-color: #990000; }
-.fg-footer_color_update.fg-checkbox:hover .fg-checkbox__icon_float_left, .fg-footer_color_update.fg-checkbox:hover .fg-checkbox__icon_float_right { background-color: #660000; }
-.fg-footer_color_update.fg-checkbox .fg-checkbox__input:checked + .fg-icon { background-color: #660000; }
-.fg-footer_color_update.fg-checkbox .fg-checkbox__input:checked + .fg-icon + .fg-text { background-color: #990000; }
-.fg-footer_color_update.fg-checkbox .fg-checkbox__input:checked + .fg-text { background-color: #990000; }
-.fg-footer_color_update.fg-icon { color: red; background-color: inherit; }
-.fg-footer_color_warning { background-color: #cc0000; color: white; }
-.fg-footer_color_warning .fg-btn { background-color: #990000; }
-.fg-footer_color_warning .fg-btn:hover { background-color: #660000; }
-.fg-footer_color_warning.fg-radio:hover { background-color: #990000; }
-.fg-footer_color_warning.fg-radio:hover .fg-radio__icon_float_left, .fg-footer_color_warning.fg-radio:hover .fg-radio__icon_float_right { background-color: #660000; }
-.fg-footer_color_warning.fg-radio .fg-radio__input:checked + .fg-radio__icon { background-color: #660000; }
-.fg-footer_color_warning.fg-radio .fg-radio__input:checked + .fg-radio__icon + .fg-radio__text { background-color: #990000; }
-.fg-footer_color_warning.fg-radio .fg-radio__input:checked + .fg-radio__text { background-color: #990000; }
-.fg-footer_color_warning.fg-checkbox:hover { background-color: #990000; }
-.fg-footer_color_warning.fg-checkbox:hover .fg-checkbox__icon_float_left, .fg-footer_color_warning.fg-checkbox:hover .fg-checkbox__icon_float_right { background-color: #660000; }
-.fg-footer_color_warning.fg-checkbox .fg-checkbox__input:checked + .fg-icon { background-color: #660000; }
-.fg-footer_color_warning.fg-checkbox .fg-checkbox__input:checked + .fg-icon + .fg-text { background-color: #990000; }
-.fg-footer_color_warning.fg-checkbox .fg-checkbox__input:checked + .fg-text { background-color: #990000; }
-.fg-footer_color_warning.fg-icon { color: red; background-color: inherit; }
-.fg-footer_color_alert { background-color: #cc0000; color: white; }
-.fg-footer_color_alert .fg-btn { background-color: #990000; }
-.fg-footer_color_alert .fg-btn:hover { background-color: #660000; }
-.fg-footer_color_alert.fg-radio:hover { background-color: #990000; }
-.fg-footer_color_alert.fg-radio:hover .fg-radio__icon_float_left, .fg-footer_color_alert.fg-radio:hover .fg-radio__icon_float_right { background-color: #660000; }
-.fg-footer_color_alert.fg-radio .fg-radio__input:checked + .fg-radio__icon { background-color: #660000; }
-.fg-footer_color_alert.fg-radio .fg-radio__input:checked + .fg-radio__icon + .fg-radio__text { background-color: #990000; }
-.fg-footer_color_alert.fg-radio .fg-radio__input:checked + .fg-radio__text { background-color: #990000; }
-.fg-footer_color_alert.fg-checkbox:hover { background-color: #990000; }
-.fg-footer_color_alert.fg-checkbox:hover .fg-checkbox__icon_float_left, .fg-footer_color_alert.fg-checkbox:hover .fg-checkbox__icon_float_right { background-color: #660000; }
-.fg-footer_color_alert.fg-checkbox .fg-checkbox__input:checked + .fg-icon { background-color: #660000; }
-.fg-footer_color_alert.fg-checkbox .fg-checkbox__input:checked + .fg-icon + .fg-text { background-color: #990000; }
-.fg-footer_color_alert.fg-checkbox .fg-checkbox__input:checked + .fg-text { background-color: #990000; }
-.fg-footer_color_alert.fg-icon { color: red; background-color: inherit; }
-.fg-footer_color_info { background-color: #cc0000; color: white; }
-.fg-footer_color_info .fg-btn { background-color: #990000; }
-.fg-footer_color_info .fg-btn:hover { background-color: #660000; }
-.fg-footer_color_info.fg-radio:hover { background-color: #990000; }
-.fg-footer_color_info.fg-radio:hover .fg-radio__icon_float_left, .fg-footer_color_info.fg-radio:hover .fg-radio__icon_float_right { background-color: #660000; }
-.fg-footer_color_info.fg-radio .fg-radio__input:checked + .fg-radio__icon { background-color: #660000; }
-.fg-footer_color_info.fg-radio .fg-radio__input:checked + .fg-radio__icon + .fg-radio__text { background-color: #990000; }
-.fg-footer_color_info.fg-radio .fg-radio__input:checked + .fg-radio__text { background-color: #990000; }
-.fg-footer_color_info.fg-checkbox:hover { background-color: #990000; }
-.fg-footer_color_info.fg-checkbox:hover .fg-checkbox__icon_float_left, .fg-footer_color_info.fg-checkbox:hover .fg-checkbox__icon_float_right { background-color: #660000; }
-.fg-footer_color_info.fg-checkbox .fg-checkbox__input:checked + .fg-icon { background-color: #660000; }
-.fg-footer_color_info.fg-checkbox .fg-checkbox__input:checked + .fg-icon + .fg-text { background-color: #990000; }
-.fg-footer_color_info.fg-checkbox .fg-checkbox__input:checked + .fg-text { background-color: #990000; }
-.fg-footer_color_info.fg-icon { color: red; background-color: inherit; }
-.fg-footer_color_success { background-color: #cc0000; color: white; }
-.fg-footer_color_success .fg-btn { background-color: #990000; }
-.fg-footer_color_success .fg-btn:hover { background-color: #660000; }
-.fg-footer_color_success.fg-radio:hover { background-color: #990000; }
-.fg-footer_color_success.fg-radio:hover .fg-radio__icon_float_left, .fg-footer_color_success.fg-radio:hover .fg-radio__icon_float_right { background-color: #660000; }
-.fg-footer_color_success.fg-radio .fg-radio__input:checked + .fg-radio__icon { background-color: #660000; }
-.fg-footer_color_success.fg-radio .fg-radio__input:checked + .fg-radio__icon + .fg-radio__text { background-color: #990000; }
-.fg-footer_color_success.fg-radio .fg-radio__input:checked + .fg-radio__text { background-color: #990000; }
-.fg-footer_color_success.fg-checkbox:hover { background-color: #990000; }
-.fg-footer_color_success.fg-checkbox:hover .fg-checkbox__icon_float_left, .fg-footer_color_success.fg-checkbox:hover .fg-checkbox__icon_float_right { background-color: #660000; }
-.fg-footer_color_success.fg-checkbox .fg-checkbox__input:checked + .fg-icon { background-color: #660000; }
-.fg-footer_color_success.fg-checkbox .fg-checkbox__input:checked + .fg-icon + .fg-text { background-color: #990000; }
-.fg-footer_color_success.fg-checkbox .fg-checkbox__input:checked + .fg-text { background-color: #990000; }
-.fg-footer_color_success.fg-icon { color: red; background-color: inherit; }
-.fg-footer_color_error { background-color: #cc0000; color: white; }
-.fg-footer_color_error .fg-btn { background-color: #990000; }
-.fg-footer_color_error .fg-btn:hover { background-color: #660000; }
-.fg-footer_color_error.fg-radio:hover { background-color: #990000; }
-.fg-footer_color_error.fg-radio:hover .fg-radio__icon_float_left, .fg-footer_color_error.fg-radio:hover .fg-radio__icon_float_right { background-color: #660000; }
-.fg-footer_color_error.fg-radio .fg-radio__input:checked + .fg-radio__icon { background-color: #660000; }
-.fg-footer_color_error.fg-radio .fg-radio__input:checked + .fg-radio__icon + .fg-radio__text { background-color: #990000; }
-.fg-footer_color_error.fg-radio .fg-radio__input:checked + .fg-radio__text { background-color: #990000; }
-.fg-footer_color_error.fg-checkbox:hover { background-color: #990000; }
-.fg-footer_color_error.fg-checkbox:hover .fg-checkbox__icon_float_left, .fg-footer_color_error.fg-checkbox:hover .fg-checkbox__icon_float_right { background-color: #660000; }
-.fg-footer_color_error.fg-checkbox .fg-checkbox__input:checked + .fg-icon { background-color: #660000; }
-.fg-footer_color_error.fg-checkbox .fg-checkbox__input:checked + .fg-icon + .fg-text { background-color: #990000; }
-.fg-footer_color_error.fg-checkbox .fg-checkbox__input:checked + .fg-text { background-color: #990000; }
-.fg-footer_color_error.fg-icon { color: red; background-color: inherit; }
-.fg-footer_color_badge { background-color: #cc0000; color: white; }
-.fg-footer_color_badge .fg-btn { background-color: #990000; }
-.fg-footer_color_badge .fg-btn:hover { background-color: #660000; }
-.fg-footer_color_badge.fg-radio:hover { background-color: #990000; }
-.fg-footer_color_badge.fg-radio:hover .fg-radio__icon_float_left, .fg-footer_color_badge.fg-radio:hover .fg-radio__icon_float_right { background-color: #660000; }
-.fg-footer_color_badge.fg-radio .fg-radio__input:checked + .fg-radio__icon { background-color: #660000; }
-.fg-footer_color_badge.fg-radio .fg-radio__input:checked + .fg-radio__icon + .fg-radio__text { background-color: #990000; }
-.fg-footer_color_badge.fg-radio .fg-radio__input:checked + .fg-radio__text { background-color: #990000; }
-.fg-footer_color_badge.fg-checkbox:hover { background-color: #990000; }
-.fg-footer_color_badge.fg-checkbox:hover .fg-checkbox__icon_float_left, .fg-footer_color_badge.fg-checkbox:hover .fg-checkbox__icon_float_right { background-color: #660000; }
-.fg-footer_color_badge.fg-checkbox .fg-checkbox__input:checked + .fg-icon { background-color: #660000; }
-.fg-footer_color_badge.fg-checkbox .fg-checkbox__input:checked + .fg-icon + .fg-text { background-color: #990000; }
-.fg-footer_color_badge.fg-checkbox .fg-checkbox__input:checked + .fg-text { background-color: #990000; }
-.fg-footer_color_badge.fg-icon { color: red; background-color: inherit; }
-.fg-footer_color_highlight { background-color: #ffb9b9; color: #b55050; }
-.fg-footer_color_highlight .fg-btn { background-color: #ff8686; }
-.fg-footer_color_highlight .fg-btn:hover { background-color: #ff5353; }
-.fg-footer_color_highlight.fg-radio:hover { background-color: #ff8686; }
-.fg-footer_color_highlight.fg-radio:hover .fg-radio__icon_float_left, .fg-footer_color_highlight.fg-radio:hover .fg-radio__icon_float_right { background-color: #ff5353; }
-.fg-footer_color_highlight.fg-radio .fg-radio__input:checked + .fg-radio__icon { background-color: #ff5353; }
-.fg-footer_color_highlight.fg-radio .fg-radio__input:checked + .fg-radio__icon + .fg-radio__text { background-color: #ff8686; }
-.fg-footer_color_highlight.fg-radio .fg-radio__input:checked + .fg-radio__text { background-color: #ff8686; }
-.fg-footer_color_highlight.fg-checkbox:hover { background-color: #ff8686; }
-.fg-footer_color_highlight.fg-checkbox:hover .fg-checkbox__icon_float_left, .fg-footer_color_highlight.fg-checkbox:hover .fg-checkbox__icon_float_right { background-color: #ff5353; }
-.fg-footer_color_highlight.fg-checkbox .fg-checkbox__input:checked + .fg-icon { background-color: #ff5353; }
-.fg-footer_color_highlight.fg-checkbox .fg-checkbox__input:checked + .fg-icon + .fg-text { background-color: #ff8686; }
-.fg-footer_color_highlight.fg-checkbox .fg-checkbox__input:checked + .fg-text { background-color: #ff8686; }
-.fg-footer_color_highlight.fg-icon { color: #ffecec; background-color: inherit; }
+.fg-footer { clear: both; }
 .fg-footer:after { content: ""; clear: both; display: table; }
 .fg-btn { position: relative; cursor: pointer; font-size: inherit; border: 0; padding: 0; font-family: inherit; display: inline-block; line-height: 2rem; text-decoration: none; background-color: gray; color: white; }
 .fg-btn__icon.fg_float_left ~ .fg-btn__text, .fg-btn__icon.fg_float_right ~ .fg-btn__text { display: inline-block; }
@@ -555,599 +379,10 @@ body { font-size: 13px; }
 .fg-btn__badge.fg-badge.fg_float_left, .fg-btn__badge.fg-badge.fg_float_right { display: inline-block; }
 .fg-btn-list:after { content: ""; clear: both; display: table; }
 .fg-btn .fg-icon { display: block; width: auto; }
-.fg-btn_color_principal { background-color: #0000cc; color: white; }
-.fg-btn_color_principal .fg-btn { background-color: #000099; }
-.fg-btn_color_principal .fg-btn:hover { background-color: #000066; }
-.fg-btn_color_principal.fg-radio:hover { background-color: #000099; }
-.fg-btn_color_principal.fg-radio:hover .fg-radio__icon_float_left, .fg-btn_color_principal.fg-radio:hover .fg-radio__icon_float_right { background-color: #000066; }
-.fg-btn_color_principal.fg-radio .fg-radio__input:checked + .fg-radio__icon { background-color: #000066; }
-.fg-btn_color_principal.fg-radio .fg-radio__input:checked + .fg-radio__icon + .fg-radio__text { background-color: #000099; }
-.fg-btn_color_principal.fg-radio .fg-radio__input:checked + .fg-radio__text { background-color: #000099; }
-.fg-btn_color_principal.fg-checkbox:hover { background-color: #000099; }
-.fg-btn_color_principal.fg-checkbox:hover .fg-checkbox__icon_float_left, .fg-btn_color_principal.fg-checkbox:hover .fg-checkbox__icon_float_right { background-color: #000066; }
-.fg-btn_color_principal.fg-checkbox .fg-checkbox__input:checked + .fg-icon { background-color: #000066; }
-.fg-btn_color_principal.fg-checkbox .fg-checkbox__input:checked + .fg-icon + .fg-text { background-color: #000099; }
-.fg-btn_color_principal.fg-checkbox .fg-checkbox__input:checked + .fg-text { background-color: #000099; }
-.fg-btn_color_principal.fg-icon { color: blue; background-color: inherit; }
-.fg-btn_color_secondary { background-color: #cc0000; color: white; }
-.fg-btn_color_secondary .fg-btn { background-color: #990000; }
-.fg-btn_color_secondary .fg-btn:hover { background-color: #660000; }
-.fg-btn_color_secondary.fg-radio:hover { background-color: #990000; }
-.fg-btn_color_secondary.fg-radio:hover .fg-radio__icon_float_left, .fg-btn_color_secondary.fg-radio:hover .fg-radio__icon_float_right { background-color: #660000; }
-.fg-btn_color_secondary.fg-radio .fg-radio__input:checked + .fg-radio__icon { background-color: #660000; }
-.fg-btn_color_secondary.fg-radio .fg-radio__input:checked + .fg-radio__icon + .fg-radio__text { background-color: #990000; }
-.fg-btn_color_secondary.fg-radio .fg-radio__input:checked + .fg-radio__text { background-color: #990000; }
-.fg-btn_color_secondary.fg-checkbox:hover { background-color: #990000; }
-.fg-btn_color_secondary.fg-checkbox:hover .fg-checkbox__icon_float_left, .fg-btn_color_secondary.fg-checkbox:hover .fg-checkbox__icon_float_right { background-color: #660000; }
-.fg-btn_color_secondary.fg-checkbox .fg-checkbox__input:checked + .fg-icon { background-color: #660000; }
-.fg-btn_color_secondary.fg-checkbox .fg-checkbox__input:checked + .fg-icon + .fg-text { background-color: #990000; }
-.fg-btn_color_secondary.fg-checkbox .fg-checkbox__input:checked + .fg-text { background-color: #990000; }
-.fg-btn_color_secondary.fg-icon { color: red; background-color: inherit; }
-.fg-btn_color_neutral { background-color: #676767; color: white; }
-.fg-btn_color_neutral .fg-btn { background-color: #4d4d4d; }
-.fg-btn_color_neutral .fg-btn:hover { background-color: #343434; }
-.fg-btn_color_neutral.fg-radio:hover { background-color: #4d4d4d; }
-.fg-btn_color_neutral.fg-radio:hover .fg-radio__icon_float_left, .fg-btn_color_neutral.fg-radio:hover .fg-radio__icon_float_right { background-color: #343434; }
-.fg-btn_color_neutral.fg-radio .fg-radio__input:checked + .fg-radio__icon { background-color: #343434; }
-.fg-btn_color_neutral.fg-radio .fg-radio__input:checked + .fg-radio__icon + .fg-radio__text { background-color: #4d4d4d; }
-.fg-btn_color_neutral.fg-radio .fg-radio__input:checked + .fg-radio__text { background-color: #4d4d4d; }
-.fg-btn_color_neutral.fg-checkbox:hover { background-color: #4d4d4d; }
-.fg-btn_color_neutral.fg-checkbox:hover .fg-checkbox__icon_float_left, .fg-btn_color_neutral.fg-checkbox:hover .fg-checkbox__icon_float_right { background-color: #343434; }
-.fg-btn_color_neutral.fg-checkbox .fg-checkbox__input:checked + .fg-icon { background-color: #343434; }
-.fg-btn_color_neutral.fg-checkbox .fg-checkbox__input:checked + .fg-icon + .fg-text { background-color: #4d4d4d; }
-.fg-btn_color_neutral.fg-checkbox .fg-checkbox__input:checked + .fg-text { background-color: #4d4d4d; }
-.fg-btn_color_neutral.fg-icon { color: gray; background-color: inherit; }
-.fg-btn_color_toolbar { background-color: #676767; color: white; }
-.fg-btn_color_toolbar .fg-btn { background-color: #4d4d4d; }
-.fg-btn_color_toolbar .fg-btn:hover { background-color: #343434; }
-.fg-btn_color_toolbar.fg-radio:hover { background-color: #4d4d4d; }
-.fg-btn_color_toolbar.fg-radio:hover .fg-radio__icon_float_left, .fg-btn_color_toolbar.fg-radio:hover .fg-radio__icon_float_right { background-color: #343434; }
-.fg-btn_color_toolbar.fg-radio .fg-radio__input:checked + .fg-radio__icon { background-color: #343434; }
-.fg-btn_color_toolbar.fg-radio .fg-radio__input:checked + .fg-radio__icon + .fg-radio__text { background-color: #4d4d4d; }
-.fg-btn_color_toolbar.fg-radio .fg-radio__input:checked + .fg-radio__text { background-color: #4d4d4d; }
-.fg-btn_color_toolbar.fg-checkbox:hover { background-color: #4d4d4d; }
-.fg-btn_color_toolbar.fg-checkbox:hover .fg-checkbox__icon_float_left, .fg-btn_color_toolbar.fg-checkbox:hover .fg-checkbox__icon_float_right { background-color: #343434; }
-.fg-btn_color_toolbar.fg-checkbox .fg-checkbox__input:checked + .fg-icon { background-color: #343434; }
-.fg-btn_color_toolbar.fg-checkbox .fg-checkbox__input:checked + .fg-icon + .fg-text { background-color: #4d4d4d; }
-.fg-btn_color_toolbar.fg-checkbox .fg-checkbox__input:checked + .fg-text { background-color: #4d4d4d; }
-.fg-btn_color_toolbar.fg-icon { color: gray; background-color: inherit; }
-.fg-btn_color_filter { background-color: #676767; color: white; }
-.fg-btn_color_filter .fg-btn { background-color: #4d4d4d; }
-.fg-btn_color_filter .fg-btn:hover { background-color: #343434; }
-.fg-btn_color_filter.fg-radio:hover { background-color: #4d4d4d; }
-.fg-btn_color_filter.fg-radio:hover .fg-radio__icon_float_left, .fg-btn_color_filter.fg-radio:hover .fg-radio__icon_float_right { background-color: #343434; }
-.fg-btn_color_filter.fg-radio .fg-radio__input:checked + .fg-radio__icon { background-color: #343434; }
-.fg-btn_color_filter.fg-radio .fg-radio__input:checked + .fg-radio__icon + .fg-radio__text { background-color: #4d4d4d; }
-.fg-btn_color_filter.fg-radio .fg-radio__input:checked + .fg-radio__text { background-color: #4d4d4d; }
-.fg-btn_color_filter.fg-checkbox:hover { background-color: #4d4d4d; }
-.fg-btn_color_filter.fg-checkbox:hover .fg-checkbox__icon_float_left, .fg-btn_color_filter.fg-checkbox:hover .fg-checkbox__icon_float_right { background-color: #343434; }
-.fg-btn_color_filter.fg-checkbox .fg-checkbox__input:checked + .fg-icon { background-color: #343434; }
-.fg-btn_color_filter.fg-checkbox .fg-checkbox__input:checked + .fg-icon + .fg-text { background-color: #4d4d4d; }
-.fg-btn_color_filter.fg-checkbox .fg-checkbox__input:checked + .fg-text { background-color: #4d4d4d; }
-.fg-btn_color_filter.fg-icon { color: gray; background-color: inherit; }
-.fg-btn_color_search { background-color: #cc0000; color: white; }
-.fg-btn_color_search .fg-btn { background-color: #990000; }
-.fg-btn_color_search .fg-btn:hover { background-color: #660000; }
-.fg-btn_color_search.fg-radio:hover { background-color: #990000; }
-.fg-btn_color_search.fg-radio:hover .fg-radio__icon_float_left, .fg-btn_color_search.fg-radio:hover .fg-radio__icon_float_right { background-color: #660000; }
-.fg-btn_color_search.fg-radio .fg-radio__input:checked + .fg-radio__icon { background-color: #660000; }
-.fg-btn_color_search.fg-radio .fg-radio__input:checked + .fg-radio__icon + .fg-radio__text { background-color: #990000; }
-.fg-btn_color_search.fg-radio .fg-radio__input:checked + .fg-radio__text { background-color: #990000; }
-.fg-btn_color_search.fg-checkbox:hover { background-color: #990000; }
-.fg-btn_color_search.fg-checkbox:hover .fg-checkbox__icon_float_left, .fg-btn_color_search.fg-checkbox:hover .fg-checkbox__icon_float_right { background-color: #660000; }
-.fg-btn_color_search.fg-checkbox .fg-checkbox__input:checked + .fg-icon { background-color: #660000; }
-.fg-btn_color_search.fg-checkbox .fg-checkbox__input:checked + .fg-icon + .fg-text { background-color: #990000; }
-.fg-btn_color_search.fg-checkbox .fg-checkbox__input:checked + .fg-text { background-color: #990000; }
-.fg-btn_color_search.fg-icon { color: red; background-color: inherit; }
-.fg-btn_color_update { background-color: #cc0000; color: white; }
-.fg-btn_color_update .fg-btn { background-color: #990000; }
-.fg-btn_color_update .fg-btn:hover { background-color: #660000; }
-.fg-btn_color_update.fg-radio:hover { background-color: #990000; }
-.fg-btn_color_update.fg-radio:hover .fg-radio__icon_float_left, .fg-btn_color_update.fg-radio:hover .fg-radio__icon_float_right { background-color: #660000; }
-.fg-btn_color_update.fg-radio .fg-radio__input:checked + .fg-radio__icon { background-color: #660000; }
-.fg-btn_color_update.fg-radio .fg-radio__input:checked + .fg-radio__icon + .fg-radio__text { background-color: #990000; }
-.fg-btn_color_update.fg-radio .fg-radio__input:checked + .fg-radio__text { background-color: #990000; }
-.fg-btn_color_update.fg-checkbox:hover { background-color: #990000; }
-.fg-btn_color_update.fg-checkbox:hover .fg-checkbox__icon_float_left, .fg-btn_color_update.fg-checkbox:hover .fg-checkbox__icon_float_right { background-color: #660000; }
-.fg-btn_color_update.fg-checkbox .fg-checkbox__input:checked + .fg-icon { background-color: #660000; }
-.fg-btn_color_update.fg-checkbox .fg-checkbox__input:checked + .fg-icon + .fg-text { background-color: #990000; }
-.fg-btn_color_update.fg-checkbox .fg-checkbox__input:checked + .fg-text { background-color: #990000; }
-.fg-btn_color_update.fg-icon { color: red; background-color: inherit; }
-.fg-btn_color_warning { background-color: #cc0000; color: white; }
-.fg-btn_color_warning .fg-btn { background-color: #990000; }
-.fg-btn_color_warning .fg-btn:hover { background-color: #660000; }
-.fg-btn_color_warning.fg-radio:hover { background-color: #990000; }
-.fg-btn_color_warning.fg-radio:hover .fg-radio__icon_float_left, .fg-btn_color_warning.fg-radio:hover .fg-radio__icon_float_right { background-color: #660000; }
-.fg-btn_color_warning.fg-radio .fg-radio__input:checked + .fg-radio__icon { background-color: #660000; }
-.fg-btn_color_warning.fg-radio .fg-radio__input:checked + .fg-radio__icon + .fg-radio__text { background-color: #990000; }
-.fg-btn_color_warning.fg-radio .fg-radio__input:checked + .fg-radio__text { background-color: #990000; }
-.fg-btn_color_warning.fg-checkbox:hover { background-color: #990000; }
-.fg-btn_color_warning.fg-checkbox:hover .fg-checkbox__icon_float_left, .fg-btn_color_warning.fg-checkbox:hover .fg-checkbox__icon_float_right { background-color: #660000; }
-.fg-btn_color_warning.fg-checkbox .fg-checkbox__input:checked + .fg-icon { background-color: #660000; }
-.fg-btn_color_warning.fg-checkbox .fg-checkbox__input:checked + .fg-icon + .fg-text { background-color: #990000; }
-.fg-btn_color_warning.fg-checkbox .fg-checkbox__input:checked + .fg-text { background-color: #990000; }
-.fg-btn_color_warning.fg-icon { color: red; background-color: inherit; }
-.fg-btn_color_alert { background-color: #cc0000; color: white; }
-.fg-btn_color_alert .fg-btn { background-color: #990000; }
-.fg-btn_color_alert .fg-btn:hover { background-color: #660000; }
-.fg-btn_color_alert.fg-radio:hover { background-color: #990000; }
-.fg-btn_color_alert.fg-radio:hover .fg-radio__icon_float_left, .fg-btn_color_alert.fg-radio:hover .fg-radio__icon_float_right { background-color: #660000; }
-.fg-btn_color_alert.fg-radio .fg-radio__input:checked + .fg-radio__icon { background-color: #660000; }
-.fg-btn_color_alert.fg-radio .fg-radio__input:checked + .fg-radio__icon + .fg-radio__text { background-color: #990000; }
-.fg-btn_color_alert.fg-radio .fg-radio__input:checked + .fg-radio__text { background-color: #990000; }
-.fg-btn_color_alert.fg-checkbox:hover { background-color: #990000; }
-.fg-btn_color_alert.fg-checkbox:hover .fg-checkbox__icon_float_left, .fg-btn_color_alert.fg-checkbox:hover .fg-checkbox__icon_float_right { background-color: #660000; }
-.fg-btn_color_alert.fg-checkbox .fg-checkbox__input:checked + .fg-icon { background-color: #660000; }
-.fg-btn_color_alert.fg-checkbox .fg-checkbox__input:checked + .fg-icon + .fg-text { background-color: #990000; }
-.fg-btn_color_alert.fg-checkbox .fg-checkbox__input:checked + .fg-text { background-color: #990000; }
-.fg-btn_color_alert.fg-icon { color: red; background-color: inherit; }
-.fg-btn_color_info { background-color: #cc0000; color: white; }
-.fg-btn_color_info .fg-btn { background-color: #990000; }
-.fg-btn_color_info .fg-btn:hover { background-color: #660000; }
-.fg-btn_color_info.fg-radio:hover { background-color: #990000; }
-.fg-btn_color_info.fg-radio:hover .fg-radio__icon_float_left, .fg-btn_color_info.fg-radio:hover .fg-radio__icon_float_right { background-color: #660000; }
-.fg-btn_color_info.fg-radio .fg-radio__input:checked + .fg-radio__icon { background-color: #660000; }
-.fg-btn_color_info.fg-radio .fg-radio__input:checked + .fg-radio__icon + .fg-radio__text { background-color: #990000; }
-.fg-btn_color_info.fg-radio .fg-radio__input:checked + .fg-radio__text { background-color: #990000; }
-.fg-btn_color_info.fg-checkbox:hover { background-color: #990000; }
-.fg-btn_color_info.fg-checkbox:hover .fg-checkbox__icon_float_left, .fg-btn_color_info.fg-checkbox:hover .fg-checkbox__icon_float_right { background-color: #660000; }
-.fg-btn_color_info.fg-checkbox .fg-checkbox__input:checked + .fg-icon { background-color: #660000; }
-.fg-btn_color_info.fg-checkbox .fg-checkbox__input:checked + .fg-icon + .fg-text { background-color: #990000; }
-.fg-btn_color_info.fg-checkbox .fg-checkbox__input:checked + .fg-text { background-color: #990000; }
-.fg-btn_color_info.fg-icon { color: red; background-color: inherit; }
-.fg-btn_color_success { background-color: #cc0000; color: white; }
-.fg-btn_color_success .fg-btn { background-color: #990000; }
-.fg-btn_color_success .fg-btn:hover { background-color: #660000; }
-.fg-btn_color_success.fg-radio:hover { background-color: #990000; }
-.fg-btn_color_success.fg-radio:hover .fg-radio__icon_float_left, .fg-btn_color_success.fg-radio:hover .fg-radio__icon_float_right { background-color: #660000; }
-.fg-btn_color_success.fg-radio .fg-radio__input:checked + .fg-radio__icon { background-color: #660000; }
-.fg-btn_color_success.fg-radio .fg-radio__input:checked + .fg-radio__icon + .fg-radio__text { background-color: #990000; }
-.fg-btn_color_success.fg-radio .fg-radio__input:checked + .fg-radio__text { background-color: #990000; }
-.fg-btn_color_success.fg-checkbox:hover { background-color: #990000; }
-.fg-btn_color_success.fg-checkbox:hover .fg-checkbox__icon_float_left, .fg-btn_color_success.fg-checkbox:hover .fg-checkbox__icon_float_right { background-color: #660000; }
-.fg-btn_color_success.fg-checkbox .fg-checkbox__input:checked + .fg-icon { background-color: #660000; }
-.fg-btn_color_success.fg-checkbox .fg-checkbox__input:checked + .fg-icon + .fg-text { background-color: #990000; }
-.fg-btn_color_success.fg-checkbox .fg-checkbox__input:checked + .fg-text { background-color: #990000; }
-.fg-btn_color_success.fg-icon { color: red; background-color: inherit; }
-.fg-btn_color_error { background-color: #cc0000; color: white; }
-.fg-btn_color_error .fg-btn { background-color: #990000; }
-.fg-btn_color_error .fg-btn:hover { background-color: #660000; }
-.fg-btn_color_error.fg-radio:hover { background-color: #990000; }
-.fg-btn_color_error.fg-radio:hover .fg-radio__icon_float_left, .fg-btn_color_error.fg-radio:hover .fg-radio__icon_float_right { background-color: #660000; }
-.fg-btn_color_error.fg-radio .fg-radio__input:checked + .fg-radio__icon { background-color: #660000; }
-.fg-btn_color_error.fg-radio .fg-radio__input:checked + .fg-radio__icon + .fg-radio__text { background-color: #990000; }
-.fg-btn_color_error.fg-radio .fg-radio__input:checked + .fg-radio__text { background-color: #990000; }
-.fg-btn_color_error.fg-checkbox:hover { background-color: #990000; }
-.fg-btn_color_error.fg-checkbox:hover .fg-checkbox__icon_float_left, .fg-btn_color_error.fg-checkbox:hover .fg-checkbox__icon_float_right { background-color: #660000; }
-.fg-btn_color_error.fg-checkbox .fg-checkbox__input:checked + .fg-icon { background-color: #660000; }
-.fg-btn_color_error.fg-checkbox .fg-checkbox__input:checked + .fg-icon + .fg-text { background-color: #990000; }
-.fg-btn_color_error.fg-checkbox .fg-checkbox__input:checked + .fg-text { background-color: #990000; }
-.fg-btn_color_error.fg-icon { color: red; background-color: inherit; }
-.fg-btn_color_badge { background-color: #cc0000; color: white; }
-.fg-btn_color_badge .fg-btn { background-color: #990000; }
-.fg-btn_color_badge .fg-btn:hover { background-color: #660000; }
-.fg-btn_color_badge.fg-radio:hover { background-color: #990000; }
-.fg-btn_color_badge.fg-radio:hover .fg-radio__icon_float_left, .fg-btn_color_badge.fg-radio:hover .fg-radio__icon_float_right { background-color: #660000; }
-.fg-btn_color_badge.fg-radio .fg-radio__input:checked + .fg-radio__icon { background-color: #660000; }
-.fg-btn_color_badge.fg-radio .fg-radio__input:checked + .fg-radio__icon + .fg-radio__text { background-color: #990000; }
-.fg-btn_color_badge.fg-radio .fg-radio__input:checked + .fg-radio__text { background-color: #990000; }
-.fg-btn_color_badge.fg-checkbox:hover { background-color: #990000; }
-.fg-btn_color_badge.fg-checkbox:hover .fg-checkbox__icon_float_left, .fg-btn_color_badge.fg-checkbox:hover .fg-checkbox__icon_float_right { background-color: #660000; }
-.fg-btn_color_badge.fg-checkbox .fg-checkbox__input:checked + .fg-icon { background-color: #660000; }
-.fg-btn_color_badge.fg-checkbox .fg-checkbox__input:checked + .fg-icon + .fg-text { background-color: #990000; }
-.fg-btn_color_badge.fg-checkbox .fg-checkbox__input:checked + .fg-text { background-color: #990000; }
-.fg-btn_color_badge.fg-icon { color: red; background-color: inherit; }
-.fg-btn_color_highlight { background-color: #ffb9b9; color: #b55050; }
-.fg-btn_color_highlight .fg-btn { background-color: #ff8686; }
-.fg-btn_color_highlight .fg-btn:hover { background-color: #ff5353; }
-.fg-btn_color_highlight.fg-radio:hover { background-color: #ff8686; }
-.fg-btn_color_highlight.fg-radio:hover .fg-radio__icon_float_left, .fg-btn_color_highlight.fg-radio:hover .fg-radio__icon_float_right { background-color: #ff5353; }
-.fg-btn_color_highlight.fg-radio .fg-radio__input:checked + .fg-radio__icon { background-color: #ff5353; }
-.fg-btn_color_highlight.fg-radio .fg-radio__input:checked + .fg-radio__icon + .fg-radio__text { background-color: #ff8686; }
-.fg-btn_color_highlight.fg-radio .fg-radio__input:checked + .fg-radio__text { background-color: #ff8686; }
-.fg-btn_color_highlight.fg-checkbox:hover { background-color: #ff8686; }
-.fg-btn_color_highlight.fg-checkbox:hover .fg-checkbox__icon_float_left, .fg-btn_color_highlight.fg-checkbox:hover .fg-checkbox__icon_float_right { background-color: #ff5353; }
-.fg-btn_color_highlight.fg-checkbox .fg-checkbox__input:checked + .fg-icon { background-color: #ff5353; }
-.fg-btn_color_highlight.fg-checkbox .fg-checkbox__input:checked + .fg-icon + .fg-text { background-color: #ff8686; }
-.fg-btn_color_highlight.fg-checkbox .fg-checkbox__input:checked + .fg-text { background-color: #ff8686; }
-.fg-btn_color_highlight.fg-icon { color: #ffecec; background-color: inherit; }
+.fg-btn .fg-badge:not([class*="_color_"]) { background-color: red; }
+.fg-btn:not([class*="_color_"]):hover { background-color: #676767; }
+.fg-btn:not([class*="_color_"]):hover .fg-badge:not([class*="_color_"]) { background-color: #cc0000; }
 .fg-btn:after { content: ""; clear: both; display: table; }
-.fg-header { background-color: gray; color: white; }
-.fg-header .fg-btn { background-color: inherit; }
-.fg-header__title { padding-left: 1rem; display: inline-block; line-height: 2rem; }
-.fg-header_color_principal { background-color: #0000cc; color: white; }
-.fg-header_color_principal .fg-btn { background-color: #000099; }
-.fg-header_color_principal .fg-btn:hover { background-color: #000066; }
-.fg-header_color_principal.fg-radio:hover { background-color: #000099; }
-.fg-header_color_principal.fg-radio:hover .fg-radio__icon_float_left, .fg-header_color_principal.fg-radio:hover .fg-radio__icon_float_right { background-color: #000066; }
-.fg-header_color_principal.fg-radio .fg-radio__input:checked + .fg-radio__icon { background-color: #000066; }
-.fg-header_color_principal.fg-radio .fg-radio__input:checked + .fg-radio__icon + .fg-radio__text { background-color: #000099; }
-.fg-header_color_principal.fg-radio .fg-radio__input:checked + .fg-radio__text { background-color: #000099; }
-.fg-header_color_principal.fg-checkbox:hover { background-color: #000099; }
-.fg-header_color_principal.fg-checkbox:hover .fg-checkbox__icon_float_left, .fg-header_color_principal.fg-checkbox:hover .fg-checkbox__icon_float_right { background-color: #000066; }
-.fg-header_color_principal.fg-checkbox .fg-checkbox__input:checked + .fg-icon { background-color: #000066; }
-.fg-header_color_principal.fg-checkbox .fg-checkbox__input:checked + .fg-icon + .fg-text { background-color: #000099; }
-.fg-header_color_principal.fg-checkbox .fg-checkbox__input:checked + .fg-text { background-color: #000099; }
-.fg-header_color_principal.fg-icon { color: blue; background-color: inherit; }
-.fg-header_color_secondary { background-color: #cc0000; color: white; }
-.fg-header_color_secondary .fg-btn { background-color: #990000; }
-.fg-header_color_secondary .fg-btn:hover { background-color: #660000; }
-.fg-header_color_secondary.fg-radio:hover { background-color: #990000; }
-.fg-header_color_secondary.fg-radio:hover .fg-radio__icon_float_left, .fg-header_color_secondary.fg-radio:hover .fg-radio__icon_float_right { background-color: #660000; }
-.fg-header_color_secondary.fg-radio .fg-radio__input:checked + .fg-radio__icon { background-color: #660000; }
-.fg-header_color_secondary.fg-radio .fg-radio__input:checked + .fg-radio__icon + .fg-radio__text { background-color: #990000; }
-.fg-header_color_secondary.fg-radio .fg-radio__input:checked + .fg-radio__text { background-color: #990000; }
-.fg-header_color_secondary.fg-checkbox:hover { background-color: #990000; }
-.fg-header_color_secondary.fg-checkbox:hover .fg-checkbox__icon_float_left, .fg-header_color_secondary.fg-checkbox:hover .fg-checkbox__icon_float_right { background-color: #660000; }
-.fg-header_color_secondary.fg-checkbox .fg-checkbox__input:checked + .fg-icon { background-color: #660000; }
-.fg-header_color_secondary.fg-checkbox .fg-checkbox__input:checked + .fg-icon + .fg-text { background-color: #990000; }
-.fg-header_color_secondary.fg-checkbox .fg-checkbox__input:checked + .fg-text { background-color: #990000; }
-.fg-header_color_secondary.fg-icon { color: red; background-color: inherit; }
-.fg-header_color_neutral { background-color: #676767; color: white; }
-.fg-header_color_neutral .fg-btn { background-color: #4d4d4d; }
-.fg-header_color_neutral .fg-btn:hover { background-color: #343434; }
-.fg-header_color_neutral.fg-radio:hover { background-color: #4d4d4d; }
-.fg-header_color_neutral.fg-radio:hover .fg-radio__icon_float_left, .fg-header_color_neutral.fg-radio:hover .fg-radio__icon_float_right { background-color: #343434; }
-.fg-header_color_neutral.fg-radio .fg-radio__input:checked + .fg-radio__icon { background-color: #343434; }
-.fg-header_color_neutral.fg-radio .fg-radio__input:checked + .fg-radio__icon + .fg-radio__text { background-color: #4d4d4d; }
-.fg-header_color_neutral.fg-radio .fg-radio__input:checked + .fg-radio__text { background-color: #4d4d4d; }
-.fg-header_color_neutral.fg-checkbox:hover { background-color: #4d4d4d; }
-.fg-header_color_neutral.fg-checkbox:hover .fg-checkbox__icon_float_left, .fg-header_color_neutral.fg-checkbox:hover .fg-checkbox__icon_float_right { background-color: #343434; }
-.fg-header_color_neutral.fg-checkbox .fg-checkbox__input:checked + .fg-icon { background-color: #343434; }
-.fg-header_color_neutral.fg-checkbox .fg-checkbox__input:checked + .fg-icon + .fg-text { background-color: #4d4d4d; }
-.fg-header_color_neutral.fg-checkbox .fg-checkbox__input:checked + .fg-text { background-color: #4d4d4d; }
-.fg-header_color_neutral.fg-icon { color: gray; background-color: inherit; }
-.fg-header_color_toolbar { background-color: #676767; color: white; }
-.fg-header_color_toolbar .fg-btn { background-color: #4d4d4d; }
-.fg-header_color_toolbar .fg-btn:hover { background-color: #343434; }
-.fg-header_color_toolbar.fg-radio:hover { background-color: #4d4d4d; }
-.fg-header_color_toolbar.fg-radio:hover .fg-radio__icon_float_left, .fg-header_color_toolbar.fg-radio:hover .fg-radio__icon_float_right { background-color: #343434; }
-.fg-header_color_toolbar.fg-radio .fg-radio__input:checked + .fg-radio__icon { background-color: #343434; }
-.fg-header_color_toolbar.fg-radio .fg-radio__input:checked + .fg-radio__icon + .fg-radio__text { background-color: #4d4d4d; }
-.fg-header_color_toolbar.fg-radio .fg-radio__input:checked + .fg-radio__text { background-color: #4d4d4d; }
-.fg-header_color_toolbar.fg-checkbox:hover { background-color: #4d4d4d; }
-.fg-header_color_toolbar.fg-checkbox:hover .fg-checkbox__icon_float_left, .fg-header_color_toolbar.fg-checkbox:hover .fg-checkbox__icon_float_right { background-color: #343434; }
-.fg-header_color_toolbar.fg-checkbox .fg-checkbox__input:checked + .fg-icon { background-color: #343434; }
-.fg-header_color_toolbar.fg-checkbox .fg-checkbox__input:checked + .fg-icon + .fg-text { background-color: #4d4d4d; }
-.fg-header_color_toolbar.fg-checkbox .fg-checkbox__input:checked + .fg-text { background-color: #4d4d4d; }
-.fg-header_color_toolbar.fg-icon { color: gray; background-color: inherit; }
-.fg-header_color_filter { background-color: #676767; color: white; }
-.fg-header_color_filter .fg-btn { background-color: #4d4d4d; }
-.fg-header_color_filter .fg-btn:hover { background-color: #343434; }
-.fg-header_color_filter.fg-radio:hover { background-color: #4d4d4d; }
-.fg-header_color_filter.fg-radio:hover .fg-radio__icon_float_left, .fg-header_color_filter.fg-radio:hover .fg-radio__icon_float_right { background-color: #343434; }
-.fg-header_color_filter.fg-radio .fg-radio__input:checked + .fg-radio__icon { background-color: #343434; }
-.fg-header_color_filter.fg-radio .fg-radio__input:checked + .fg-radio__icon + .fg-radio__text { background-color: #4d4d4d; }
-.fg-header_color_filter.fg-radio .fg-radio__input:checked + .fg-radio__text { background-color: #4d4d4d; }
-.fg-header_color_filter.fg-checkbox:hover { background-color: #4d4d4d; }
-.fg-header_color_filter.fg-checkbox:hover .fg-checkbox__icon_float_left, .fg-header_color_filter.fg-checkbox:hover .fg-checkbox__icon_float_right { background-color: #343434; }
-.fg-header_color_filter.fg-checkbox .fg-checkbox__input:checked + .fg-icon { background-color: #343434; }
-.fg-header_color_filter.fg-checkbox .fg-checkbox__input:checked + .fg-icon + .fg-text { background-color: #4d4d4d; }
-.fg-header_color_filter.fg-checkbox .fg-checkbox__input:checked + .fg-text { background-color: #4d4d4d; }
-.fg-header_color_filter.fg-icon { color: gray; background-color: inherit; }
-.fg-header_color_search { background-color: #cc0000; color: white; }
-.fg-header_color_search .fg-btn { background-color: #990000; }
-.fg-header_color_search .fg-btn:hover { background-color: #660000; }
-.fg-header_color_search.fg-radio:hover { background-color: #990000; }
-.fg-header_color_search.fg-radio:hover .fg-radio__icon_float_left, .fg-header_color_search.fg-radio:hover .fg-radio__icon_float_right { background-color: #660000; }
-.fg-header_color_search.fg-radio .fg-radio__input:checked + .fg-radio__icon { background-color: #660000; }
-.fg-header_color_search.fg-radio .fg-radio__input:checked + .fg-radio__icon + .fg-radio__text { background-color: #990000; }
-.fg-header_color_search.fg-radio .fg-radio__input:checked + .fg-radio__text { background-color: #990000; }
-.fg-header_color_search.fg-checkbox:hover { background-color: #990000; }
-.fg-header_color_search.fg-checkbox:hover .fg-checkbox__icon_float_left, .fg-header_color_search.fg-checkbox:hover .fg-checkbox__icon_float_right { background-color: #660000; }
-.fg-header_color_search.fg-checkbox .fg-checkbox__input:checked + .fg-icon { background-color: #660000; }
-.fg-header_color_search.fg-checkbox .fg-checkbox__input:checked + .fg-icon + .fg-text { background-color: #990000; }
-.fg-header_color_search.fg-checkbox .fg-checkbox__input:checked + .fg-text { background-color: #990000; }
-.fg-header_color_search.fg-icon { color: red; background-color: inherit; }
-.fg-header_color_update { background-color: #cc0000; color: white; }
-.fg-header_color_update .fg-btn { background-color: #990000; }
-.fg-header_color_update .fg-btn:hover { background-color: #660000; }
-.fg-header_color_update.fg-radio:hover { background-color: #990000; }
-.fg-header_color_update.fg-radio:hover .fg-radio__icon_float_left, .fg-header_color_update.fg-radio:hover .fg-radio__icon_float_right { background-color: #660000; }
-.fg-header_color_update.fg-radio .fg-radio__input:checked + .fg-radio__icon { background-color: #660000; }
-.fg-header_color_update.fg-radio .fg-radio__input:checked + .fg-radio__icon + .fg-radio__text { background-color: #990000; }
-.fg-header_color_update.fg-radio .fg-radio__input:checked + .fg-radio__text { background-color: #990000; }
-.fg-header_color_update.fg-checkbox:hover { background-color: #990000; }
-.fg-header_color_update.fg-checkbox:hover .fg-checkbox__icon_float_left, .fg-header_color_update.fg-checkbox:hover .fg-checkbox__icon_float_right { background-color: #660000; }
-.fg-header_color_update.fg-checkbox .fg-checkbox__input:checked + .fg-icon { background-color: #660000; }
-.fg-header_color_update.fg-checkbox .fg-checkbox__input:checked + .fg-icon + .fg-text { background-color: #990000; }
-.fg-header_color_update.fg-checkbox .fg-checkbox__input:checked + .fg-text { background-color: #990000; }
-.fg-header_color_update.fg-icon { color: red; background-color: inherit; }
-.fg-header_color_warning { background-color: #cc0000; color: white; }
-.fg-header_color_warning .fg-btn { background-color: #990000; }
-.fg-header_color_warning .fg-btn:hover { background-color: #660000; }
-.fg-header_color_warning.fg-radio:hover { background-color: #990000; }
-.fg-header_color_warning.fg-radio:hover .fg-radio__icon_float_left, .fg-header_color_warning.fg-radio:hover .fg-radio__icon_float_right { background-color: #660000; }
-.fg-header_color_warning.fg-radio .fg-radio__input:checked + .fg-radio__icon { background-color: #660000; }
-.fg-header_color_warning.fg-radio .fg-radio__input:checked + .fg-radio__icon + .fg-radio__text { background-color: #990000; }
-.fg-header_color_warning.fg-radio .fg-radio__input:checked + .fg-radio__text { background-color: #990000; }
-.fg-header_color_warning.fg-checkbox:hover { background-color: #990000; }
-.fg-header_color_warning.fg-checkbox:hover .fg-checkbox__icon_float_left, .fg-header_color_warning.fg-checkbox:hover .fg-checkbox__icon_float_right { background-color: #660000; }
-.fg-header_color_warning.fg-checkbox .fg-checkbox__input:checked + .fg-icon { background-color: #660000; }
-.fg-header_color_warning.fg-checkbox .fg-checkbox__input:checked + .fg-icon + .fg-text { background-color: #990000; }
-.fg-header_color_warning.fg-checkbox .fg-checkbox__input:checked + .fg-text { background-color: #990000; }
-.fg-header_color_warning.fg-icon { color: red; background-color: inherit; }
-.fg-header_color_alert { background-color: #cc0000; color: white; }
-.fg-header_color_alert .fg-btn { background-color: #990000; }
-.fg-header_color_alert .fg-btn:hover { background-color: #660000; }
-.fg-header_color_alert.fg-radio:hover { background-color: #990000; }
-.fg-header_color_alert.fg-radio:hover .fg-radio__icon_float_left, .fg-header_color_alert.fg-radio:hover .fg-radio__icon_float_right { background-color: #660000; }
-.fg-header_color_alert.fg-radio .fg-radio__input:checked + .fg-radio__icon { background-color: #660000; }
-.fg-header_color_alert.fg-radio .fg-radio__input:checked + .fg-radio__icon + .fg-radio__text { background-color: #990000; }
-.fg-header_color_alert.fg-radio .fg-radio__input:checked + .fg-radio__text { background-color: #990000; }
-.fg-header_color_alert.fg-checkbox:hover { background-color: #990000; }
-.fg-header_color_alert.fg-checkbox:hover .fg-checkbox__icon_float_left, .fg-header_color_alert.fg-checkbox:hover .fg-checkbox__icon_float_right { background-color: #660000; }
-.fg-header_color_alert.fg-checkbox .fg-checkbox__input:checked + .fg-icon { background-color: #660000; }
-.fg-header_color_alert.fg-checkbox .fg-checkbox__input:checked + .fg-icon + .fg-text { background-color: #990000; }
-.fg-header_color_alert.fg-checkbox .fg-checkbox__input:checked + .fg-text { background-color: #990000; }
-.fg-header_color_alert.fg-icon { color: red; background-color: inherit; }
-.fg-header_color_info { background-color: #cc0000; color: white; }
-.fg-header_color_info .fg-btn { background-color: #990000; }
-.fg-header_color_info .fg-btn:hover { background-color: #660000; }
-.fg-header_color_info.fg-radio:hover { background-color: #990000; }
-.fg-header_color_info.fg-radio:hover .fg-radio__icon_float_left, .fg-header_color_info.fg-radio:hover .fg-radio__icon_float_right { background-color: #660000; }
-.fg-header_color_info.fg-radio .fg-radio__input:checked + .fg-radio__icon { background-color: #660000; }
-.fg-header_color_info.fg-radio .fg-radio__input:checked + .fg-radio__icon + .fg-radio__text { background-color: #990000; }
-.fg-header_color_info.fg-radio .fg-radio__input:checked + .fg-radio__text { background-color: #990000; }
-.fg-header_color_info.fg-checkbox:hover { background-color: #990000; }
-.fg-header_color_info.fg-checkbox:hover .fg-checkbox__icon_float_left, .fg-header_color_info.fg-checkbox:hover .fg-checkbox__icon_float_right { background-color: #660000; }
-.fg-header_color_info.fg-checkbox .fg-checkbox__input:checked + .fg-icon { background-color: #660000; }
-.fg-header_color_info.fg-checkbox .fg-checkbox__input:checked + .fg-icon + .fg-text { background-color: #990000; }
-.fg-header_color_info.fg-checkbox .fg-checkbox__input:checked + .fg-text { background-color: #990000; }
-.fg-header_color_info.fg-icon { color: red; background-color: inherit; }
-.fg-header_color_success { background-color: #cc0000; color: white; }
-.fg-header_color_success .fg-btn { background-color: #990000; }
-.fg-header_color_success .fg-btn:hover { background-color: #660000; }
-.fg-header_color_success.fg-radio:hover { background-color: #990000; }
-.fg-header_color_success.fg-radio:hover .fg-radio__icon_float_left, .fg-header_color_success.fg-radio:hover .fg-radio__icon_float_right { background-color: #660000; }
-.fg-header_color_success.fg-radio .fg-radio__input:checked + .fg-radio__icon { background-color: #660000; }
-.fg-header_color_success.fg-radio .fg-radio__input:checked + .fg-radio__icon + .fg-radio__text { background-color: #990000; }
-.fg-header_color_success.fg-radio .fg-radio__input:checked + .fg-radio__text { background-color: #990000; }
-.fg-header_color_success.fg-checkbox:hover { background-color: #990000; }
-.fg-header_color_success.fg-checkbox:hover .fg-checkbox__icon_float_left, .fg-header_color_success.fg-checkbox:hover .fg-checkbox__icon_float_right { background-color: #660000; }
-.fg-header_color_success.fg-checkbox .fg-checkbox__input:checked + .fg-icon { background-color: #660000; }
-.fg-header_color_success.fg-checkbox .fg-checkbox__input:checked + .fg-icon + .fg-text { background-color: #990000; }
-.fg-header_color_success.fg-checkbox .fg-checkbox__input:checked + .fg-text { background-color: #990000; }
-.fg-header_color_success.fg-icon { color: red; background-color: inherit; }
-.fg-header_color_error { background-color: #cc0000; color: white; }
-.fg-header_color_error .fg-btn { background-color: #990000; }
-.fg-header_color_error .fg-btn:hover { background-color: #660000; }
-.fg-header_color_error.fg-radio:hover { background-color: #990000; }
-.fg-header_color_error.fg-radio:hover .fg-radio__icon_float_left, .fg-header_color_error.fg-radio:hover .fg-radio__icon_float_right { background-color: #660000; }
-.fg-header_color_error.fg-radio .fg-radio__input:checked + .fg-radio__icon { background-color: #660000; }
-.fg-header_color_error.fg-radio .fg-radio__input:checked + .fg-radio__icon + .fg-radio__text { background-color: #990000; }
-.fg-header_color_error.fg-radio .fg-radio__input:checked + .fg-radio__text { background-color: #990000; }
-.fg-header_color_error.fg-checkbox:hover { background-color: #990000; }
-.fg-header_color_error.fg-checkbox:hover .fg-checkbox__icon_float_left, .fg-header_color_error.fg-checkbox:hover .fg-checkbox__icon_float_right { background-color: #660000; }
-.fg-header_color_error.fg-checkbox .fg-checkbox__input:checked + .fg-icon { background-color: #660000; }
-.fg-header_color_error.fg-checkbox .fg-checkbox__input:checked + .fg-icon + .fg-text { background-color: #990000; }
-.fg-header_color_error.fg-checkbox .fg-checkbox__input:checked + .fg-text { background-color: #990000; }
-.fg-header_color_error.fg-icon { color: red; background-color: inherit; }
-.fg-header_color_badge { background-color: #cc0000; color: white; }
-.fg-header_color_badge .fg-btn { background-color: #990000; }
-.fg-header_color_badge .fg-btn:hover { background-color: #660000; }
-.fg-header_color_badge.fg-radio:hover { background-color: #990000; }
-.fg-header_color_badge.fg-radio:hover .fg-radio__icon_float_left, .fg-header_color_badge.fg-radio:hover .fg-radio__icon_float_right { background-color: #660000; }
-.fg-header_color_badge.fg-radio .fg-radio__input:checked + .fg-radio__icon { background-color: #660000; }
-.fg-header_color_badge.fg-radio .fg-radio__input:checked + .fg-radio__icon + .fg-radio__text { background-color: #990000; }
-.fg-header_color_badge.fg-radio .fg-radio__input:checked + .fg-radio__text { background-color: #990000; }
-.fg-header_color_badge.fg-checkbox:hover { background-color: #990000; }
-.fg-header_color_badge.fg-checkbox:hover .fg-checkbox__icon_float_left, .fg-header_color_badge.fg-checkbox:hover .fg-checkbox__icon_float_right { background-color: #660000; }
-.fg-header_color_badge.fg-checkbox .fg-checkbox__input:checked + .fg-icon { background-color: #660000; }
-.fg-header_color_badge.fg-checkbox .fg-checkbox__input:checked + .fg-icon + .fg-text { background-color: #990000; }
-.fg-header_color_badge.fg-checkbox .fg-checkbox__input:checked + .fg-text { background-color: #990000; }
-.fg-header_color_badge.fg-icon { color: red; background-color: inherit; }
-.fg-header_color_highlight { background-color: #ffb9b9; color: #b55050; }
-.fg-header_color_highlight .fg-btn { background-color: #ff8686; }
-.fg-header_color_highlight .fg-btn:hover { background-color: #ff5353; }
-.fg-header_color_highlight.fg-radio:hover { background-color: #ff8686; }
-.fg-header_color_highlight.fg-radio:hover .fg-radio__icon_float_left, .fg-header_color_highlight.fg-radio:hover .fg-radio__icon_float_right { background-color: #ff5353; }
-.fg-header_color_highlight.fg-radio .fg-radio__input:checked + .fg-radio__icon { background-color: #ff5353; }
-.fg-header_color_highlight.fg-radio .fg-radio__input:checked + .fg-radio__icon + .fg-radio__text { background-color: #ff8686; }
-.fg-header_color_highlight.fg-radio .fg-radio__input:checked + .fg-radio__text { background-color: #ff8686; }
-.fg-header_color_highlight.fg-checkbox:hover { background-color: #ff8686; }
-.fg-header_color_highlight.fg-checkbox:hover .fg-checkbox__icon_float_left, .fg-header_color_highlight.fg-checkbox:hover .fg-checkbox__icon_float_right { background-color: #ff5353; }
-.fg-header_color_highlight.fg-checkbox .fg-checkbox__input:checked + .fg-icon { background-color: #ff5353; }
-.fg-header_color_highlight.fg-checkbox .fg-checkbox__input:checked + .fg-icon + .fg-text { background-color: #ff8686; }
-.fg-header_color_highlight.fg-checkbox .fg-checkbox__input:checked + .fg-text { background-color: #ff8686; }
-.fg-header_color_highlight.fg-icon { color: #ffecec; background-color: inherit; }
-.fg-header .fg-btn_color_principal { background-color: #0000cc; color: white; }
-.fg-header .fg-btn_color_principal .fg-btn { background-color: #000099; }
-.fg-header .fg-btn_color_principal .fg-btn:hover { background-color: #000066; }
-.fg-header .fg-btn_color_principal.fg-radio:hover { background-color: #000099; }
-.fg-header .fg-btn_color_principal.fg-radio:hover .fg-radio__icon_float_left, .fg-header .fg-btn_color_principal.fg-radio:hover .fg-radio__icon_float_right { background-color: #000066; }
-.fg-header .fg-btn_color_principal.fg-radio .fg-radio__input:checked + .fg-radio__icon { background-color: #000066; }
-.fg-header .fg-btn_color_principal.fg-radio .fg-radio__input:checked + .fg-radio__icon + .fg-radio__text { background-color: #000099; }
-.fg-header .fg-btn_color_principal.fg-radio .fg-radio__input:checked + .fg-radio__text { background-color: #000099; }
-.fg-header .fg-btn_color_principal.fg-checkbox:hover { background-color: #000099; }
-.fg-header .fg-btn_color_principal.fg-checkbox:hover .fg-checkbox__icon_float_left, .fg-header .fg-btn_color_principal.fg-checkbox:hover .fg-checkbox__icon_float_right { background-color: #000066; }
-.fg-header .fg-btn_color_principal.fg-checkbox .fg-checkbox__input:checked + .fg-icon { background-color: #000066; }
-.fg-header .fg-btn_color_principal.fg-checkbox .fg-checkbox__input:checked + .fg-icon + .fg-text { background-color: #000099; }
-.fg-header .fg-btn_color_principal.fg-checkbox .fg-checkbox__input:checked + .fg-text { background-color: #000099; }
-.fg-header .fg-btn_color_principal.fg-icon { color: blue; background-color: inherit; }
-.fg-header .fg-btn_color_secondary { background-color: #cc0000; color: white; }
-.fg-header .fg-btn_color_secondary .fg-btn { background-color: #990000; }
-.fg-header .fg-btn_color_secondary .fg-btn:hover { background-color: #660000; }
-.fg-header .fg-btn_color_secondary.fg-radio:hover { background-color: #990000; }
-.fg-header .fg-btn_color_secondary.fg-radio:hover .fg-radio__icon_float_left, .fg-header .fg-btn_color_secondary.fg-radio:hover .fg-radio__icon_float_right { background-color: #660000; }
-.fg-header .fg-btn_color_secondary.fg-radio .fg-radio__input:checked + .fg-radio__icon { background-color: #660000; }
-.fg-header .fg-btn_color_secondary.fg-radio .fg-radio__input:checked + .fg-radio__icon + .fg-radio__text { background-color: #990000; }
-.fg-header .fg-btn_color_secondary.fg-radio .fg-radio__input:checked + .fg-radio__text { background-color: #990000; }
-.fg-header .fg-btn_color_secondary.fg-checkbox:hover { background-color: #990000; }
-.fg-header .fg-btn_color_secondary.fg-checkbox:hover .fg-checkbox__icon_float_left, .fg-header .fg-btn_color_secondary.fg-checkbox:hover .fg-checkbox__icon_float_right { background-color: #660000; }
-.fg-header .fg-btn_color_secondary.fg-checkbox .fg-checkbox__input:checked + .fg-icon { background-color: #660000; }
-.fg-header .fg-btn_color_secondary.fg-checkbox .fg-checkbox__input:checked + .fg-icon + .fg-text { background-color: #990000; }
-.fg-header .fg-btn_color_secondary.fg-checkbox .fg-checkbox__input:checked + .fg-text { background-color: #990000; }
-.fg-header .fg-btn_color_secondary.fg-icon { color: red; background-color: inherit; }
-.fg-header .fg-btn_color_neutral { background-color: #676767; color: white; }
-.fg-header .fg-btn_color_neutral .fg-btn { background-color: #4d4d4d; }
-.fg-header .fg-btn_color_neutral .fg-btn:hover { background-color: #343434; }
-.fg-header .fg-btn_color_neutral.fg-radio:hover { background-color: #4d4d4d; }
-.fg-header .fg-btn_color_neutral.fg-radio:hover .fg-radio__icon_float_left, .fg-header .fg-btn_color_neutral.fg-radio:hover .fg-radio__icon_float_right { background-color: #343434; }
-.fg-header .fg-btn_color_neutral.fg-radio .fg-radio__input:checked + .fg-radio__icon { background-color: #343434; }
-.fg-header .fg-btn_color_neutral.fg-radio .fg-radio__input:checked + .fg-radio__icon + .fg-radio__text { background-color: #4d4d4d; }
-.fg-header .fg-btn_color_neutral.fg-radio .fg-radio__input:checked + .fg-radio__text { background-color: #4d4d4d; }
-.fg-header .fg-btn_color_neutral.fg-checkbox:hover { background-color: #4d4d4d; }
-.fg-header .fg-btn_color_neutral.fg-checkbox:hover .fg-checkbox__icon_float_left, .fg-header .fg-btn_color_neutral.fg-checkbox:hover .fg-checkbox__icon_float_right { background-color: #343434; }
-.fg-header .fg-btn_color_neutral.fg-checkbox .fg-checkbox__input:checked + .fg-icon { background-color: #343434; }
-.fg-header .fg-btn_color_neutral.fg-checkbox .fg-checkbox__input:checked + .fg-icon + .fg-text { background-color: #4d4d4d; }
-.fg-header .fg-btn_color_neutral.fg-checkbox .fg-checkbox__input:checked + .fg-text { background-color: #4d4d4d; }
-.fg-header .fg-btn_color_neutral.fg-icon { color: gray; background-color: inherit; }
-.fg-header .fg-btn_color_toolbar { background-color: #676767; color: white; }
-.fg-header .fg-btn_color_toolbar .fg-btn { background-color: #4d4d4d; }
-.fg-header .fg-btn_color_toolbar .fg-btn:hover { background-color: #343434; }
-.fg-header .fg-btn_color_toolbar.fg-radio:hover { background-color: #4d4d4d; }
-.fg-header .fg-btn_color_toolbar.fg-radio:hover .fg-radio__icon_float_left, .fg-header .fg-btn_color_toolbar.fg-radio:hover .fg-radio__icon_float_right { background-color: #343434; }
-.fg-header .fg-btn_color_toolbar.fg-radio .fg-radio__input:checked + .fg-radio__icon { background-color: #343434; }
-.fg-header .fg-btn_color_toolbar.fg-radio .fg-radio__input:checked + .fg-radio__icon + .fg-radio__text { background-color: #4d4d4d; }
-.fg-header .fg-btn_color_toolbar.fg-radio .fg-radio__input:checked + .fg-radio__text { background-color: #4d4d4d; }
-.fg-header .fg-btn_color_toolbar.fg-checkbox:hover { background-color: #4d4d4d; }
-.fg-header .fg-btn_color_toolbar.fg-checkbox:hover .fg-checkbox__icon_float_left, .fg-header .fg-btn_color_toolbar.fg-checkbox:hover .fg-checkbox__icon_float_right { background-color: #343434; }
-.fg-header .fg-btn_color_toolbar.fg-checkbox .fg-checkbox__input:checked + .fg-icon { background-color: #343434; }
-.fg-header .fg-btn_color_toolbar.fg-checkbox .fg-checkbox__input:checked + .fg-icon + .fg-text { background-color: #4d4d4d; }
-.fg-header .fg-btn_color_toolbar.fg-checkbox .fg-checkbox__input:checked + .fg-text { background-color: #4d4d4d; }
-.fg-header .fg-btn_color_toolbar.fg-icon { color: gray; background-color: inherit; }
-.fg-header .fg-btn_color_filter { background-color: #676767; color: white; }
-.fg-header .fg-btn_color_filter .fg-btn { background-color: #4d4d4d; }
-.fg-header .fg-btn_color_filter .fg-btn:hover { background-color: #343434; }
-.fg-header .fg-btn_color_filter.fg-radio:hover { background-color: #4d4d4d; }
-.fg-header .fg-btn_color_filter.fg-radio:hover .fg-radio__icon_float_left, .fg-header .fg-btn_color_filter.fg-radio:hover .fg-radio__icon_float_right { background-color: #343434; }
-.fg-header .fg-btn_color_filter.fg-radio .fg-radio__input:checked + .fg-radio__icon { background-color: #343434; }
-.fg-header .fg-btn_color_filter.fg-radio .fg-radio__input:checked + .fg-radio__icon + .fg-radio__text { background-color: #4d4d4d; }
-.fg-header .fg-btn_color_filter.fg-radio .fg-radio__input:checked + .fg-radio__text { background-color: #4d4d4d; }
-.fg-header .fg-btn_color_filter.fg-checkbox:hover { background-color: #4d4d4d; }
-.fg-header .fg-btn_color_filter.fg-checkbox:hover .fg-checkbox__icon_float_left, .fg-header .fg-btn_color_filter.fg-checkbox:hover .fg-checkbox__icon_float_right { background-color: #343434; }
-.fg-header .fg-btn_color_filter.fg-checkbox .fg-checkbox__input:checked + .fg-icon { background-color: #343434; }
-.fg-header .fg-btn_color_filter.fg-checkbox .fg-checkbox__input:checked + .fg-icon + .fg-text { background-color: #4d4d4d; }
-.fg-header .fg-btn_color_filter.fg-checkbox .fg-checkbox__input:checked + .fg-text { background-color: #4d4d4d; }
-.fg-header .fg-btn_color_filter.fg-icon { color: gray; background-color: inherit; }
-.fg-header .fg-btn_color_search { background-color: #cc0000; color: white; }
-.fg-header .fg-btn_color_search .fg-btn { background-color: #990000; }
-.fg-header .fg-btn_color_search .fg-btn:hover { background-color: #660000; }
-.fg-header .fg-btn_color_search.fg-radio:hover { background-color: #990000; }
-.fg-header .fg-btn_color_search.fg-radio:hover .fg-radio__icon_float_left, .fg-header .fg-btn_color_search.fg-radio:hover .fg-radio__icon_float_right { background-color: #660000; }
-.fg-header .fg-btn_color_search.fg-radio .fg-radio__input:checked + .fg-radio__icon { background-color: #660000; }
-.fg-header .fg-btn_color_search.fg-radio .fg-radio__input:checked + .fg-radio__icon + .fg-radio__text { background-color: #990000; }
-.fg-header .fg-btn_color_search.fg-radio .fg-radio__input:checked + .fg-radio__text { background-color: #990000; }
-.fg-header .fg-btn_color_search.fg-checkbox:hover { background-color: #990000; }
-.fg-header .fg-btn_color_search.fg-checkbox:hover .fg-checkbox__icon_float_left, .fg-header .fg-btn_color_search.fg-checkbox:hover .fg-checkbox__icon_float_right { background-color: #660000; }
-.fg-header .fg-btn_color_search.fg-checkbox .fg-checkbox__input:checked + .fg-icon { background-color: #660000; }
-.fg-header .fg-btn_color_search.fg-checkbox .fg-checkbox__input:checked + .fg-icon + .fg-text { background-color: #990000; }
-.fg-header .fg-btn_color_search.fg-checkbox .fg-checkbox__input:checked + .fg-text { background-color: #990000; }
-.fg-header .fg-btn_color_search.fg-icon { color: red; background-color: inherit; }
-.fg-header .fg-btn_color_update { background-color: #cc0000; color: white; }
-.fg-header .fg-btn_color_update .fg-btn { background-color: #990000; }
-.fg-header .fg-btn_color_update .fg-btn:hover { background-color: #660000; }
-.fg-header .fg-btn_color_update.fg-radio:hover { background-color: #990000; }
-.fg-header .fg-btn_color_update.fg-radio:hover .fg-radio__icon_float_left, .fg-header .fg-btn_color_update.fg-radio:hover .fg-radio__icon_float_right { background-color: #660000; }
-.fg-header .fg-btn_color_update.fg-radio .fg-radio__input:checked + .fg-radio__icon { background-color: #660000; }
-.fg-header .fg-btn_color_update.fg-radio .fg-radio__input:checked + .fg-radio__icon + .fg-radio__text { background-color: #990000; }
-.fg-header .fg-btn_color_update.fg-radio .fg-radio__input:checked + .fg-radio__text { background-color: #990000; }
-.fg-header .fg-btn_color_update.fg-checkbox:hover { background-color: #990000; }
-.fg-header .fg-btn_color_update.fg-checkbox:hover .fg-checkbox__icon_float_left, .fg-header .fg-btn_color_update.fg-checkbox:hover .fg-checkbox__icon_float_right { background-color: #660000; }
-.fg-header .fg-btn_color_update.fg-checkbox .fg-checkbox__input:checked + .fg-icon { background-color: #660000; }
-.fg-header .fg-btn_color_update.fg-checkbox .fg-checkbox__input:checked + .fg-icon + .fg-text { background-color: #990000; }
-.fg-header .fg-btn_color_update.fg-checkbox .fg-checkbox__input:checked + .fg-text { background-color: #990000; }
-.fg-header .fg-btn_color_update.fg-icon { color: red; background-color: inherit; }
-.fg-header .fg-btn_color_warning { background-color: #cc0000; color: white; }
-.fg-header .fg-btn_color_warning .fg-btn { background-color: #990000; }
-.fg-header .fg-btn_color_warning .fg-btn:hover { background-color: #660000; }
-.fg-header .fg-btn_color_warning.fg-radio:hover { background-color: #990000; }
-.fg-header .fg-btn_color_warning.fg-radio:hover .fg-radio__icon_float_left, .fg-header .fg-btn_color_warning.fg-radio:hover .fg-radio__icon_float_right { background-color: #660000; }
-.fg-header .fg-btn_color_warning.fg-radio .fg-radio__input:checked + .fg-radio__icon { background-color: #660000; }
-.fg-header .fg-btn_color_warning.fg-radio .fg-radio__input:checked + .fg-radio__icon + .fg-radio__text { background-color: #990000; }
-.fg-header .fg-btn_color_warning.fg-radio .fg-radio__input:checked + .fg-radio__text { background-color: #990000; }
-.fg-header .fg-btn_color_warning.fg-checkbox:hover { background-color: #990000; }
-.fg-header .fg-btn_color_warning.fg-checkbox:hover .fg-checkbox__icon_float_left, .fg-header .fg-btn_color_warning.fg-checkbox:hover .fg-checkbox__icon_float_right { background-color: #660000; }
-.fg-header .fg-btn_color_warning.fg-checkbox .fg-checkbox__input:checked + .fg-icon { background-color: #660000; }
-.fg-header .fg-btn_color_warning.fg-checkbox .fg-checkbox__input:checked + .fg-icon + .fg-text { background-color: #990000; }
-.fg-header .fg-btn_color_warning.fg-checkbox .fg-checkbox__input:checked + .fg-text { background-color: #990000; }
-.fg-header .fg-btn_color_warning.fg-icon { color: red; background-color: inherit; }
-.fg-header .fg-btn_color_alert { background-color: #cc0000; color: white; }
-.fg-header .fg-btn_color_alert .fg-btn { background-color: #990000; }
-.fg-header .fg-btn_color_alert .fg-btn:hover { background-color: #660000; }
-.fg-header .fg-btn_color_alert.fg-radio:hover { background-color: #990000; }
-.fg-header .fg-btn_color_alert.fg-radio:hover .fg-radio__icon_float_left, .fg-header .fg-btn_color_alert.fg-radio:hover .fg-radio__icon_float_right { background-color: #660000; }
-.fg-header .fg-btn_color_alert.fg-radio .fg-radio__input:checked + .fg-radio__icon { background-color: #660000; }
-.fg-header .fg-btn_color_alert.fg-radio .fg-radio__input:checked + .fg-radio__icon + .fg-radio__text { background-color: #990000; }
-.fg-header .fg-btn_color_alert.fg-radio .fg-radio__input:checked + .fg-radio__text { background-color: #990000; }
-.fg-header .fg-btn_color_alert.fg-checkbox:hover { background-color: #990000; }
-.fg-header .fg-btn_color_alert.fg-checkbox:hover .fg-checkbox__icon_float_left, .fg-header .fg-btn_color_alert.fg-checkbox:hover .fg-checkbox__icon_float_right { background-color: #660000; }
-.fg-header .fg-btn_color_alert.fg-checkbox .fg-checkbox__input:checked + .fg-icon { background-color: #660000; }
-.fg-header .fg-btn_color_alert.fg-checkbox .fg-checkbox__input:checked + .fg-icon + .fg-text { background-color: #990000; }
-.fg-header .fg-btn_color_alert.fg-checkbox .fg-checkbox__input:checked + .fg-text { background-color: #990000; }
-.fg-header .fg-btn_color_alert.fg-icon { color: red; background-color: inherit; }
-.fg-header .fg-btn_color_info { background-color: #cc0000; color: white; }
-.fg-header .fg-btn_color_info .fg-btn { background-color: #990000; }
-.fg-header .fg-btn_color_info .fg-btn:hover { background-color: #660000; }
-.fg-header .fg-btn_color_info.fg-radio:hover { background-color: #990000; }
-.fg-header .fg-btn_color_info.fg-radio:hover .fg-radio__icon_float_left, .fg-header .fg-btn_color_info.fg-radio:hover .fg-radio__icon_float_right { background-color: #660000; }
-.fg-header .fg-btn_color_info.fg-radio .fg-radio__input:checked + .fg-radio__icon { background-color: #660000; }
-.fg-header .fg-btn_color_info.fg-radio .fg-radio__input:checked + .fg-radio__icon + .fg-radio__text { background-color: #990000; }
-.fg-header .fg-btn_color_info.fg-radio .fg-radio__input:checked + .fg-radio__text { background-color: #990000; }
-.fg-header .fg-btn_color_info.fg-checkbox:hover { background-color: #990000; }
-.fg-header .fg-btn_color_info.fg-checkbox:hover .fg-checkbox__icon_float_left, .fg-header .fg-btn_color_info.fg-checkbox:hover .fg-checkbox__icon_float_right { background-color: #660000; }
-.fg-header .fg-btn_color_info.fg-checkbox .fg-checkbox__input:checked + .fg-icon { background-color: #660000; }
-.fg-header .fg-btn_color_info.fg-checkbox .fg-checkbox__input:checked + .fg-icon + .fg-text { background-color: #990000; }
-.fg-header .fg-btn_color_info.fg-checkbox .fg-checkbox__input:checked + .fg-text { background-color: #990000; }
-.fg-header .fg-btn_color_info.fg-icon { color: red; background-color: inherit; }
-.fg-header .fg-btn_color_success { background-color: #cc0000; color: white; }
-.fg-header .fg-btn_color_success .fg-btn { background-color: #990000; }
-.fg-header .fg-btn_color_success .fg-btn:hover { background-color: #660000; }
-.fg-header .fg-btn_color_success.fg-radio:hover { background-color: #990000; }
-.fg-header .fg-btn_color_success.fg-radio:hover .fg-radio__icon_float_left, .fg-header .fg-btn_color_success.fg-radio:hover .fg-radio__icon_float_right { background-color: #660000; }
-.fg-header .fg-btn_color_success.fg-radio .fg-radio__input:checked + .fg-radio__icon { background-color: #660000; }
-.fg-header .fg-btn_color_success.fg-radio .fg-radio__input:checked + .fg-radio__icon + .fg-radio__text { background-color: #990000; }
-.fg-header .fg-btn_color_success.fg-radio .fg-radio__input:checked + .fg-radio__text { background-color: #990000; }
-.fg-header .fg-btn_color_success.fg-checkbox:hover { background-color: #990000; }
-.fg-header .fg-btn_color_success.fg-checkbox:hover .fg-checkbox__icon_float_left, .fg-header .fg-btn_color_success.fg-checkbox:hover .fg-checkbox__icon_float_right { background-color: #660000; }
-.fg-header .fg-btn_color_success.fg-checkbox .fg-checkbox__input:checked + .fg-icon { background-color: #660000; }
-.fg-header .fg-btn_color_success.fg-checkbox .fg-checkbox__input:checked + .fg-icon + .fg-text { background-color: #990000; }
-.fg-header .fg-btn_color_success.fg-checkbox .fg-checkbox__input:checked + .fg-text { background-color: #990000; }
-.fg-header .fg-btn_color_success.fg-icon { color: red; background-color: inherit; }
-.fg-header .fg-btn_color_error { background-color: #cc0000; color: white; }
-.fg-header .fg-btn_color_error .fg-btn { background-color: #990000; }
-.fg-header .fg-btn_color_error .fg-btn:hover { background-color: #660000; }
-.fg-header .fg-btn_color_error.fg-radio:hover { background-color: #990000; }
-.fg-header .fg-btn_color_error.fg-radio:hover .fg-radio__icon_float_left, .fg-header .fg-btn_color_error.fg-radio:hover .fg-radio__icon_float_right { background-color: #660000; }
-.fg-header .fg-btn_color_error.fg-radio .fg-radio__input:checked + .fg-radio__icon { background-color: #660000; }
-.fg-header .fg-btn_color_error.fg-radio .fg-radio__input:checked + .fg-radio__icon + .fg-radio__text { background-color: #990000; }
-.fg-header .fg-btn_color_error.fg-radio .fg-radio__input:checked + .fg-radio__text { background-color: #990000; }
-.fg-header .fg-btn_color_error.fg-checkbox:hover { background-color: #990000; }
-.fg-header .fg-btn_color_error.fg-checkbox:hover .fg-checkbox__icon_float_left, .fg-header .fg-btn_color_error.fg-checkbox:hover .fg-checkbox__icon_float_right { background-color: #660000; }
-.fg-header .fg-btn_color_error.fg-checkbox .fg-checkbox__input:checked + .fg-icon { background-color: #660000; }
-.fg-header .fg-btn_color_error.fg-checkbox .fg-checkbox__input:checked + .fg-icon + .fg-text { background-color: #990000; }
-.fg-header .fg-btn_color_error.fg-checkbox .fg-checkbox__input:checked + .fg-text { background-color: #990000; }
-.fg-header .fg-btn_color_error.fg-icon { color: red; background-color: inherit; }
-.fg-header .fg-btn_color_badge { background-color: #cc0000; color: white; }
-.fg-header .fg-btn_color_badge .fg-btn { background-color: #990000; }
-.fg-header .fg-btn_color_badge .fg-btn:hover { background-color: #660000; }
-.fg-header .fg-btn_color_badge.fg-radio:hover { background-color: #990000; }
-.fg-header .fg-btn_color_badge.fg-radio:hover .fg-radio__icon_float_left, .fg-header .fg-btn_color_badge.fg-radio:hover .fg-radio__icon_float_right { background-color: #660000; }
-.fg-header .fg-btn_color_badge.fg-radio .fg-radio__input:checked + .fg-radio__icon { background-color: #660000; }
-.fg-header .fg-btn_color_badge.fg-radio .fg-radio__input:checked + .fg-radio__icon + .fg-radio__text { background-color: #990000; }
-.fg-header .fg-btn_color_badge.fg-radio .fg-radio__input:checked + .fg-radio__text { background-color: #990000; }
-.fg-header .fg-btn_color_badge.fg-checkbox:hover { background-color: #990000; }
-.fg-header .fg-btn_color_badge.fg-checkbox:hover .fg-checkbox__icon_float_left, .fg-header .fg-btn_color_badge.fg-checkbox:hover .fg-checkbox__icon_float_right { background-color: #660000; }
-.fg-header .fg-btn_color_badge.fg-checkbox .fg-checkbox__input:checked + .fg-icon { background-color: #660000; }
-.fg-header .fg-btn_color_badge.fg-checkbox .fg-checkbox__input:checked + .fg-icon + .fg-text { background-color: #990000; }
-.fg-header .fg-btn_color_badge.fg-checkbox .fg-checkbox__input:checked + .fg-text { background-color: #990000; }
-.fg-header .fg-btn_color_badge.fg-icon { color: red; background-color: inherit; }
-.fg-header .fg-btn_color_highlight { background-color: #ffb9b9; color: #b55050; }
-.fg-header .fg-btn_color_highlight .fg-btn { background-color: #ff8686; }
-.fg-header .fg-btn_color_highlight .fg-btn:hover { background-color: #ff5353; }
-.fg-header .fg-btn_color_highlight.fg-radio:hover { background-color: #ff8686; }
-.fg-header .fg-btn_color_highlight.fg-radio:hover .fg-radio__icon_float_left, .fg-header .fg-btn_color_highlight.fg-radio:hover .fg-radio__icon_float_right { background-color: #ff5353; }
-.fg-header .fg-btn_color_highlight.fg-radio .fg-radio__input:checked + .fg-radio__icon { background-color: #ff5353; }
-.fg-header .fg-btn_color_highlight.fg-radio .fg-radio__input:checked + .fg-radio__icon + .fg-radio__text { background-color: #ff8686; }
-.fg-header .fg-btn_color_highlight.fg-radio .fg-radio__input:checked + .fg-radio__text { background-color: #ff8686; }
-.fg-header .fg-btn_color_highlight.fg-checkbox:hover { background-color: #ff8686; }
-.fg-header .fg-btn_color_highlight.fg-checkbox:hover .fg-checkbox__icon_float_left, .fg-header .fg-btn_color_highlight.fg-checkbox:hover .fg-checkbox__icon_float_right { background-color: #ff5353; }
-.fg-header .fg-btn_color_highlight.fg-checkbox .fg-checkbox__input:checked + .fg-icon { background-color: #ff5353; }
-.fg-header .fg-btn_color_highlight.fg-checkbox .fg-checkbox__input:checked + .fg-icon + .fg-text { background-color: #ff8686; }
-.fg-header .fg-btn_color_highlight.fg-checkbox .fg-checkbox__input:checked + .fg-text { background-color: #ff8686; }
-.fg-header .fg-btn_color_highlight.fg-icon { color: #ffecec; background-color: inherit; }
-.fg-header:after { content: ""; clear: both; display: table; }
 .fg-badge { background-color: red; color: white; border-radius: 1rem; min-width: 2rem; display: inline-block; text-align: center; line-height: 2rem; padding: 0 0.3rem; box-sizing: border-box; }
 .fg-checkbox { position: relative; cursor: pointer; font-size: inherit; border: 0; padding: 0; font-family: inherit; display: inline-block; line-height: 2rem; }
 .fg-checkbox__label { cursor: pointer; }
@@ -1163,31 +398,28 @@ body { font-size: 13px; }
 .fg-checkbox__text_float_left { float: left; }
 .fg-checkbox__text_float_right { float: right; }
 .fg-checkbox:after { content: ""; clear: both; display: table; }
-.fg-radio { position: relative; cursor: pointer; font-size: inherit; border: 0; padding: 0; font-family: inherit; display: inline-block; line-height: 2rem; }
-.fg-radio__icon_float_left { float: left; }
-.fg-radio__icon_float_right { float: right; }
-.fg-radio__text { padding: 0 0.5rem; display: inline-block; }
-.fg-radio__label { cursor: pointer; }
+.fg-radio { position: relative; cursor: pointer; font-size: inherit; border: 0; padding: 0; font-family: inherit; display: block; line-height: 2rem; }
+.fg-radio__icon.fg_float_left + .fg-radio__text { text-align: left; float: left; }
+.fg-radio__icon.fg_float_right + .fg-radio__text { text-align: right; float: right; }
+.fg-radio__text { padding: 0 0.5rem; display: block; text-align: center; }
+.fg-radio__label { cursor: pointer; display: block; }
+.fg-radio__label:after { content: ""; clear: both; display: table; }
 .fg-radio__input { width: 0; height: 0; visibility: hidden; position: absolute; }
 .fg-radio__input:checked + .fg-icon.fg-icon_graph_circle::before { content: "\f111"; position: absolute; transform: scale(0.6); }
-.fg-radio-list__item_float_left { float: left; }
-.fg-radio-list__item_float_right { float: right; }
-.fg-radio-list__item.fg-radio-list__item_float_left:first-child .fg-radio, .fg-radio-list__item .fg-radio-list__item_float_right:first-child .fg-radio { border-radius: 0.5rem 0 0 0.5rem; overflow: hidden; }
-.fg-radio-list__item.fg-radio-list__item_float_left:last-child .fg-radio, .fg-radio-list__item .fg-radio-list__item_float_right:last-child .fg-radio { border-radius: 0 0.5rem 0.5rem 0; overflow: hidden; }
 .fg-radio-list:after { content: ""; clear: both; display: table; }
 .fg-radio .fg-icon { display: block; width: auto; }
-.fg-link__icon_float_left { float: left; }
-.fg-link__icon_float_right { float: right; }
+.fg-link { display: inline-block; }
+.fg-link__icon.fg_float_left ~ .fg-link__text, .fg-link__icon.fg_float_right ~ .fg-link__text { display: inline-block; }
+.fg-link .fg-icon { display: block; width: auto; }
+.fg-cover__img { width: 100%; }
 .fg-icon { display: inline-block; min-width: 2rem; text-align: center; font-size: 1.25rem; margin-left: auto; margin-right: auto; font-family: FontAwesome; }
 .fg-icon::after { display: inline-block; content: "\f118"; }
 .fg-icon::before { display: inline-block; }
-.fg-icon-list__item_float_left { float: left; }
-.fg-icon-list__item_float_right { float: right; }
 .fg-icon_graph_close:after { content: "\f00d"; }
 .fg-icon_graph_filter:after { content: "f"; }
 .fg-icon_graph_search:after { content: "g"; }
 .fg-icon_graph_more:after { content: "h"; }
-.fg-icon_graph_next:after { content: "j"; }
+.fg-icon_graph_next:after { content: "\f054"; }
 .fg-icon_graph_prev:after { content: "w"; }
 .fg-icon_graph_upload:after { content: "xy"; }
 .fg-icon_graph_circle:after { content: "\f1db"; }
@@ -1196,15 +428,289 @@ body { font-size: 13px; }
 .fg-icon_graph_align-left:after { content: "\f036"; }
 .fg-icon_graph_align-right:after { content: "\f038"; }
 .fg-icon_graph_align-center:after { content: "\f037"; }
-.fg-title__icon_float_left { float: left; }
-.fg-title__icon_float_right { float: right; }
 .fg-title:after { content: ""; clear: both; display: table; }
-.fg-toolbar__item_float_left { float: left; }
-.fg-toolbar__item_float_right { float: right; }
 .fg-toolbar:after { content: ""; clear: both; display: table; }
-.fg-list__item_float_left { float: left; }
-.fg-list__item_float_right { float: right; }
 .fg-list:after { content: ""; clear: both; display: table; }
+.fg_color_principal.fg-header { background-color: blue; color: white; }
+.fg_color_principal.fg-header .fg-btn { background-color: #000099; }
+.fg_color_principal.fg-header .fg-btn:hover { background-color: #000066; }
+.fg_color_principal.fg-btn { background-color: blue !important; }
+.fg_color_principal.fg-btn:hover { background-color: #0000cc !important; }
+.fg_color_principal.fg-btn .fg-badge { background-color: #000099; }
+.fg_color_principal.fg-btn .fg-badge:hover { background-color: #000066; }
+.fg_color_principal.fg-radio { background-color: blue; color: white; }
+.fg_color_principal.fg-radio:hover { background-color: #0000cc; }
+.fg_color_principal.fg-radio .fg-radio__input:checked + .fg-radio__icon { background-color: #000099; }
+.fg_color_principal.fg-radio .fg-radio__input:checked + .fg-radio__icon + .fg-radio__text { background-color: #000099; }
+.fg_color_principal.fg-radio .fg-radio__input:checked + .fg-radio__text { background-color: #000099; }
+.fg_color_principal.fg-checkbox:hover { background-color: #000099; }
+.fg_color_principal.fg-checkbox:hover .fg-checkbox__icon_float_left, .fg_color_principal.fg-checkbox:hover .fg-checkbox__icon_float_right { background-color: #000066; }
+.fg_color_principal.fg-checkbox .fg-checkbox__input:checked + .fg-icon { background-color: #000066; }
+.fg_color_principal.fg-checkbox .fg-checkbox__input:checked + .fg-icon + .fg-text { background-color: #000099; }
+.fg_color_principal.fg-checkbox .fg-checkbox__input:checked + .fg-text { background-color: #000099; }
+.fg_color_principal.fg-icon { color: blue; background-color: inherit; }
+.fg_color_principal.fg-code { color: white; background-color: blue; }
+.fg_color_principal.fg-badge { color: white; background-color: blue; }
+.fg_color_secondary.fg-header { background-color: red; color: white; }
+.fg_color_secondary.fg-header .fg-btn { background-color: #990000; }
+.fg_color_secondary.fg-header .fg-btn:hover { background-color: #660000; }
+.fg_color_secondary.fg-btn { background-color: red !important; }
+.fg_color_secondary.fg-btn:hover { background-color: #cc0000 !important; }
+.fg_color_secondary.fg-btn .fg-badge { background-color: #990000; }
+.fg_color_secondary.fg-btn .fg-badge:hover { background-color: #660000; }
+.fg_color_secondary.fg-radio { background-color: red; color: white; }
+.fg_color_secondary.fg-radio:hover { background-color: #cc0000; }
+.fg_color_secondary.fg-radio .fg-radio__input:checked + .fg-radio__icon { background-color: #990000; }
+.fg_color_secondary.fg-radio .fg-radio__input:checked + .fg-radio__icon + .fg-radio__text { background-color: #990000; }
+.fg_color_secondary.fg-radio .fg-radio__input:checked + .fg-radio__text { background-color: #990000; }
+.fg_color_secondary.fg-checkbox:hover { background-color: #990000; }
+.fg_color_secondary.fg-checkbox:hover .fg-checkbox__icon_float_left, .fg_color_secondary.fg-checkbox:hover .fg-checkbox__icon_float_right { background-color: #660000; }
+.fg_color_secondary.fg-checkbox .fg-checkbox__input:checked + .fg-icon { background-color: #660000; }
+.fg_color_secondary.fg-checkbox .fg-checkbox__input:checked + .fg-icon + .fg-text { background-color: #990000; }
+.fg_color_secondary.fg-checkbox .fg-checkbox__input:checked + .fg-text { background-color: #990000; }
+.fg_color_secondary.fg-icon { color: red; background-color: inherit; }
+.fg_color_secondary.fg-code { color: white; background-color: red; }
+.fg_color_secondary.fg-badge { color: white; background-color: red; }
+.fg_color_neutral.fg-header { background-color: gray; color: white; }
+.fg_color_neutral.fg-header .fg-btn { background-color: #4d4d4d; }
+.fg_color_neutral.fg-header .fg-btn:hover { background-color: #343434; }
+.fg_color_neutral.fg-btn { background-color: gray !important; }
+.fg_color_neutral.fg-btn:hover { background-color: #676767 !important; }
+.fg_color_neutral.fg-btn .fg-badge { background-color: #4d4d4d; }
+.fg_color_neutral.fg-btn .fg-badge:hover { background-color: #343434; }
+.fg_color_neutral.fg-radio { background-color: gray; color: white; }
+.fg_color_neutral.fg-radio:hover { background-color: #676767; }
+.fg_color_neutral.fg-radio .fg-radio__input:checked + .fg-radio__icon { background-color: #4d4d4d; }
+.fg_color_neutral.fg-radio .fg-radio__input:checked + .fg-radio__icon + .fg-radio__text { background-color: #4d4d4d; }
+.fg_color_neutral.fg-radio .fg-radio__input:checked + .fg-radio__text { background-color: #4d4d4d; }
+.fg_color_neutral.fg-checkbox:hover { background-color: #4d4d4d; }
+.fg_color_neutral.fg-checkbox:hover .fg-checkbox__icon_float_left, .fg_color_neutral.fg-checkbox:hover .fg-checkbox__icon_float_right { background-color: #343434; }
+.fg_color_neutral.fg-checkbox .fg-checkbox__input:checked + .fg-icon { background-color: #343434; }
+.fg_color_neutral.fg-checkbox .fg-checkbox__input:checked + .fg-icon + .fg-text { background-color: #4d4d4d; }
+.fg_color_neutral.fg-checkbox .fg-checkbox__input:checked + .fg-text { background-color: #4d4d4d; }
+.fg_color_neutral.fg-icon { color: gray; background-color: inherit; }
+.fg_color_neutral.fg-code { color: white; background-color: gray; }
+.fg_color_neutral.fg-badge { color: white; background-color: gray; }
+.fg_color_toolbar.fg-header { background-color: gray; color: white; }
+.fg_color_toolbar.fg-header .fg-btn { background-color: #4d4d4d; }
+.fg_color_toolbar.fg-header .fg-btn:hover { background-color: #343434; }
+.fg_color_toolbar.fg-btn { background-color: gray !important; }
+.fg_color_toolbar.fg-btn:hover { background-color: #676767 !important; }
+.fg_color_toolbar.fg-btn .fg-badge { background-color: #4d4d4d; }
+.fg_color_toolbar.fg-btn .fg-badge:hover { background-color: #343434; }
+.fg_color_toolbar.fg-radio { background-color: gray; color: white; }
+.fg_color_toolbar.fg-radio:hover { background-color: #676767; }
+.fg_color_toolbar.fg-radio .fg-radio__input:checked + .fg-radio__icon { background-color: #4d4d4d; }
+.fg_color_toolbar.fg-radio .fg-radio__input:checked + .fg-radio__icon + .fg-radio__text { background-color: #4d4d4d; }
+.fg_color_toolbar.fg-radio .fg-radio__input:checked + .fg-radio__text { background-color: #4d4d4d; }
+.fg_color_toolbar.fg-checkbox:hover { background-color: #4d4d4d; }
+.fg_color_toolbar.fg-checkbox:hover .fg-checkbox__icon_float_left, .fg_color_toolbar.fg-checkbox:hover .fg-checkbox__icon_float_right { background-color: #343434; }
+.fg_color_toolbar.fg-checkbox .fg-checkbox__input:checked + .fg-icon { background-color: #343434; }
+.fg_color_toolbar.fg-checkbox .fg-checkbox__input:checked + .fg-icon + .fg-text { background-color: #4d4d4d; }
+.fg_color_toolbar.fg-checkbox .fg-checkbox__input:checked + .fg-text { background-color: #4d4d4d; }
+.fg_color_toolbar.fg-icon { color: gray; background-color: inherit; }
+.fg_color_toolbar.fg-code { color: white; background-color: gray; }
+.fg_color_toolbar.fg-badge { color: white; background-color: gray; }
+.fg_color_filter.fg-header { background-color: gray; color: white; }
+.fg_color_filter.fg-header .fg-btn { background-color: #4d4d4d; }
+.fg_color_filter.fg-header .fg-btn:hover { background-color: #343434; }
+.fg_color_filter.fg-btn { background-color: gray !important; }
+.fg_color_filter.fg-btn:hover { background-color: #676767 !important; }
+.fg_color_filter.fg-btn .fg-badge { background-color: #4d4d4d; }
+.fg_color_filter.fg-btn .fg-badge:hover { background-color: #343434; }
+.fg_color_filter.fg-radio { background-color: gray; color: white; }
+.fg_color_filter.fg-radio:hover { background-color: #676767; }
+.fg_color_filter.fg-radio .fg-radio__input:checked + .fg-radio__icon { background-color: #4d4d4d; }
+.fg_color_filter.fg-radio .fg-radio__input:checked + .fg-radio__icon + .fg-radio__text { background-color: #4d4d4d; }
+.fg_color_filter.fg-radio .fg-radio__input:checked + .fg-radio__text { background-color: #4d4d4d; }
+.fg_color_filter.fg-checkbox:hover { background-color: #4d4d4d; }
+.fg_color_filter.fg-checkbox:hover .fg-checkbox__icon_float_left, .fg_color_filter.fg-checkbox:hover .fg-checkbox__icon_float_right { background-color: #343434; }
+.fg_color_filter.fg-checkbox .fg-checkbox__input:checked + .fg-icon { background-color: #343434; }
+.fg_color_filter.fg-checkbox .fg-checkbox__input:checked + .fg-icon + .fg-text { background-color: #4d4d4d; }
+.fg_color_filter.fg-checkbox .fg-checkbox__input:checked + .fg-text { background-color: #4d4d4d; }
+.fg_color_filter.fg-icon { color: gray; background-color: inherit; }
+.fg_color_filter.fg-code { color: white; background-color: gray; }
+.fg_color_filter.fg-badge { color: white; background-color: gray; }
+.fg_color_search.fg-header { background-color: red; color: white; }
+.fg_color_search.fg-header .fg-btn { background-color: #990000; }
+.fg_color_search.fg-header .fg-btn:hover { background-color: #660000; }
+.fg_color_search.fg-btn { background-color: red !important; }
+.fg_color_search.fg-btn:hover { background-color: #cc0000 !important; }
+.fg_color_search.fg-btn .fg-badge { background-color: #990000; }
+.fg_color_search.fg-btn .fg-badge:hover { background-color: #660000; }
+.fg_color_search.fg-radio { background-color: red; color: white; }
+.fg_color_search.fg-radio:hover { background-color: #cc0000; }
+.fg_color_search.fg-radio .fg-radio__input:checked + .fg-radio__icon { background-color: #990000; }
+.fg_color_search.fg-radio .fg-radio__input:checked + .fg-radio__icon + .fg-radio__text { background-color: #990000; }
+.fg_color_search.fg-radio .fg-radio__input:checked + .fg-radio__text { background-color: #990000; }
+.fg_color_search.fg-checkbox:hover { background-color: #990000; }
+.fg_color_search.fg-checkbox:hover .fg-checkbox__icon_float_left, .fg_color_search.fg-checkbox:hover .fg-checkbox__icon_float_right { background-color: #660000; }
+.fg_color_search.fg-checkbox .fg-checkbox__input:checked + .fg-icon { background-color: #660000; }
+.fg_color_search.fg-checkbox .fg-checkbox__input:checked + .fg-icon + .fg-text { background-color: #990000; }
+.fg_color_search.fg-checkbox .fg-checkbox__input:checked + .fg-text { background-color: #990000; }
+.fg_color_search.fg-icon { color: red; background-color: inherit; }
+.fg_color_search.fg-code { color: white; background-color: red; }
+.fg_color_search.fg-badge { color: white; background-color: red; }
+.fg_color_update.fg-header { background-color: red; color: white; }
+.fg_color_update.fg-header .fg-btn { background-color: #990000; }
+.fg_color_update.fg-header .fg-btn:hover { background-color: #660000; }
+.fg_color_update.fg-btn { background-color: red !important; }
+.fg_color_update.fg-btn:hover { background-color: #cc0000 !important; }
+.fg_color_update.fg-btn .fg-badge { background-color: #990000; }
+.fg_color_update.fg-btn .fg-badge:hover { background-color: #660000; }
+.fg_color_update.fg-radio { background-color: red; color: white; }
+.fg_color_update.fg-radio:hover { background-color: #cc0000; }
+.fg_color_update.fg-radio .fg-radio__input:checked + .fg-radio__icon { background-color: #990000; }
+.fg_color_update.fg-radio .fg-radio__input:checked + .fg-radio__icon + .fg-radio__text { background-color: #990000; }
+.fg_color_update.fg-radio .fg-radio__input:checked + .fg-radio__text { background-color: #990000; }
+.fg_color_update.fg-checkbox:hover { background-color: #990000; }
+.fg_color_update.fg-checkbox:hover .fg-checkbox__icon_float_left, .fg_color_update.fg-checkbox:hover .fg-checkbox__icon_float_right { background-color: #660000; }
+.fg_color_update.fg-checkbox .fg-checkbox__input:checked + .fg-icon { background-color: #660000; }
+.fg_color_update.fg-checkbox .fg-checkbox__input:checked + .fg-icon + .fg-text { background-color: #990000; }
+.fg_color_update.fg-checkbox .fg-checkbox__input:checked + .fg-text { background-color: #990000; }
+.fg_color_update.fg-icon { color: red; background-color: inherit; }
+.fg_color_update.fg-code { color: white; background-color: red; }
+.fg_color_update.fg-badge { color: white; background-color: red; }
+.fg_color_warning.fg-header { background-color: red; color: white; }
+.fg_color_warning.fg-header .fg-btn { background-color: #990000; }
+.fg_color_warning.fg-header .fg-btn:hover { background-color: #660000; }
+.fg_color_warning.fg-btn { background-color: red !important; }
+.fg_color_warning.fg-btn:hover { background-color: #cc0000 !important; }
+.fg_color_warning.fg-btn .fg-badge { background-color: #990000; }
+.fg_color_warning.fg-btn .fg-badge:hover { background-color: #660000; }
+.fg_color_warning.fg-radio { background-color: red; color: white; }
+.fg_color_warning.fg-radio:hover { background-color: #cc0000; }
+.fg_color_warning.fg-radio .fg-radio__input:checked + .fg-radio__icon { background-color: #990000; }
+.fg_color_warning.fg-radio .fg-radio__input:checked + .fg-radio__icon + .fg-radio__text { background-color: #990000; }
+.fg_color_warning.fg-radio .fg-radio__input:checked + .fg-radio__text { background-color: #990000; }
+.fg_color_warning.fg-checkbox:hover { background-color: #990000; }
+.fg_color_warning.fg-checkbox:hover .fg-checkbox__icon_float_left, .fg_color_warning.fg-checkbox:hover .fg-checkbox__icon_float_right { background-color: #660000; }
+.fg_color_warning.fg-checkbox .fg-checkbox__input:checked + .fg-icon { background-color: #660000; }
+.fg_color_warning.fg-checkbox .fg-checkbox__input:checked + .fg-icon + .fg-text { background-color: #990000; }
+.fg_color_warning.fg-checkbox .fg-checkbox__input:checked + .fg-text { background-color: #990000; }
+.fg_color_warning.fg-icon { color: red; background-color: inherit; }
+.fg_color_warning.fg-code { color: white; background-color: red; }
+.fg_color_warning.fg-badge { color: white; background-color: red; }
+.fg_color_alert.fg-header { background-color: red; color: white; }
+.fg_color_alert.fg-header .fg-btn { background-color: #990000; }
+.fg_color_alert.fg-header .fg-btn:hover { background-color: #660000; }
+.fg_color_alert.fg-btn { background-color: red !important; }
+.fg_color_alert.fg-btn:hover { background-color: #cc0000 !important; }
+.fg_color_alert.fg-btn .fg-badge { background-color: #990000; }
+.fg_color_alert.fg-btn .fg-badge:hover { background-color: #660000; }
+.fg_color_alert.fg-radio { background-color: red; color: white; }
+.fg_color_alert.fg-radio:hover { background-color: #cc0000; }
+.fg_color_alert.fg-radio .fg-radio__input:checked + .fg-radio__icon { background-color: #990000; }
+.fg_color_alert.fg-radio .fg-radio__input:checked + .fg-radio__icon + .fg-radio__text { background-color: #990000; }
+.fg_color_alert.fg-radio .fg-radio__input:checked + .fg-radio__text { background-color: #990000; }
+.fg_color_alert.fg-checkbox:hover { background-color: #990000; }
+.fg_color_alert.fg-checkbox:hover .fg-checkbox__icon_float_left, .fg_color_alert.fg-checkbox:hover .fg-checkbox__icon_float_right { background-color: #660000; }
+.fg_color_alert.fg-checkbox .fg-checkbox__input:checked + .fg-icon { background-color: #660000; }
+.fg_color_alert.fg-checkbox .fg-checkbox__input:checked + .fg-icon + .fg-text { background-color: #990000; }
+.fg_color_alert.fg-checkbox .fg-checkbox__input:checked + .fg-text { background-color: #990000; }
+.fg_color_alert.fg-icon { color: red; background-color: inherit; }
+.fg_color_alert.fg-code { color: white; background-color: red; }
+.fg_color_alert.fg-badge { color: white; background-color: red; }
+.fg_color_info.fg-header { background-color: red; color: white; }
+.fg_color_info.fg-header .fg-btn { background-color: #990000; }
+.fg_color_info.fg-header .fg-btn:hover { background-color: #660000; }
+.fg_color_info.fg-btn { background-color: red !important; }
+.fg_color_info.fg-btn:hover { background-color: #cc0000 !important; }
+.fg_color_info.fg-btn .fg-badge { background-color: #990000; }
+.fg_color_info.fg-btn .fg-badge:hover { background-color: #660000; }
+.fg_color_info.fg-radio { background-color: red; color: white; }
+.fg_color_info.fg-radio:hover { background-color: #cc0000; }
+.fg_color_info.fg-radio .fg-radio__input:checked + .fg-radio__icon { background-color: #990000; }
+.fg_color_info.fg-radio .fg-radio__input:checked + .fg-radio__icon + .fg-radio__text { background-color: #990000; }
+.fg_color_info.fg-radio .fg-radio__input:checked + .fg-radio__text { background-color: #990000; }
+.fg_color_info.fg-checkbox:hover { background-color: #990000; }
+.fg_color_info.fg-checkbox:hover .fg-checkbox__icon_float_left, .fg_color_info.fg-checkbox:hover .fg-checkbox__icon_float_right { background-color: #660000; }
+.fg_color_info.fg-checkbox .fg-checkbox__input:checked + .fg-icon { background-color: #660000; }
+.fg_color_info.fg-checkbox .fg-checkbox__input:checked + .fg-icon + .fg-text { background-color: #990000; }
+.fg_color_info.fg-checkbox .fg-checkbox__input:checked + .fg-text { background-color: #990000; }
+.fg_color_info.fg-icon { color: red; background-color: inherit; }
+.fg_color_info.fg-code { color: white; background-color: red; }
+.fg_color_info.fg-badge { color: white; background-color: red; }
+.fg_color_success.fg-header { background-color: red; color: white; }
+.fg_color_success.fg-header .fg-btn { background-color: #990000; }
+.fg_color_success.fg-header .fg-btn:hover { background-color: #660000; }
+.fg_color_success.fg-btn { background-color: red !important; }
+.fg_color_success.fg-btn:hover { background-color: #cc0000 !important; }
+.fg_color_success.fg-btn .fg-badge { background-color: #990000; }
+.fg_color_success.fg-btn .fg-badge:hover { background-color: #660000; }
+.fg_color_success.fg-radio { background-color: red; color: white; }
+.fg_color_success.fg-radio:hover { background-color: #cc0000; }
+.fg_color_success.fg-radio .fg-radio__input:checked + .fg-radio__icon { background-color: #990000; }
+.fg_color_success.fg-radio .fg-radio__input:checked + .fg-radio__icon + .fg-radio__text { background-color: #990000; }
+.fg_color_success.fg-radio .fg-radio__input:checked + .fg-radio__text { background-color: #990000; }
+.fg_color_success.fg-checkbox:hover { background-color: #990000; }
+.fg_color_success.fg-checkbox:hover .fg-checkbox__icon_float_left, .fg_color_success.fg-checkbox:hover .fg-checkbox__icon_float_right { background-color: #660000; }
+.fg_color_success.fg-checkbox .fg-checkbox__input:checked + .fg-icon { background-color: #660000; }
+.fg_color_success.fg-checkbox .fg-checkbox__input:checked + .fg-icon + .fg-text { background-color: #990000; }
+.fg_color_success.fg-checkbox .fg-checkbox__input:checked + .fg-text { background-color: #990000; }
+.fg_color_success.fg-icon { color: red; background-color: inherit; }
+.fg_color_success.fg-code { color: white; background-color: red; }
+.fg_color_success.fg-badge { color: white; background-color: red; }
+.fg_color_error.fg-header { background-color: red; color: white; }
+.fg_color_error.fg-header .fg-btn { background-color: #990000; }
+.fg_color_error.fg-header .fg-btn:hover { background-color: #660000; }
+.fg_color_error.fg-btn { background-color: red !important; }
+.fg_color_error.fg-btn:hover { background-color: #cc0000 !important; }
+.fg_color_error.fg-btn .fg-badge { background-color: #990000; }
+.fg_color_error.fg-btn .fg-badge:hover { background-color: #660000; }
+.fg_color_error.fg-radio { background-color: red; color: white; }
+.fg_color_error.fg-radio:hover { background-color: #cc0000; }
+.fg_color_error.fg-radio .fg-radio__input:checked + .fg-radio__icon { background-color: #990000; }
+.fg_color_error.fg-radio .fg-radio__input:checked + .fg-radio__icon + .fg-radio__text { background-color: #990000; }
+.fg_color_error.fg-radio .fg-radio__input:checked + .fg-radio__text { background-color: #990000; }
+.fg_color_error.fg-checkbox:hover { background-color: #990000; }
+.fg_color_error.fg-checkbox:hover .fg-checkbox__icon_float_left, .fg_color_error.fg-checkbox:hover .fg-checkbox__icon_float_right { background-color: #660000; }
+.fg_color_error.fg-checkbox .fg-checkbox__input:checked + .fg-icon { background-color: #660000; }
+.fg_color_error.fg-checkbox .fg-checkbox__input:checked + .fg-icon + .fg-text { background-color: #990000; }
+.fg_color_error.fg-checkbox .fg-checkbox__input:checked + .fg-text { background-color: #990000; }
+.fg_color_error.fg-icon { color: red; background-color: inherit; }
+.fg_color_error.fg-code { color: white; background-color: red; }
+.fg_color_error.fg-badge { color: white; background-color: red; }
+.fg_color_badge.fg-header { background-color: red; color: white; }
+.fg_color_badge.fg-header .fg-btn { background-color: #990000; }
+.fg_color_badge.fg-header .fg-btn:hover { background-color: #660000; }
+.fg_color_badge.fg-btn { background-color: red !important; }
+.fg_color_badge.fg-btn:hover { background-color: #cc0000 !important; }
+.fg_color_badge.fg-btn .fg-badge { background-color: #990000; }
+.fg_color_badge.fg-btn .fg-badge:hover { background-color: #660000; }
+.fg_color_badge.fg-radio { background-color: red; color: white; }
+.fg_color_badge.fg-radio:hover { background-color: #cc0000; }
+.fg_color_badge.fg-radio .fg-radio__input:checked + .fg-radio__icon { background-color: #990000; }
+.fg_color_badge.fg-radio .fg-radio__input:checked + .fg-radio__icon + .fg-radio__text { background-color: #990000; }
+.fg_color_badge.fg-radio .fg-radio__input:checked + .fg-radio__text { background-color: #990000; }
+.fg_color_badge.fg-checkbox:hover { background-color: #990000; }
+.fg_color_badge.fg-checkbox:hover .fg-checkbox__icon_float_left, .fg_color_badge.fg-checkbox:hover .fg-checkbox__icon_float_right { background-color: #660000; }
+.fg_color_badge.fg-checkbox .fg-checkbox__input:checked + .fg-icon { background-color: #660000; }
+.fg_color_badge.fg-checkbox .fg-checkbox__input:checked + .fg-icon + .fg-text { background-color: #990000; }
+.fg_color_badge.fg-checkbox .fg-checkbox__input:checked + .fg-text { background-color: #990000; }
+.fg_color_badge.fg-icon { color: red; background-color: inherit; }
+.fg_color_badge.fg-code { color: white; background-color: red; }
+.fg_color_badge.fg-badge { color: white; background-color: red; }
+.fg_color_highlight.fg-header { background-color: #ffecec; color: #b55050; }
+.fg_color_highlight.fg-header .fg-btn { background-color: #ff8686; }
+.fg_color_highlight.fg-header .fg-btn:hover { background-color: #ff5353; }
+.fg_color_highlight.fg-btn { background-color: #ffecec !important; }
+.fg_color_highlight.fg-btn:hover { background-color: #ffb9b9 !important; }
+.fg_color_highlight.fg-btn .fg-badge { background-color: #ff8686; }
+.fg_color_highlight.fg-btn .fg-badge:hover { background-color: #ff5353; }
+.fg_color_highlight.fg-radio { background-color: #ffecec; color: #b55050; }
+.fg_color_highlight.fg-radio:hover { background-color: #ffb9b9; }
+.fg_color_highlight.fg-radio .fg-radio__input:checked + .fg-radio__icon { background-color: #ff8686; }
+.fg_color_highlight.fg-radio .fg-radio__input:checked + .fg-radio__icon + .fg-radio__text { background-color: #ff8686; }
+.fg_color_highlight.fg-radio .fg-radio__input:checked + .fg-radio__text { background-color: #ff8686; }
+.fg_color_highlight.fg-checkbox:hover { background-color: #ff8686; }
+.fg_color_highlight.fg-checkbox:hover .fg-checkbox__icon_float_left, .fg_color_highlight.fg-checkbox:hover .fg-checkbox__icon_float_right { background-color: #ff5353; }
+.fg_color_highlight.fg-checkbox .fg-checkbox__input:checked + .fg-icon { background-color: #ff5353; }
+.fg_color_highlight.fg-checkbox .fg-checkbox__input:checked + .fg-icon + .fg-text { background-color: #ff8686; }
+.fg_color_highlight.fg-checkbox .fg-checkbox__input:checked + .fg-text { background-color: #ff8686; }
+.fg_color_highlight.fg-icon { color: #ffecec; background-color: inherit; }
+.fg_color_highlight.fg-code { color: #b55050; background-color: #ffecec; }
+.fg_color_highlight.fg-badge { color: #b55050; background-color: #ffecec; }
 .fg_size_xs { font-size: 0.3rem; }
 .fg_size_xs.fg-badge { border-radius: 0.3rem; min-width: 0.6rem; line-height: 0.6rem; padding: 0 0.1rem; }
 .fg_size_xs.fg-btn { line-height: 0.6rem; }
@@ -1231,3 +737,5 @@ body { font-size: 13px; }
 .fg_size_l.fg-icon { font-size: 1.875rem; width: 3rem; line-height: 3rem; }
 .fg_float_left { float: left; }
 .fg_float_right { float: right; }
+
+.fg-publication:after { content: ""; clear: both; display: table; }

@@ -1,10 +1,19 @@
 .#{$pre} {
-  &-col {
-    &-8 {
-      width: 66.6%;
-    }
-    &-4 {
-      width: 33.3%;
+  &-row {
+    display: flex;
+    margin-left: -1rem;
+    margin-right: -1rem;
+    &__col {
+      &_8 {
+        padding-left: 1rem;
+        padding-right: 1rem;
+        width: 66.6%;
+      }
+      &_4 {
+        padding-left: 1rem;
+        padding-right: 1rem;
+        width: 33.3%;
+      }
     }
   }
   &-affix {
@@ -14,6 +23,35 @@
   &-body {
     @include after-float();
   }
+  // Cabeceras de contenido
+  &-header {
+    &__title {
+      padding-left: 1rem;
+      display: inline-block;
+      line-height: 2rem;
+    }
+    &__btn {}
+    &__list {}
+    background-color: $bg_color_neutral;
+    color: $text_color_neutral;
+    .#{$pre}-btn {
+      &:not([class*="_color_"]) {
+        background-color: inherit;
+      }
+    }
+    &:not([class*="_color_"]) {
+      .#{$pre}-btn {
+        &:not([class*="_color_"]) {
+          background-color: darken($bg_color_neutral, 10%);
+          &:hover {
+            background-color: darken($bg_color_neutral, 20%);
+          }
+        }
+      }
+    }
+    @include after-float();
+  }
+  // laterales secundarios añadidos al contenido principal
   &-aside {
     //@include _color();
     //@include _float();
@@ -22,13 +60,15 @@
     &__list {}
     @include after-float();
   }
+  // contenido principal
   &-content {
     //@include _color();
     //@include _float();
     @include after-float();
   }
+  // Pie de contenido
   &-footer {
-    @include _color();
+    clear: both;
     &__title {}
     &__btn {}
     &__list {}
@@ -48,9 +88,9 @@
     background-color: $bg_color_neutral;
     color: $text_color_neutral;
     &__icon {
-      &.fg_float_left,
-      &.fg_float_right {
-        &~.fg-btn__text {
+      &.#{$pre}_float_left,
+      &.#{$pre}_float_right {
+        &~.#{$pre}-btn__text {
           display: inline-block;
         }
       }
@@ -60,13 +100,13 @@
       display: block;
     }
     &__badge {
-      &.fg-badge {
+      &.#{$pre}-badge {
         transform: scale(0.7);
         margin-left: auto;
         margin-right: auto;
         display: table;
-        &.fg_float_left,
-        &.fg_float_right {
+        &.#{$pre}_float_left,
+        &.#{$pre}_float_right {
           display: inline-block;
         }
       }
@@ -75,29 +115,24 @@
       &__item {}
       @include after-float();
     }
-    .fg-icon {
+    .#{$pre}-icon {
       display: block;
       width: auto;
     }
-    @include _color();
-    @include after-float();
-  }
-  &-header {
-    .#{$pre}-btn {
-      background-color: inherit;
+    .#{$pre}-badge {
+      &:not([class*="_color_"]) {
+        background-color: $bg_color_badge;
+      }
     }
-    &__title {
-      padding-left: 1rem;
-      display: inline-block;
-      line-height: 2rem;
-    }
-    &__btn {}
-    &__list {}
-    background-color: $bg_color_neutral;
-    color: $text_color_neutral;
-    @include _color();
-    .#{$pre}-btn {
-      @include _color();
+    &:not([class*="_color_"]) {
+      &:hover {
+        background-color: darken($bg_color_neutral, 10%);
+        .#{$pre}-badge {
+          &:not([class*="_color_"]) {
+            background-color: darken($bg_color_badge, 10%);
+          }
+        }
+      }
     }
     @include after-float();
   }
@@ -115,9 +150,6 @@
     line-height: $line-height;
     padding: 0 0.3rem;
     box-sizing: border-box;
-    //@include _color();
-    //@include _size();
-    //@include _float();
   }
   &-dropdown {
     &__link {}
@@ -184,19 +216,27 @@
     border: 0;
     padding: 0;
     font-family: inherit;
-    display: inline-block;
+    display: block;
     line-height: 2rem;
-    //@include _color();
-    //@include _size();
     &__icon {
-      @include _float();
+      &.#{$pre}_float_left+.#{$pre}-radio__text {
+        text-align: left;
+        float: left;
+      }
+      &.#{$pre}_float_right+.#{$pre}-radio__text {
+        text-align: right;
+        float: right;
+      }
     }
     &__text {
       padding: 0 0.5rem;
-      display: inline-block;
+      display: block;
+      text-align: center;
     }
     &__label {
       cursor: pointer;
+      display: block;
+      @include after-float();
     }
     &__input {
       width: 0;
@@ -216,24 +256,7 @@
       }
     }
     &-list {
-      &__item {
-        @include _float();
-        &.#{$pre}-radio-list__item_float_left,
-        .#{$pre}-radio-list__item_float_right {
-          &:first-child {
-            .fg-radio {
-              border-radius: 0.5rem 0 0 0.5rem;
-              overflow: hidden;
-            }
-          }
-          &:last-child {
-            .fg-radio {
-              border-radius: 0 0.5rem 0.5rem 0;
-              overflow: hidden;
-            }
-          }
-        }
-      }
+      &__item {}
       @include after-float();
     }
     .fg-icon {
@@ -242,8 +265,23 @@
     }
   }
   &-link {
+    display: inline-block;
     &__icon {
-      @include _float()
+      &.#{$pre}_float_left,
+      &.#{$pre}_float_right {
+        &~.#{$pre}-link__text {
+          display: inline-block;
+        }
+      }
+    }
+    .#{$pre}-icon {
+      display: block;
+      width: auto;
+    }
+  }
+  &-cover {
+    &__img {
+      width: 100%;
     }
   }
   &-icon {
@@ -254,9 +292,6 @@
     margin-left: auto;
     margin-right: auto;
     font-family: FontAwesome;
-    //@include _color();
-    //@include _size();
-    //@include _float();
     &::after {
       display: inline-block;
       content: "\f118";
@@ -265,37 +300,29 @@
       display: inline-block;
     }
     &-list {
-      &__item {
-        @include _float()
-      }
+      &__item {}
     }
     &_graph {
       @include icon()
     }
   }
   &-title {
-    &__icon {
-      @include _float()
-    }
+    &__icon {}
     @include after-float();
   }
   &-img {}
   //componentes especificos aglutinantes
   &-toolbar {
-    &__item {
-      @include _float()
-    }
+    &__item {}
     @include after-float();
   }
   &-list {
-    &__item {
-      @include _float()
-    }
+    &__item {}
     @include after-float();
   }
   &-card {}
   //LOS MODIFICADORES TIENE QUE ESTAR AL FINAL
-  //@include _color();
+  @include _color();
   @include _size();
   @include _float();
 }

@@ -59,86 +59,108 @@
 }
 
 @mixin hover($background-color, $color) {
-  background-color: darken($background-color, 10%);
-  color: $color;
-  .#{$pre}-btn {
-    background-color: darken($background-color, 20%);
-    &:hover {
-      background-color: darken($background-color, 30%);
-    }
-  }
-  &.#{$pre}-radio {
-    &:hover {
-      background-color: darken($background-color, 20%);
-      .#{$pre}-radio__icon_float_left,
-      .#{$pre}-radio__icon_float_right {
-        background-color: darken($background-color, 30%);
+  &.#{$pre} {
+    &-header {
+      background-color: $background-color;
+      color: $color;
+      .#{$pre}-btn {
+        background-color: darken($background-color, 20%);
+        &:hover {
+          background-color: darken($background-color, 30%);
+        }
       }
     }
-    .#{$pre}-radio__input {
-      &:checked {
-        &+.fg-radio__icon {
+    &-btn {
+      background-color: $background-color !important;
+      &:hover {
+        background-color: darken($background-color, 10%) !important;
+      }
+      .#{$pre}-badge {
+        background-color: darken($background-color, 20%);
+        &:hover {
           background-color: darken($background-color, 30%);
-          &+.fg-radio__text {
+        }
+      }
+    }
+    &-radio {
+      background-color: $background-color;
+      color: $color;
+      &:hover {
+        background-color: darken($background-color, 10%);
+      }
+      .#{$pre}-radio__input {
+        &:checked {
+          &+.#{$pre}-radio__icon {
+            background-color: darken($background-color, 20%);
+            &+.#{$pre}-radio__text {
+              background-color: darken($background-color, 20%);
+            }
+          }
+          &+.#{$pre}-radio__text {
             background-color: darken($background-color, 20%);
           }
         }
-        &+.fg-radio__text {
-          background-color: darken($background-color, 20%);
+      }
+    }
+    &-checkbox {
+      &:hover {
+        background-color: darken($background-color, 20%);
+        .#{$pre}-checkbox__icon_float_left,
+        .#{$pre}-checkbox__icon_float_right {
+          background-color: darken($background-color, 30%);
         }
       }
-    }
-  }
-  &.#{$pre}-checkbox {
-    &:hover {
-      background-color: darken($background-color, 20%);
-      .#{$pre}-checkbox__icon_float_left,
-      .#{$pre}-checkbox__icon_float_right {
-        background-color: darken($background-color, 30%);
-      }
-    }
-    .#{$pre}-checkbox__input {
-      &:checked {
-        &+.fg-icon {
-          background-color: darken($background-color, 30%);
+      .#{$pre}-checkbox__input {
+        &:checked {
+          &+.fg-icon {
+            background-color: darken($background-color, 30%);
+            &+.fg-text {
+              background-color: darken($background-color, 20%);
+            }
+          }
           &+.fg-text {
             background-color: darken($background-color, 20%);
           }
         }
-        &+.fg-text {
-          background-color: darken($background-color, 20%);
-        }
       }
     }
-  }
-  &.#{$pre}-icon {
-    color: $background-color;
-    background-color: inherit;
+    &-icon {
+      color: $background-color;
+      background-color: inherit;
+    }
+    &-code {
+      color: $color;
+      background-color: $background-color;
+    }
+    &-badge {
+      color: $color;
+      background-color: $background-color;
+    }
   }
 }
 
 @mixin _color() {
   &_color {
     &_principal {
-      @include hover($bg_color_principal, $text_color_principal);
+      @include hover($bg_color_principal, $text_color_principal)
     }
     &_secondary {
-      @include hover($bg_color_secondary, $text_color_secondary);
+      @include hover($bg_color_secondary, $text_color_secondary)
     }
     &_neutral {
-      @include hover($bg_color_neutral, $text_color_neutral);
+      @include hover($bg_color_neutral, $text_color_neutral)
     }
     &_toolbar {
-      @include hover($bg_color_toolbar, $text_color_toolbar);
+      @include hover($bg_color_toolbar, $text_color_toolbar)
     }
     &_filter {
-      @include hover($bg_color_filter, $text_color_filter);
+      @include hover($bg_color_filter, $text_color_filter)
     }
     &_search {
-      @include hover($bg_color_search, $text_color_search);
+      @include hover($bg_color_search, $text_color_search)
     }
     &_update {
-      @include hover($bg_color_update, $text_color_update);
+      @include hover($bg_color_update, $text_color_update)
     }
     &_warning {
       @include hover($bg_color_warning, $text_color_warning);
@@ -206,7 +228,7 @@
   }
   &_next {
     &:after {
-      content: "j";
+      content: "\f054";
     }
   }
   &_prev {
