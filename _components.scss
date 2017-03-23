@@ -1,6 +1,5 @@
 .#{$pre} {
   &-row {
-    display: flex;
     margin-left: -1rem;
     margin-right: -1rem;
     &__col {
@@ -9,12 +8,18 @@
         padding-right: 1rem;
         width: 66.6%;
       }
+      &_6 {
+        padding-left: 1rem;
+        padding-right: 1rem;
+        width: 50%;
+      }
       &_4 {
         padding-left: 1rem;
         padding-right: 1rem;
         width: 33.3%;
       }
     }
+    @include after-float();
   }
   &-affix {
     position: fixed;
@@ -95,9 +100,18 @@
         }
       }
     }
+    &__picture {
+      &.#{$pre}_float_left,
+      &.#{$pre}_float_right {
+        &~.#{$pre}-btn__text {
+          display: inline-block;
+        }
+      }
+    }
     &__text {
       padding: 0 0.5rem;
       display: block;
+      text-align: center;
     }
     &__badge {
       &.#{$pre}-badge {
@@ -119,10 +133,25 @@
       display: block;
       width: auto;
     }
+    .#{$pre}-picture {
+      display: block;
+      width: auto;
+      margin-left: auto;
+      margin-right: auto;
+      &__img {
+        width: 2rem;
+        margin-left: auto;
+        margin-right: auto;
+        display: table;
+      }
+    }
     .#{$pre}-badge {
       &:not([class*="_color_"]) {
         background-color: $bg_color_badge;
       }
+    }
+    &.#{$pre}_is-active {
+      background-color: darken($bg_color_neutral, 10%);
     }
     &:not([class*="_color_"]) {
       &:hover {
@@ -317,12 +346,31 @@
     @include after-float();
   }
   &-list {
-    &__item {}
+    &__item {
+      &.#{$pre}-btn,
+      &>.#{$pre}-btn {
+        display: block;
+      }
+    }
     @include after-float();
   }
+  &-logo {
+    &:after {
+      content: "";
+    }
+  }
+  &-picture {
+    &__img {
+      width: 100%;
+    }
+  }
+  &-menu {}
   &-card {}
   //LOS MODIFICADORES TIENE QUE ESTAR AL FINAL
-  @include _color();
-  @include _size();
-  @include _float();
 }
+
+@include _fix();
+@include _color();
+@include _size();
+@include _float();
+@include _corner();

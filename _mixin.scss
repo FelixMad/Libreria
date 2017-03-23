@@ -1,5 +1,5 @@
 @mixin _size() {
-  &_size {
+  .#{$pre}_size {
     &_xs {
       $font-size: 0.3rem;
       @include _size-components($font-size);
@@ -14,6 +14,42 @@
     }
     &_l {
       $font-size: 1.5rem;
+      @include _size-components($font-size);
+    }
+    &_x1 {
+      $font-size: 1rem;
+      @include _size-components($font-size);
+    }
+    &_x1-5 {
+      $font-size: 1.5rem;
+      @include _size-components($font-size);
+    }
+    &_x2 {
+      $font-size: 2rem;
+      @include _size-components($font-size);
+    }
+    &_x2-5 {
+      $font-size: 2.5rem;
+      @include _size-components($font-size);
+    }
+    &_x3 {
+      $font-size: 3rem;
+      @include _size-components($font-size);
+    }
+    &_x3-5 {
+      $font-size: 3.5rem;
+      @include _size-components($font-size);
+    }
+    &_x4 {
+      $font-size: 4rem;
+      @include _size-components($font-size);
+    }
+    &_x4-5 {
+      $font-size: 4.5rem;
+      @include _size-components($font-size);
+    }
+    &_x5 {
+      $font-size: 5rem;
       @include _size-components($font-size);
     }
   }
@@ -56,6 +92,16 @@
     width: $width;
     line-height: $line-height;
   }
+  &.#{$pre}-picture {
+    width: $width;
+    &.#{$pre}_corner_rounder {
+      $border-radius: $line-height / 2;
+      border-radius: $border-radius;
+    }
+    .#{$pre}-picture__img {
+      width: 100%;
+    }
+  }
 }
 
 @mixin hover($background-color, $color) {
@@ -74,6 +120,9 @@
       background-color: $background-color !important;
       &:hover {
         background-color: darken($background-color, 10%) !important;
+      }
+      &.#{$pre}_is-active {
+        background-color: darken($background-color, 10%);
       }
       .#{$pre}-badge {
         background-color: darken($background-color, 20%);
@@ -139,8 +188,16 @@
   }
 }
 
+@mixin _corner() {
+  .#{$pre}_corner {
+    &_rounder {
+      overflow: hidden;
+    }
+  }
+}
+
 @mixin _color() {
-  &_color {
+  .#{$pre}_color {
     &_principal {
       @include hover($bg_color_principal, $text_color_principal)
     }
@@ -187,12 +244,59 @@
 }
 
 @mixin _float() {
-  &_float {
+  .#{$pre}_float {
     &_left {
       float: left;
     }
     &_right {
       float: right;
+    }
+  }
+}
+
+@mixin _fix() {
+  .#{$pre}_fix {
+    &_left {
+      position: fixed;
+      left: 0;
+      top: 0;
+      bottom: 0;
+    }
+    &_right {
+      position: fixed;
+      right: 0;
+      top: 0;
+      bottom: 0;
+    }
+    &_top {
+      position: fixed;
+      right: 0;
+      left: 0;
+      top: 0;
+    }
+    &_bottom {
+      position: fixed;
+      right: 0;
+      left: 0;
+      bottom: 0;
+    }
+  }
+  [class*="_fix_"] {
+    .#{$pre} {
+      &_fix {
+        &_left {
+          position: absolute;
+        }
+        &_right {
+          position: absolute;
+        }
+        &_top {
+          position: absolute;
+        }
+        &_bottom {
+          position: absolute;
+        }
+      }
     }
   }
 }
@@ -218,7 +322,7 @@
   }
   &_search {
     &:after {
-      content: "g";
+      content: "\f002";
     }
   }
   &_more {
@@ -254,6 +358,26 @@
   &_toggle {
     &:after {
       content: "\f204";
+    }
+  }
+  &_settings {
+    &:after {
+      content: "\f013";
+    }
+  }
+  &_users {
+    &:after {
+      content: "\f0c0";
+    }
+  }
+  &_podcast {
+    &:after {
+      content: "\f2ce";
+    }
+  }
+  &_spotify {
+    &:after {
+      content: "\f1bc";
     }
   }
   &_align-left {
